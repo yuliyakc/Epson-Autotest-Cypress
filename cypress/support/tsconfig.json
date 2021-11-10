@@ -1,0 +1,49 @@
+// open register block > click "Sign Up" without entering anything > check required fields
+// open register block > enter invalid data > click "Sign Up" > check that user won't sign up with invalid data
+// register new user > logout > open register block > enter valid data > click "Sign Up" > check that user will sign up with valid data
+
+// open login block > click "Sign In" without entering anything > check required fields
+// open login block > enter invalid data, click "Sign In" > check that user won't login with invalid data
+// register new user > logout > open register block > enter valid data > click "Sign In" > check that user will sign in with valid data
+
+// open forgot password block > enter invalid email > check an error about invalid user
+// open forgot password block > doesn't enter email > request for a password" > check an error about absent email
+// register new user > logout > open forgot password block, enter valid email > check that alert about valid user and email was sent
+
+// register new user > logout
+
+// layout testing https://javascript-conference.com/wp-content/uploads/2019/04/Visual_Testing_with_Cypress.pdf  https://docs.cypress.io/guides/tooling/visual-testing#Functional-vs-visual-testing
+
+// register new user > login > check all main pages for content relevance(homepage, printer page(several different), cart page, contact us page) > check that each page have it's blocks and breadcrumbs
+
+// register new user > login > open specific printers list > filter by app segment >> category >>  classification >> number of colors >> etc. > check that filters are showing correct information
+
+// register new user > login > open specific printers list > click Learn more btn from PLP > check breadcrumbs and several specific blocks of this page
+
+// register new user > login > open specific printers list > click "Buy now" btn from PLP > check breadcrumbs; several specific blocks of this page
+
+// register new user > login > open specific printers list > click "Find a dealer" btn from PLP > check breadcrumbs; several specific blocks of this page
+
+// register new user > login > open specific printers list > click "Support" btn from PLP > check breadcrumbs; several specific blocks of this page
+
+// register new user > login > open specific printers list > click "Sort by" and select several points > check PLP is changed in accordance to sorting(ascending/descending price/name or relevance)
+
+// register new user > login > open specific printers list > change list page by using pagination > check PLP is changed in accordance to pagination
+
+// register new user > login > open specific printers list > click "Buy now" btn from PLP > check breadcrumbs; check that printer was added to the Basket for checkout
+
+//Checkout
+// register new user > login > open specific printers list > click "Buy now" btn from PDP > check breadcrumbs; check that printer was added to the Basket for checkout
+
+//Support
+// register new user > login > click on header "Support" btn > perform search by Product name > check dropdown menu; check that appropriate page opens after click
+// register new user > login > click on header "Support" btn > perform search by Serial number > check dropdown menu; check that appropriate page opens after click
+
+// Support PDP
+// register new user > login > open any printers page > click Download tab > click Download btn > check Download tab exists; check Download btn works and save some data
+// register new user > login > open any printers page > click FAQs tab > click input > check FAQ tab exists; check input is allow to enter some symbols
+// register new user > login > open any printers page > click Videos tab > check tab exists;
+// register new user > login > open any printers page > click Manual & Documentation tab > check tab exists;
+// register new user > login > open any printers page > click Registration & Warranty Options tab > check tab exists;
+// register new user > login > open any printers page > click Contact Us tab > check tab exists;
+// register new user > login > open any printers page > click Detect OS tab > check tab exists;
