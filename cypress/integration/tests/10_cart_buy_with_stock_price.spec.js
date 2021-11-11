@@ -8,7 +8,7 @@ describe("Find discount price and purchase", ()=> {
     it('should login, find printer with discount and purchase', function () {
         perform.signInActions.openWebsiteAndLogin();
 
-        perform.commonActions.openSpecificPrinterPDP();
+        perform.productLinksForPDP.openWorkForcePrinterPDP();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
 
@@ -23,8 +23,7 @@ describe("Find discount price and purchase", ()=> {
         perform.checkoutActions.goNextToBilling();
         check.checkoutAsserts.checkTotalPriceOnShipmentPage();
         perform.checkoutActions.saveAndGoToNextStep();
-
-        cy.selectCardToPay();
+        perform.checkoutActions.performPayoutWithCreditCardMethod();
         perform.checkoutActions.setCardName();
         perform.checkoutActions.goNext();
         perform.checkoutActions.agreeTermsAndPlaceAnOrder();

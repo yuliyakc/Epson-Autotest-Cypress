@@ -4,8 +4,12 @@ import Asserts from "../../framework/Asserts";
 describe("Check different types of shopping methods", ()=> {
     let perform = new Actions();
     let check = new Asserts();
-    it('should check Shopping Method "Standard" when add Hardware to the Cart', function () {
+    beforeEach(function () {
+        cy.clearCookies();
+        cy.viewport(1200, 800);
         perform.signInActions.openWebsiteAndLogin();
+    });
+    it('should check Shopping Method "Standard" when add Hardware to the Cart', function () {
         perform.searchActions.searchInkEcoPrinterPLP();
         perform.buyNowPLPActions.clickBuyNowBtnPLP();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
@@ -22,7 +26,6 @@ describe("Check different types of shopping methods", ()=> {
         check.cartAsserts.checkErrorMessage();
     });
     it('should check Shopping Method "Electronic" when add CoverPlus to the Cart', function () {
-        perform.signInActions.openWebsiteAndLogin();
         perform.searchActions.searchCoverPlusProducts();
         perform.buyNowPLPActions.clickBuyNowBtnPLP();
         check.cartAsserts.checkCartSection();
@@ -38,7 +41,6 @@ describe("Check different types of shopping methods", ()=> {
         check.cartAsserts.checkErrorMessage();
     });
     it('should check Shipping Method "Standard" when add Option to the Cart', function () {
-        perform.signInActions.openWebsiteAndLogin();
         perform.productLinksForPDP.openSpecificOptionPDPPage();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         check.cartAsserts.checkCartSection();
@@ -54,7 +56,6 @@ describe("Check different types of shopping methods", ()=> {
         check.cartAsserts.checkErrorMessage();
     });
     it('should check Shipping Method "Deutsche Post" when add EasyMail to purchase', function () {
-        perform.signInActions.openWebsiteAndLogin();
         perform.productLinksForPDP.openEasyMailProduct();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         check.cartAsserts.checkCartSection();
@@ -67,7 +68,7 @@ describe("Check different types of shopping methods", ()=> {
 
         perform.checkoutActions.goNextToBilling();
         perform.checkoutActions.saveAndGoToNextStep();
-        cy.selectCardToPay();
+        perform.checkoutActions.performPayoutWithCreditCardMethod();
         perform.checkoutActions.setCardName();
         perform.checkoutActions.goNext();
         perform.checkoutActions.agreeTermsAndPlaceAnOrder();
@@ -75,9 +76,8 @@ describe("Check different types of shopping methods", ()=> {
         check.checkoutAsserts.checkOrderInfoBlockIsVisible();
     });
     it('should check Shipping Method "Standard" when add Multiple Consumables to purchase', function () {
-        perform.signInActions.openWebsiteAndLogin();
         perform.productLinksForPDP.openEcoTankPrinterPDPPage();
-        perform.consumablesActions.clickAccessoriesTab();
+        perform.buyNowPDPActions.clickAccessoriesTab();
         perform.consumablesActions.selectConsumablesEcoTank();
         perform.consumablesActions.clickBuyNowBtnForConsumablesAndContinueShopping();
         perform.consumablesActions.selectCoverPlusConsumable();
@@ -92,7 +92,7 @@ describe("Check different types of shopping methods", ()=> {
 
         perform.checkoutActions.goNextToBilling();
         perform.checkoutActions.saveAndGoToNextStep();
-        cy.selectCardToPay();
+        perform.checkoutActions.performPayoutWithCreditCardMethod();
         perform.checkoutActions.setCardName();
         perform.checkoutActions.goNext();
         perform.checkoutActions.agreeTermsAndPlaceAnOrder();
@@ -100,8 +100,6 @@ describe("Check different types of shopping methods", ()=> {
         check.checkoutAsserts.checkOrderInfoBlockIsVisible();
     });
     it('should check Shipping Method "Standard" when add Hardware with CoverPlus to purchase', function () {
-        perform.signInActions.openWebsiteAndLogin();
-
         perform.productLinksForPDP.openEcoTankPrinterPDPPage();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         perform.consumablesActions.selectCoverPlusConsumable();
@@ -116,7 +114,7 @@ describe("Check different types of shopping methods", ()=> {
 
         perform.checkoutActions.goNextToBilling();
         perform.checkoutActions.saveAndGoToNextStep();
-        cy.selectCardToPay();
+        perform.checkoutActions.performPayoutWithCreditCardMethod();
         perform.checkoutActions.setCardName();
         perform.checkoutActions.goNext();
         perform.checkoutActions.agreeTermsAndPlaceAnOrder();

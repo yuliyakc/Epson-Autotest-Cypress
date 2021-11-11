@@ -21,7 +21,7 @@ describe("Login and buy a printer", ()=> {
         perform.checkoutActions.saveAndGoToNextStep();
         perform.checkoutActions.goNextToBilling();
         perform.checkoutActions.saveAndGoToNextStep();
-        cy.selectCardToPay();
+        perform.checkoutActions.performPayoutWithCreditCardMethod();
         perform.checkoutActions.setCardName();
         perform.checkoutActions.goNext();
         perform.checkoutActions.agreeTermsAndPlaceAnOrder();

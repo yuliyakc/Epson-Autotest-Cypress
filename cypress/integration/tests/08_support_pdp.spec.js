@@ -4,14 +4,16 @@ import Asserts from "../../framework/Asserts";
 describe("Check Support page works correctly", ()=> {
     let perform = new Actions();
     let check = new Asserts();
-
-    it('should open Support page for printer and check FAQ tab', function () {
+    beforeEach(function () {
+        cy.clearCookies();
+        cy.viewport(1200, 800);
         perform.signInActions.openWebsiteAndLogin();
-
         perform.supportActions.openInkJetProphotoPrinters();
         perform.supportActions.clickSupportBtnFromPLP();
         check.supportAsserts.checkSupportPageIsOpened();
         check.supportAsserts.checkSupportSku();
+    });
+    it('should open Support page for printer and check FAQ tab', function () {
         perform.supportActions.openFaqTabByClickOnABtn();
         check.supportAsserts.checkFaqPageIncludeSearchInput();
         perform.supportActions.typeTextToSearchInputAndSearch();
@@ -23,12 +25,6 @@ describe("Check Support page works correctly", ()=> {
         check.supportAsserts.checkItemsForThirdResult();
     });
     it('should open Support page for printer and check Manuals&Docs tab', function () {
-        perform.signInActions.openWebsiteAndLogin();
-
-        perform.supportActions.openInkJetProphotoPrinters();
-        perform.supportActions.clickSupportBtnFromPLP();
-        check.supportAsserts.checkSupportPageIsOpened();
-        check.supportAsserts.checkSupportSku();
         perform.supportActions.openManualsTabByClickOnABtn();
         check.supportAsserts.checkActiveTabContainsBlocks();
         perform.supportActions.openToggleOfADocsTab();
@@ -36,12 +32,6 @@ describe("Check Support page works correctly", ()=> {
         //perform.supportActions.clickBtnAndDownloadTheDocFile();
     });
     it('should open Support page for printer and check Download tab', function () {
-        perform.signInActions.openWebsiteAndLogin();
-
-        perform.supportActions.openInkJetProphotoPrinters();
-        perform.supportActions.clickSupportBtnFromPLP();
-        check.supportAsserts.checkSupportPageIsOpened();
-        check.supportAsserts.checkSupportSku();
         check.supportAsserts.checkSupportDownloadsTabIsActive();
         check.supportAsserts.checkActiveTabContainsBlocks();
         perform.supportActions.openToggleOfADownloadTab();
@@ -49,12 +39,6 @@ describe("Check Support page works correctly", ()=> {
         //perform.supportActions.clickBtnAndDownloadTheFile();
     });
     it('should open Support page for printer and check Registration&Warranty tab', function () {
-        perform.signInActions.openWebsiteAndLogin();
-
-        perform.supportActions.openInkJetProphotoPrinters();
-        perform.supportActions.clickSupportBtnFromPLP();
-        check.supportAsserts.checkSupportPageIsOpened();
-        check.supportAsserts.checkSupportSku();
         perform.supportActions.openOptionsTabByClickOnABtn();
         check.supportAsserts.checkFirstBlockIsVisible();
        // supportActions.clickRegisterNowBtn();
@@ -68,12 +52,6 @@ describe("Check Support page works correctly", ()=> {
         check.supportAsserts.checkCorrectPageIsOpened();
     });
     it('should open Support page for printer and check ContactUs tab', function () {
-        perform.signInActions.openWebsiteAndLogin();
-
-        perform.supportActions.openInkJetProphotoPrinters();
-        perform.supportActions.clickSupportBtnFromPLP();
-        check.supportAsserts.checkSupportPageIsOpened();
-        check.supportAsserts.checkSupportSku();
         perform.supportActions.clickContactUsButton();
         check.supportAsserts.checkContactUsFirstBlock();
         perform.supportActions.clickChatNowBtn();
@@ -84,23 +62,11 @@ describe("Check Support page works correctly", ()=> {
         check.supportAsserts.checkWidgetIsOpened();
     });
     it('should open Support page for printer and check correct OS changing and saving', function () {
-        perform.signInActions.openWebsiteAndLogin();
-
-        perform.supportActions.openInkJetProphotoPrinters();
-        perform.supportActions.clickSupportBtnFromPLP();
-        check.supportAsserts.checkSupportPageIsOpened();
-        check.supportAsserts.checkSupportSku();
         perform.supportActions.selectOperatingSystem();
         perform.supportActions.clickGoBtn();
         check.supportAsserts.checkNewOSInAddressLink();
     });
     it('should open Support page for printer and check redirect to Printers home page', function () {
-        perform.signInActions.openWebsiteAndLogin();
-
-        perform.supportActions.openInkJetProphotoPrinters();
-        perform.supportActions.clickSupportBtnFromPLP();
-        check.supportAsserts.checkSupportPageIsOpened();
-        check.supportAsserts.checkSupportSku();
         perform.supportActions.goToPrintersHomePage();
         check.supportAsserts.checkPrintersHomePage();
    });

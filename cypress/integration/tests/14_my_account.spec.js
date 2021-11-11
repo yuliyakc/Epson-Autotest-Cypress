@@ -4,10 +4,14 @@ import Asserts from "../../framework/Asserts";
 describe("Checking tabs on My Account menu", ()=> {
     let perform = new Actions();
     let check = new Asserts();
-    it('should check that tabs on My account menu is opened and correct ones', function () {
+    beforeEach(function () {
+        cy.clearCookies();
+        cy.viewport(1200, 800);
         perform.signInActions.openWebsiteAndLogin();
         perform.myAccountActions.openMyAccountMenu();
         perform.myAccountActions.openMyAccountTab();
+    });
+    it('should check that tabs on My account menu is opened and correct ones', function () {
         check.myAccAsserts.checkMyAccountTabIsOpened();
 
         perform.myAccountActions.openMyAccountMenu();
@@ -31,9 +35,6 @@ describe("Checking tabs on My Account menu", ()=> {
         check.myAccAsserts.checkAddressBookTabIsOpened();
     });
     it('should open My Accounts tab and check Inner blocks', function () {
-        perform.signInActions.openWebsiteAndLogin();
-        perform.myAccountActions.openMyAccountMenu();
-        perform.myAccountActions.openMyAccountTab();
         perform.myAccountActions.openOrderHistoryPage();
         check.orderHistoryAsserts.checkThatUserTransferToOrdersHistoryPage();
 

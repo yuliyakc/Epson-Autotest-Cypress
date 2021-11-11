@@ -65,6 +65,9 @@ class CheckoutActions {
         cy.xpath(CheckoutElements.xpathDropdown_DeliveryMethod)
             .select(checkoutsData.shippingMethods.easymail).should("be.visible");
     };
+    performPayoutWithCreditCardMethod(){
+        cy.selectCardToPay();
+    };
 
 }
 export default CheckoutActions

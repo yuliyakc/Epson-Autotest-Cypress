@@ -4,7 +4,6 @@ import Asserts from "../../framework/Asserts.js"
 describe("Checking Update Details Tab", ()=> {
     let perform = new Actions();
     let check = new Asserts();
-
     it('should check that new Details are saved successfully', function () {
         perform.signInActions.openWebsiteAndLogin();
         perform.myAccountActions.openMyAccountMenu();

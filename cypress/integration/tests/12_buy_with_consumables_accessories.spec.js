@@ -7,7 +7,7 @@ describe("Add several consumables and  Accessories to cart ", ()=> {
     it('should login, add printer and several addons', function () {
         perform.signInActions.openWebsiteAndLogin();
 
-        perform.commonActions.openWebsiteOnASpecificPrinter();
+        perform.productLinksForPDP.openEcoTankPrinter();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         check.consumablesAsserts.checkUserIsOnConsumablesPage();
         perform.consumablesActions.selectMediaBusinessPaper();
@@ -33,7 +33,7 @@ describe("Add several consumables and  Accessories to cart ", ()=> {
         perform.checkoutActions.goNextToBilling();
         perform.checkoutActions.saveAndGoToNextStep();
         // checkoutActions.agreeTermsAndPlaceAnOrder();
-        cy.selectCardToPay();
+        perform.checkoutActions.performPayoutWithCreditCardMethod();
         perform.checkoutActions.setCardName();
         perform.checkoutActions.goNext();
         perform.checkoutActions.agreeTermsAndPlaceAnOrder();

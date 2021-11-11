@@ -13,9 +13,6 @@ describe("Checking Update Email Tab", ()=> {
         perform.updateDetailsActions.fillOldAndNewMenu();
         perform.updateDetailsActions.fillOldPassword();
         perform.updateDetailsActions.clickUpdateInfoBtn();
-
-
-
-
+        check.commonAsserts.checkGlobalAlertIsDisplayed();
     });
 });

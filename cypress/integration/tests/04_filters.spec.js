@@ -4,6 +4,11 @@ import Asserts from "../../framework/Asserts";
 describe("Checking filter for all printers", ()=> {
     let perform = new Actions();
     let check = new Asserts();
+    beforeEach(function () {
+        cy.clearCookies();
+        cy.viewport(1200, 800);
+        perform.signInActions.openWebsiteAndLogin();
+    });
     it('should check that filters are working correct for Ink Printer', function () {
         perform.signInActions.openWebsiteAndLogin();
         perform.searchActions.searchInkPrinterPLP();

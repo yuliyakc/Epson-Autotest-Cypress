@@ -4,10 +4,14 @@ import Asserts from "../../framework/Asserts";
 describe("Checking pagination and sorting on PLP", ()=> {
     let perform = new Actions();
     let check = new Asserts();
-    it('should check that pagination working correct for PLP', function () {
+    beforeEach(function () {
+        cy.clearCookies();
+        cy.viewport(1200, 800);
         perform.signInActions.openWebsiteAndLogin();
         perform.searchActions.searchInkPrinterPLP();
         check.assertions.checkMainProductsQuantity();
+    });
+    it('should check that pagination working correct for PLP', function () {
         perform.paginationActions.clickTopPaginationButtonNext();
         check.assertions.checkSecondPageIsOpened();
         perform.paginationActions.clickTopPaginationButtonNext();
@@ -16,18 +20,12 @@ describe("Checking pagination and sorting on PLP", ()=> {
         check.assertions.checkSecondPageIsOpened();
     });
     it('should check that sorting by Price is working correct for PLP', function () {
-        perform.signInActions.openWebsiteAndLogin();
-        perform.searchActions.searchInkPrinterPLP();
-        check.assertions.checkMainProductsQuantity();
         perform.sortingActions.selectSortingPriceAscending();
         check.assertions.checkSortingApplyAscending();
         perform.sortingActions.selectSortingPriceDescending();
         check.assertions.checkSortingApplyDescending();
     });
     it('should check that sorting by Name is working correct for PLP', function () {
-        perform.signInActions.openWebsiteAndLogin();
-        perform.searchActions.searchInkPrinterPLP();
-        check.assertions.checkMainProductsQuantity();
         perform.sortingActions.selectSortingNameAscending();
         check.assertions.checkSortingByNameApplyAscending();
         perform.sortingActions.selectSortingNameDescending();

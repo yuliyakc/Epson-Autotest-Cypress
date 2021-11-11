@@ -4,29 +4,26 @@ import Asserts from "../../framework/Asserts.js"
 describe("Checking Order History Tab", ()=> {
 let perform = new Actions();
 let check = new Asserts();
-
-    it('should check Sorting on Order History page', function () {
+    beforeEach(function () {
+        cy.clearCookies();
+        cy.viewport(1200, 800);
         perform.signInActions.openWebsiteAndLogin();
         perform.myAccountActions.openMyAccountMenu();
         perform.orderHistoryActions.openOrderHistoryTab();
+    });
+    it('should check Sorting on Order History page', function () {
         perform.orderHistoryActions.selectSortingByOrderNumber();
         check.orderHistoryAsserts.checkOrderNumberSortingWasApplied();
         perform.orderHistoryActions.selectSortingByDate();
         check.orderHistoryAsserts.checkOrderDateSortingWasApplied();
     });
     it('should check Pagination on Order History page', function () {
-        perform.signInActions.openWebsiteAndLogin();
-        perform.myAccountActions.openMyAccountMenu();
-        perform.orderHistoryActions.openOrderHistoryTab();
         perform.paginationActions.clickTopPaginationButtonNext();
         check.orderHistoryAsserts.checkSecondPageIsOpened();
         perform.paginationActions.clickTopPaginationButtonPrev();
         check.orderHistoryAsserts.checkFirstPageIsOpened();
     });
     it('should open Order Number page and reorder an order', function () {
-        perform.signInActions.openWebsiteAndLogin();
-        perform.myAccountActions.openMyAccountMenu();
-        perform.orderHistoryActions.openOrderHistoryTab();
         perform.orderHistoryActions.openOrderNumberLink();
         perform.orderHistoryActions.clickReorderBtn();
         check.cartAsserts.checkCartPage();
@@ -35,9 +32,6 @@ let check = new Asserts();
         check.checkoutAsserts.checkSelectedCountry();
    });
     it('should check Order History Pagination buttons', function () {
-        perform.signInActions.openWebsiteAndLogin();
-        perform.myAccountActions.openMyAccountMenu();
-        perform.orderHistoryActions.openOrderHistoryTab();
         perform.orderHistoryActions.openOrderNumberLink();
         check.orderHistoryAsserts.checkThatUserTransferToOrderPage();
         perform.orderHistoryActions.clickBackToOrderHistoryBtn();

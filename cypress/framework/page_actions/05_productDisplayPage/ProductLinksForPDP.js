@@ -8,5 +8,11 @@ class ProductLinksForPDP {
     openSpecificOptionPDPPage(){
         cy.visitWebsite("/products/options/epson-sidm-roll-paper-holder-and-cover-for-lq-50/p/8667?suggestionClicked=true")
     };
+    openEcoTankPrinter(){
+        cy.visitWebsite("/products/printers/inkjet/consumer/ecotank-et-2750/p/30907");
+    };
+    openWorkForcePrinterPDP(){
+        cy.visitWebsite("/products/printers/inkjet/microbusiness/workforce-wf-2010w/p/11998");
+    };
 }
 export default ProductLinksForPDP

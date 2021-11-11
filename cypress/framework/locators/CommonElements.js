@@ -14,12 +14,10 @@ class CommonElements {
     static cssBtn_BtnPrimary = ".btn.btn-primary";
     static cssBtn_BuyNowForConsumables = ".accordion-toggle__content:nth-child(2) .accordion-toggle__content:nth-child(1) .cross-sell-list__footer .btn";
     static cssBtn_BuyNowForCoverPlus = ".cross-sell-list:nth-child(2) > .cross-sell-list__footer > .btn";
-    static xpathLink_SpecificPrinter = "//em[contains(text(),'EcoTank ET-M1120')]";
-    static xpathTab_Accessories = "//button[contains(text(),'Accessories')]";
-    static xpathBtn_ContinueShopping = "//div[@id='simple-modal']//a[contains(text(),'Continue Shopping')]";
+    static cssBtn_ContinueShopping = "#simple-modal a:nth-child(1)";
     static cssBtn_BuyNowForConsumable = ".cross-sell-list:nth-child(1) > .cross-sell-list__footer > .btn";
     static cssDropdown_Sorting = "select[id='sortOptions1']";
-    static cssAlert_Message = "div.main__inner-wrapper > div.global-alerts > div";
+    static cssGlobal_Message = "div.main__inner-wrapper > div.global-alerts > div";
 
 }
 export default CommonElements

@@ -1,6 +1,7 @@
 import ConsumablesElements from "../../locators/08_extraAccessories/ConsumablesElements";
 import CommonElements from "../../locators/CommonElements";
 import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
+import BuyNowPDPElements from "../../locators/05_productDisplayPage/BuyNowPDPElements";
 
 class ConsumablesActions {
     clickCheckoutBtnOnConsumablesPage(){
@@ -15,7 +16,7 @@ class ConsumablesActions {
     };
     clickBuyNowForMediaAndContinueShopping(){
         cy.get(CommonElements.cssBtn_BuyNowForFirstBlock).click();
-        cy.xpath(CommonElements.xpathBtn_ContinueShopping).click();
+        cy.get(CommonElements.cssBtn_ContinueShopping).click();
     };
     selectConsumablesColourMultiPac(){
         cy.wait(2000)
@@ -24,7 +25,7 @@ class ConsumablesActions {
     };
     clickBuyNowForConsumablesAndContinueShopping(){
         cy.get(CommonElements.cssBtn_BuyNowForConsumables).click();
-        cy.xpath(CommonElements.xpathBtn_ContinueShopping).click();
+        cy.get(CommonElements.cssBtn_ContinueShopping).click();
     };
     selectCoverPlusZeroFiveYears(){
         cy.wait(2000)
@@ -37,10 +38,6 @@ class ConsumablesActions {
     addAnotherConsumable(){
       cy.get("#updateCartForm3 > .product-card__qty-inc > .glyphicon").click();
     };
-
-    clickAccessoriesTab(){
-        cy.xpath(CommonElements.xpathTab_Accessories).click()
-    };
     selectConsumablesEcoTank() {
         cy.wait(2000)
         cy.get(CommonElements.cssBtn_BtnPrimary).eq(6).click();
@@ -51,10 +48,10 @@ class ConsumablesActions {
     };
     clickBuyNowBtnForConsumablesAndContinueShopping(){
        cy.get(CommonElements.cssBtn_BuyNowForConsumable).click()
-        cy.xpath(CommonElements.xpathBtn_ContinueShopping).click();
+        cy.get(CommonElements.cssBtn_ContinueShopping).click();
     };
     minimizeMediaAccordion(){
-        cy.xpath(ConsumablesElements.cssToggle_Media).click();
+        cy.get(ConsumablesElements.cssToggle_Media).click();
     };
     minimizeConsumablesAccordion(){
       cy.get(ConsumablesElements.cssToggle_Consumables).click();

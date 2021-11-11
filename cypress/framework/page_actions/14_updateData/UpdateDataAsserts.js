@@ -3,7 +3,7 @@ import notificationsData from "../../../data/notifications";
 
 class UpdateDataAsserts {
     checkCorrectMessageIsDisplayed(){
-        cy.get(CommonElements.cssAlert_Message).should("contain", notificationsData.errors.positive)
+        cy.get(CommonElements.cssGlobal_Message).should("contain", notificationsData.errors.positive)
     };
     checkUpdateDetailsTabIsOpened(){
         cy.url().should("include", "my-account/update-profile");

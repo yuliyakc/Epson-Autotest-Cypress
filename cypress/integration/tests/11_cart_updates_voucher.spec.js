@@ -4,10 +4,13 @@ import Asserts from "../../framework/Asserts";
 describe("Open Cart and make some manipulations", ()=> {
     let perform = new Actions();
     let check = new Asserts();
-    it('should login, add printer to Cart and Update it - change and delete', function () {
+    beforeEach(function () {
+        cy.clearCookies();
+        cy.viewport(1200, 800);
         perform.signInActions.openWebsiteAndLogin();
-
-        perform.commonActions.openWebsiteOnASpecificPrinter();
+        perform.productLinksForPDP.openEcoTankPrinter();
+    });
+    it('should login, add printer to Cart and Update it - change and delete', function () {
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkUserOpenCartSection();
@@ -23,9 +26,6 @@ describe("Open Cart and make some manipulations", ()=> {
         check.cartAsserts.checkThatCartIsEmpty();
     });
     it('should login, add printer to Cart and use a voucher to change the price', function () {
-        perform.signInActions.openWebsiteAndLogin();
-
-        perform.commonActions.openWebsiteOnASpecificPrinter();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkUserOpenCartSection()
