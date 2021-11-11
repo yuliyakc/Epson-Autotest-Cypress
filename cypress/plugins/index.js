@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+
 // ***********************************************************
 // This example plugins/index.js can be used to load plugins
 //
@@ -24,4 +25,4 @@ const { isFileExist } = require('cy-verify-downloads');
 
 module.exports = (on, config) => {
     on('task', { isFileExist })
-}
+};

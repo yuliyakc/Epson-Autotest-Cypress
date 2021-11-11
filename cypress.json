@@ -3,8 +3,7 @@
   "defaultCommandTimeout": 50000,
   "pageLoadTimeout": 75000,
   "watchForFileChanges": false,
-  "video" : false,
+  "video": false,
   "screenshotOnRunFailure": true
-
 
 }

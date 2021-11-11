@@ -31,6 +31,18 @@ class UpdateDataActions {
     fillOldPassword(){
         cy.get(UpdateDataElements.idInput_Password).click().clear().type(usersData.register.password);
     };
+    openChangePasswordTab(){
+        cy.get(MyAccountElements.cssTab_ChangePassword).click();
+    };
+    enterCurrentPassword(){
+      cy.get(UpdateDataElements.idInput_CurrentPassword).click().clear().type(usersData.register.password);
+    };
+    enterNewPassword(){
+        cy.get(UpdateDataElements.idInput_NewPassword).click().clear().type(usersData.register.newPassword);
+    };
+    confirmNewPassword(){
+        cy.get(UpdateDataElements.idInput_CheckNewPassword).click().clear().type(usersData.register.newPassword);
+    };
 
 
 }

@@ -10,7 +10,6 @@ describe("Checking filter for all printers", ()=> {
         perform.signInActions.openWebsiteAndLogin();
     });
     it('should check that filters are working correct for Ink Printer', function () {
-        perform.signInActions.openWebsiteAndLogin();
         perform.searchActions.searchInkPrinterPLP();
         check.assertions.checkMainProductsQuantity();
         perform.filtersActions.useAppSegmentFilter();
@@ -21,7 +20,7 @@ describe("Checking filter for all printers", ()=> {
         check.assertions.checkInkQuantity();
     });
     it('should check that several filters shows correct result for Dot Printer', function () {
-        perform.signInActions.openWebsiteAndLogin();
+
         perform.searchActions.searchDotPrinterPLP();
         perform.filtersActions.useIncludedSoftFilter();
         perform.filtersActions.usePriceFrom200Filter();
@@ -29,14 +28,14 @@ describe("Checking filter for all printers", ()=> {
         check.assertions.checkDotMatrixQuantity();
     });
     it('should check that filter is working correct for Laser Printer', function () {
-        perform.signInActions.openWebsiteAndLogin();
+
         perform.searchActions.searchLaserPrinters();
         perform.filtersActions.useClassificationFilter();
         check.assertions.checkActiveFilter();
         check.assertions.checkLaserQuantity();
     });
     it('should check that filter is working correct for Laser Printer and clear filter', function () {
-        perform.signInActions.openWebsiteAndLogin();
+
         perform.commonActions.openProductListingPage();
         perform.filtersActions.useLargeFormatPrinters();
         check.assertions.checkActiveFilter();
@@ -45,7 +44,7 @@ describe("Checking filter for all printers", ()=> {
         check.assertions.checkMainProductsQuantity();
      });
     it('should check that filter is working correct for Label Maker Printers', function () {
-        perform.signInActions.openWebsiteAndLogin();
+
         perform.commonActions.openProductListingPage();
         perform.filtersActions.useLabelMakerPrinters();
         check.assertions.checkActiveFilter();

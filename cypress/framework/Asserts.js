@@ -26,5 +26,6 @@ class Asserts {
     signAsserts = new SignAsserts();
     updateDataAsserts = new UpdateDataAsserts();
 
+
 }
 export default Asserts

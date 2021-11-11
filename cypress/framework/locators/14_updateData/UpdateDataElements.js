@@ -9,6 +9,8 @@ class UpdateDataElements {
     static idInput_NewEmail = "input[id='profile.email']";
     static idInput_CheckEmail = "input[id='profile.checkEmail']";
     static idInput_Password = "input[id='profile.pwd']";
-
+    static idInput_CurrentPassword = "input[id='currentPassword']";
+    static idInput_NewPassword = "input[id='newPassword']";
+    static idInput_CheckNewPassword = "input[id='checkNewPassword']";
 }
 export default UpdateDataElements

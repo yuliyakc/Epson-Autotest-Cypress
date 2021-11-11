@@ -18,12 +18,12 @@ class CommonActions {
     openProductListingPage(){
         cy.get(FiltersElements.cssButton_PrintersList).eq(2).click();
     };
-    openChangePasswordTab(){
-      cy.get(MyAccountElements.cssTab_ChangePassword).click();
-    };
     goBackToPreviousPage(){
         cy.wait(1000);
         cy.go("back");
+    };
+    acceptWebsiteCookies(){
+        cy.get(CommonElements.idModal_AcceptCookies).click();
     };
 
 

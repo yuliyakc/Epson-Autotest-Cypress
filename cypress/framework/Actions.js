@@ -47,6 +47,7 @@ class Actions {
     addressBookActions = new AddressBookActions();
     productLinksForPDP = new ProductLinksForPDP();
     updateDetailsActions = new UpdateDataActions();
+    updateDataActions = new UpdateDataActions();
 
 
 

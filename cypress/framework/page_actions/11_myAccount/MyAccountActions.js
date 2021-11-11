@@ -1,8 +1,9 @@
 import MyAccountElements from "../../locators/11_myAccount/MyAccountElements";
+import MainHeaderElements from "../../locators/00_mainHeader/MainHeaderElements";
 
 class MyAccountActions {
     openMyAccountMenu(){
-        cy.get(MyAccountElements.cssDropdown_MyAccount).click();
+        cy.get(MainHeaderElements.cssDropdown_MyAccount).click();
     };
     openMyAccountTab(){
         cy.xpath(MyAccountElements.xpathTab_MyAccount).click();

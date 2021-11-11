@@ -4,8 +4,9 @@ module.exports = {
     "register": {
         "firstName" : "John",
         "lastName" : "Smith",
-        "email": `maria.bobrova+0${UNIQID}@keenethics.com`,
+        "email": `maria.bobrova+${UNIQID}@keenethics.com`,
         "password": "Qwe123456!",
+        "newPassword": "Qwe13579!",
         "fullName":"J.Smith"
     },
     "purchase": {
@@ -33,6 +34,10 @@ module.exports = {
         "lastName":"Smith",
         "companyName" : "Testers",
         "default": "Baker str 221bB"
-
+    },
+    "passChange":{
+        "email": "maria.bobrova+1@keenethics.com",
+        "newPassword": "Qwe13579!",
+        "oldPassword": "Qwe123456!"
     }
 }

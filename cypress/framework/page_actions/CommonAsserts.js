@@ -12,10 +12,6 @@ class CommonAsserts {
     checkTotalOnPaymentSelectPage(){
       cy.get(".checkout-summary__product").should('contain', checkoutsData.discount.price)
     };
-    checkChangePassTabIsOpened(){
-        cy.url().should("include", "my-account/update-password");
-        cy.get("div").should("have.class", "update-password");
-    };
     checkGlobalAlertIsDisplayed(){
       cy.get(CommonElements.cssGlobal_Message).should("be.visible");
 
