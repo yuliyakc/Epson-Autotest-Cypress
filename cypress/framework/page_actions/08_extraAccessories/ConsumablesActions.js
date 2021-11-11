@@ -32,7 +32,7 @@ class ConsumablesActions {
     };
     clickBuyNowForCoverPlusAndGoToCart(){
         cy.get(CommonElements.cssBtn_BuyNowForCoverPlus).click();
-        cy.xpath(CommonElements.xpathBtn_GoToCheckout).click();
+        cy.get(CommonElements.cssBtn_GoToCheckout).click();
     };
     addAnotherConsumable(){
       cy.get("#updateCartForm3 > .product-card__qty-inc > .glyphicon").click();
@@ -54,7 +54,7 @@ class ConsumablesActions {
         cy.xpath(CommonElements.xpathBtn_ContinueShopping).click();
     };
     minimizeMediaAccordion(){
-        cy.xpath(ConsumablesElements.xpathToggle_Media).click();
+        cy.xpath(ConsumablesElements.cssToggle_Media).click();
     };
     minimizeConsumablesAccordion(){
       cy.get(ConsumablesElements.cssToggle_Consumables).click();

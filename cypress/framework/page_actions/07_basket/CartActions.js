@@ -25,10 +25,10 @@ class CartActions {
     };
     putVoucherCodeAndApply(){
         cy.xpath(CartElements.xpathInput_VoucherCode).click().type(checkoutsData.discount.name);
-        cy.xpath(CartElements.xpathBtn_VoucherRedeem).click();
+        cy.xpath(CartElements.cssBtn_VoucherRedeem).click();
     };
     removeDiscountFromPrinter(){
-        cy.xpath(CartElements.xpathBtn_RemoveDiscount).click();
+        cy.xpath(CartElements.cssBtn_RemoveDiscount).click();
     };
 
 }

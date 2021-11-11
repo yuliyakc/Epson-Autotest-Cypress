@@ -31,13 +31,13 @@ class CommonActions {
         cy.xpath(CommonElements.xpathLink_SpecificPrinter).click();
     };
     openUpdateDetailsTab(){
-      cy.xpath(MyAccountElements.xpathTab_UpdateDetails).click();
+      cy.get(MyAccountElements.cssTab_UpdateDetails).click();
     };
     openChangePasswordTab(){
-      cy.xpath(MyAccountElements.xpathTab_ChangePassword).click();
+      cy.get(MyAccountElements.cssTab_ChangePassword).click();
     };
     openAddressBookTab(){
-      cy.xpath(MyAccountElements.xpathTab_AddressBook).click();
+      cy.get(MyAccountElements.cssTab_AddressBook).click();
     };
     goBackToPreviousPage(){
         cy.wait(1000);

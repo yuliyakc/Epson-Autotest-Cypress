@@ -5,11 +5,11 @@ import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
 
 class AddressBookActions {
     openAddressBookTab(){
-      cy.xpath(MyAccountElements.xpathTab_AddressBook).click();
+      cy.get(MyAccountElements.cssTab_AddressBook).click();
     };
     scrollDownAndClickAddNewAddressBtn(){
       cy.scrollTo("bottom");
-      cy.xpath(AddressBookElements.xpathBtn_AddressCreation).click();
+      cy.get(AddressBookElements.cssBtn_AddressCreation).click();
     };
     enterCorrectDataForNewAddress(){
         cy.get(CheckoutElements.idInput_Nickname).click().clear().type(usersData.address.nickname);

@@ -1,32 +1,33 @@
 import CommonElements from "../../locators/CommonElements";
 import printersData from "../../../data/printers";
 import productsData from "../../../data/products";
+import SearchElements from "../../locators/09_search/SearchElements";
 
 class SearchActions {
     searchInkPrinterPLP(){
-        cy.get(CommonElements.cssBtn_SearchLabel).click();
-        cy.get(CommonElements.cssInput_SearchForText).click().type(printersData.inkJet.name);
+        cy.get(SearchElements.cssBtn_SearchLabel).click();
+        cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.inkJet.name);
         cy.wait(2000)
     };
     searchInkEcoPrinterPLP(){
-        cy.get(CommonElements.cssBtn_SearchLabel).click();
-        cy.get(CommonElements.cssInput_SearchForText).click().type(printersData.inkJet.ink);
+        cy.get(SearchElements.cssBtn_SearchLabel).click();
+        cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.inkJet.ink);
     };
     searchDotPrinterPLP(){
-        cy.get(CommonElements.cssBtn_SearchLabel).click();
-        cy.get(CommonElements.cssInput_SearchForText).click().type(printersData.dotMatrix.name);
+        cy.get(SearchElements.cssBtn_SearchLabel).click();
+        cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.dotMatrix.name);
     };
     searchLaserPrinters(){
-        cy.get(CommonElements.cssBtn_SearchLabel).click();
-        cy.get(CommonElements.cssInput_SearchForText).click().type(printersData.laserPrinters.name);
+        cy.get(SearchElements.cssBtn_SearchLabel).click();
+        cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.laserPrinters.name);
     };
     searchCoverPlusProducts(){
-        cy.get(CommonElements.cssBtn_SearchLabel).click();
-        cy.get(CommonElements.cssInput_SearchForText).click().type(productsData.coverplus.name);
+        cy.get(SearchElements.cssBtn_SearchLabel).click();
+        cy.get(SearchElements.cssInput_SearchForText).click().type(productsData.coverplus.name);
     };
     searchOptionsProducts(){
-        cy.get(CommonElements.cssBtn_SearchLabel).click();
-        cy.get(CommonElements.cssInput_SearchForText).click().type(productsData.options.name);
+        cy.get(SearchElements.cssBtn_SearchLabel).click();
+        cy.get(SearchElements.cssInput_SearchForText).click().type(productsData.options.name);
     };
 
 

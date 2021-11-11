@@ -1,11 +1,10 @@
 import MyAccountElements from "../../locators/11_myAccount/MyAccountElements";
 import OrderHistoryElements from "../../locators/12_orderHistory/OrderHistoryElements";
-import CommonElements from "../../locators/CommonElements";
 import SortingElements from "../../locators/04_productListingPage/SortingElements";
 
 class OrderHistoryActions {
     openOrderHistoryTab(){
-        cy.xpath(MyAccountElements.xpathTab_OrderHistory).click();
+        cy.get(MyAccountElements.cssTab_OrderHistory).click();
     };
     openOrderNumberLink(){
         cy.wait(5000)

@@ -22,7 +22,7 @@ class SupportElements {
     static cssWidget_Main = "#widgetMain > div:nth-child(4) > div";
     static idSelect_OperatingSystems = "select[id='operating-system']";
     static cssBtn_Go = " div.support-product__operating-system > div > form > button";
-    static xpathBtn_PrintersHomePage = "//a[contains(text(),'Product Home')]";
+    static cssBtn_PrintersHomePage = "div.support-product__headline-sidebar > div > a";
     static xpathLink_Support = "//a[contains(text(),'Support')]";
     static cssInput_ProductName = "input[name='searchText']";
     static cssInput_SerialNumber = "input[name='serialNumber']";
@@ -30,6 +30,7 @@ class SupportElements {
     static xpathBtn_Check = "//button[contains(text(),'Check')]";
     static xpathResult_SearchResult = "//a[contains(text(),'Epson LQ-630')]";
     static cssBtn_SupportPLP = ".product-card .product-card__supportlink";
+    static cssBtn_SearchResult = "div.support-homepage__search > div > a";
 
 
 

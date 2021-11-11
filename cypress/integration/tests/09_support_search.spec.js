@@ -11,7 +11,8 @@ describe("Check Support search page works correctly", ()=> {
         perform.supportActions.openSupportPage();
         check.supportAsserts.checkSearchSupportPageIsOpened();
         perform.supportActions.performSearchByProductName();
-        perform.supportActions.selectAndOpenFindPrinter();
+        perform.supportActions.openFindPrinterFromSearchResults();
+        //perform.supportActions.selectAndOpenFindPrinter();
         check.supportAsserts.checkSupportPageIsOpened();
     });
     it('should open Support page and perform search by Serial Number', function () {

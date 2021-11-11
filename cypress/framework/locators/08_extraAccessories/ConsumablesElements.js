@@ -3,8 +3,8 @@ class ConsumablesElements {
     static cssBlock_CheckoutOrderList = "div.col-xs-12 > ul.cart__product-list > li"
     static cssBlock_DeliveredItemsList = "div.order-entries__content > div";
     static cssBtn_RaiseItemsQuantity = "#updateCartForm3 > button.product-card__qty-inc.js-update-entry-quantity-inc";
-    static xpathToggle_Media = "//span[@class='accordion-toggle__title'][contains(text(),'Media')]";
-    static cssToggle_Consumables = "div:nth-child(2) > span > span";
+    static cssToggle_Media = "div.tab-panel__section-inner > div > div > div > div:nth-child(1) > span > span";
+    static cssToggle_Consumables = "div.tab-panel__section-inner > div > div > div > div:nth-child(2) > span > span";
 
 }
 export default ConsumablesElements

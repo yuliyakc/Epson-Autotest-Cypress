@@ -7,8 +7,8 @@ class CartElements {
     static cssBtn_DeleteThirdItem = "#actionEntry_2 > .product-card__delete";
     static cssBtn_DeleteFourthItem = "#actionEntry_3 > .product-card__delete";
     static xpathInput_VoucherCode = "//input[@id='voucherLabel']";
-    static xpathBtn_VoucherRedeem = "//button[contains(text(),'Redeem')]";
-    static xpathBtn_RemoveDiscount = "//a[contains(text(),'Remove')]";
+    static cssBtn_VoucherRedeem = "#voucherForm > button";
+    static cssBtn_RemoveDiscount = "#removeVoucherForm0 > div.basket-voucher__voucher-applied > a";
     static cssButton_BasketCheckout = ".btn-primary:nth-child(2)";
 
 }

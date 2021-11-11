@@ -5,7 +5,7 @@ module.exports = {
         "breadcrumbs" : "Support",
         "search": "test",
         "name" : "support",
-        "searchName" : "LQ-630",
+        "searchName" : "LQ-690",
         "searchSerial": "QJPY000768",
     }
 

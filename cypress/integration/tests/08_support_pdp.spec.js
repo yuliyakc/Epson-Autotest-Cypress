@@ -33,7 +33,7 @@ describe("Check Support page works correctly", ()=> {
         check.supportAsserts.checkActiveTabContainsBlocks();
         perform.supportActions.openToggleOfADocsTab();
         check.supportAsserts.checkDocsToggleDescription();
-        perform.supportActions.clickBtnAndDownloadTheDocFile();
+        //perform.supportActions.clickBtnAndDownloadTheDocFile();
     });
     it('should open Support page for printer and check Download tab', function () {
         perform.signInActions.openWebsiteAndLogin();
@@ -46,7 +46,7 @@ describe("Check Support page works correctly", ()=> {
         check.supportAsserts.checkActiveTabContainsBlocks();
         perform.supportActions.openToggleOfADownloadTab();
         check.supportAsserts.checkDownloadToggleDescription();
-        perform.supportActions.clickBtnAndDownloadTheFile();
+        //perform.supportActions.clickBtnAndDownloadTheFile();
     });
     it('should open Support page for printer and check Registration&Warranty tab', function () {
         perform.signInActions.openWebsiteAndLogin();

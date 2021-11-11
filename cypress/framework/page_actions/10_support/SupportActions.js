@@ -68,7 +68,7 @@ class SupportActions{
         cy.get(SupportElements.cssBtn_Go).click();
     };
     goToPrintersHomePage(){
-      cy.xpath(SupportElements.xpathBtn_PrintersHomePage).click();
+      cy.get(SupportElements.cssBtn_PrintersHomePage).click();
     };
     openSupportPage(){
         cy.xpath(SupportElements.xpathLink_Support).click();
@@ -80,6 +80,9 @@ class SupportActions{
     selectAndOpenFindPrinter(){
         cy.xpath(SupportElements.xpathResult_SearchResult).click();
     };
+    openFindPrinterFromSearchResults(){
+        cy.get(SupportElements.cssBtn_SearchResult).click();
+    }
     performSearchBySerialNumber(){
       cy.get(SupportElements.cssInput_SerialNumber).click().type(supportsData.support.searchSerial)
         cy.wait(500)

@@ -1,11 +1,10 @@
 import MyAccountElements from "../../locators/11_myAccount/MyAccountElements";
 import UpdateDataElements from "../../locators/14_updateData/UpdateDataElements";
 import usersData from "../../../data/users";
-import CommonActions from "../CommonActions";
 
 class UpdateDataActions {
     openUpdateDetailsTab(){
-        cy.xpath(MyAccountElements.xpathTab_UpdateDetails).click();
+        cy.get(MyAccountElements.cssTab_UpdateDetails).click();
     };
     enterFirstAndLastNames(){
         cy.get(UpdateDataElements.idInput_ProfileFirstName).click().clear().type(usersData.address.firstName);
@@ -23,7 +22,7 @@ class UpdateDataActions {
       cy.xpath(UpdateDataElements.xpathBtn_UpdateInfo).click();
     };
     openUpdateEmailTab(){
-        cy.xpath(MyAccountElements.xpathTab_UpdateEmail).click();
+        cy.get(MyAccountElements.cssTab_UpdateEmail).click();
     };
     fillOldAndNewMenu(){
       cy.get(UpdateDataElements.idInput_NewEmail).click().clear().type(usersData.register.email);

@@ -1,7 +1,5 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
-import CommonActions from "../../framework/page_actions/CommonActions";
-
 
 describe("Open Cart and make some manipulations", ()=> {
     let perform = new Actions();

@@ -8,22 +8,22 @@ class MyAccountActions {
         cy.xpath(MyAccountElements.xpathTab_MyAccount).click();
     };
     openOrderHistoryPage(){
-      cy.xpath(MyAccountElements.xpathLink_OrderHistory).click();
+      cy.get(MyAccountElements.cssLink_OrderHistory).click();
     };
     openUpdatePersonalDetailsPage(){
-        cy.xpath(MyAccountElements.xpathLink_UpdatePersonalDetails).click();
+        cy.get(MyAccountElements.cssLink_UpdatePersonalDetails).click();
     };
     openUpdateEmailPage(){
-      cy.xpath(MyAccountElements.xpathLink_UpdateEmail).click();
+      cy.get(MyAccountElements.cssLink_UpdateEmail).click();
     };
     openUpdatePasswordPage(){
-        cy.xpath(MyAccountElements.xpathLink_UpdatePassword).click();
+        cy.get(MyAccountElements.cssLink_UpdatePassword).click();
     };
     openAddressBookPage(){
-        cy.xpath(MyAccountElements.xpathLink_AddressBook).click();
+        cy.get(MyAccountElements.cssLink_AddressBook).click();
     };
     openBuyAccessoriesPage(){
-        cy.xpath(MyAccountElements.xpathLink_Accessories).click();
+        cy.get(MyAccountElements.cssLink_Accessories).click();
     };
 
 }

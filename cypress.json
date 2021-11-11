@@ -4,16 +4,7 @@
   "pageLoadTimeout": 75000,
   "watchForFileChanges": false,
   "video" : false,
-  "screenshotOnRunFailure": true,
-  "screenshotsFolder": "cypress/report/mochareports/assets",
+  "screenshotOnRunFailure": true
 
-  "reporter": "mochawesome",
-  "reporterOptions": {
-    "charts": true,
-    "overwrite": false,
-    "html": false,
-    "json": true,
-    "reportDir": "cypress/report/mochawesome-report"
-  }
 
 }
