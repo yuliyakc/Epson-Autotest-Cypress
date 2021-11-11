@@ -6,7 +6,7 @@ describe ("Send a message when forgot password", ()=> {
     let check = new Asserts();
     it('should click Forgot Password btn and assert an alert', function () {
         // comment
-        perform.commonActions.openWebsite();
+        //perform.commonActions.openWebsite();
         cy.viewport(1420, 950);
         perform.commonActions.confirmAllCookies();
         perform.commonActions.clickCreateNewAccountBtn();
