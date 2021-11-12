@@ -3,17 +3,23 @@
   "defaultCommandTimeout": 50000,
   "pageLoadTimeout": 75000,
   "watchForFileChanges": false,
-  "video" : false,
   "screenshotOnRunFailure": true,
-  "screenshotsFolder": "cypress/report/mochareports/assets",
 
-  "reporter": "mochawesome",
+
+  "reporter": "cypress-multi-reporters",
   "reporterOptions": {
-    "charts": true,
-    "overwrite": false,
-    "html": false,
-    "json": true,
-    "reportDir": "cypress/report/mochawesome-report"
-  }
+    "reporterEnabled": "cypress-mochawesome-reporter, mocha-junit-reporter",
+    "cypressMochawesomeReporterReporterOptions": {
+      "reportDir": "cypress/reports",
+      "charts": true,
+      "reportPageTitle": "My Test Suite",
+      "embeddedScreenshots": true,
+      "inlineAssets": true
+    },
+    "mochaJunitReporterReporterOptions": {
+      "mochaFile": "cypress/reports/junit/results-[hash].xml"
+    }
+  },
+  "video": false
 
 }

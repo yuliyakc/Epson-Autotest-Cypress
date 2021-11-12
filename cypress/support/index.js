@@ -16,10 +16,12 @@
 // Import commands.js using ES2015 syntax:
 import './commands'
 require('cypress-xpath')
+
 // Add Screenshot to Mochawesome Report
 import addContext from "mochawesome/addContext";
-
-Cypress.on("uncaught:exception", (err, runnable) => {
+//index.js inside support folder
+import 'cypress-mochawesome-reporter/register';
+Cypress.on("uncaught:exception", () => {
     // returning false here prevents Cypress from
     // failing the test
     return false;

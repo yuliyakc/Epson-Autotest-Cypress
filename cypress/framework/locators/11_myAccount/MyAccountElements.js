@@ -1,5 +1,5 @@
 class MyAccountElements {
-    static xpathTab_MyAccount = "nav > li:nth-child(2) > a";
+    static cssTab_MyAccount = "nav > li:nth-child(2) > a";
     static cssTab_UpdateDetails = "nav > li:nth-child(3) > a";
     static cssTab_UpdateEmail = "nav > li:nth-child(4) > a";
     static cssTab_ChangePassword = "nav > li:nth-child(5) > a";

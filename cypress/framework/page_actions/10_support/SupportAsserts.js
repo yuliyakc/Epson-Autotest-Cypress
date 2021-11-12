@@ -26,21 +26,22 @@ class SupportAsserts {
         cy.get(SupportElements.cssList_QuestionsResult).should("be.visible");
     };
     checkItemsForSecondResult(){
-        cy.get(SupportElements.cssList_QuestionsResult).should("be.visible")
+        cy.get(SupportElements.cssList_QuestionsResult).should("be.visible");
     };
     checkItemsForThirdResult(){
-        cy.get(SupportElements.cssList_QuestionsResult).should("be.visible")
+        cy.wait(1000);
+        cy.get(SupportElements.cssList_QuestionsResult).should("be.visible");
     };
     checkActiveTabContainsBlocks(){
         cy.get("div").should("have.class", "tab-panel__content")
             .and("have.class","tab-panel__section-inner")
-            .and("have.class", "tab-panel__section-content")
+            .and("have.class", "tab-panel__section-content");
     };
     checkDocsToggleDescription(){
-        cy.get(".accordion-toggle__content").eq(12).should("be.visible")
+        cy.get(".accordion-toggle__content").eq(12).should("be.visible");
     };
     checkDownloadToggleDescription(){
-        cy.get(".accordion-toggle__group").eq(0).should("be.visible")
+        cy.get(".accordion-toggle__group").eq(0).should("be.visible");
     };
     checkFirstBlockIsVisible(){
         cy.get(SupportElements.cssBlock_SupportOptions).eq(0).should("be.visible");
@@ -55,10 +56,10 @@ class SupportAsserts {
         cy.get(SupportElements.cssBlock_SupportOptions).eq(3).should("be.visible");
     };
     checkThatCorrectPageIsOpened(){
-        cy.url().should("contain", "/en_GB/support")
+        cy.url().should("contain", "/en_GB/support");
     };
     checkCorrectPageIsOpened(){
-        cy.url().should("contain", "/en_GB/")
+        cy.url().should("contain", "/en_GB/");
     };
     checkChatWasOpened(){
         cy.get(SupportElements.idModal_Chat).should("be.visible");
@@ -73,7 +74,7 @@ class SupportAsserts {
         cy.url().should("include", "/inkjet/prophoto-and-graphic-arts/expression-photo-hd-xp-15000/");
     };
     checkSupportDownloadsTabIsActive(){
-        cy.get(SupportElements.cssTab_ActiveTab).should("contain", "Downloads")
+        cy.get(SupportElements.cssTab_ActiveTab).should("contain", "Downloads");
     };
 }
 export default SupportAsserts

@@ -6,7 +6,7 @@ class MyAccountActions {
         cy.get(MainHeaderElements.cssDropdown_MyAccount).click();
     };
     openMyAccountTab(){
-        cy.xpath(MyAccountElements.xpathTab_MyAccount).click();
+        cy.get(MyAccountElements.cssTab_MyAccount).click();
     };
     openOrderHistoryPage(){
       cy.get(MyAccountElements.cssLink_OrderHistory).click();

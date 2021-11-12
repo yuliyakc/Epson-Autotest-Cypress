@@ -1,5 +1,4 @@
 import CartElements from "../../locators/07_basket/CartElements";
-import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
 import checkoutsData from "../../../data/checkouts";
 
 class CartActions {
@@ -25,10 +24,10 @@ class CartActions {
     };
     putVoucherCodeAndApply(){
         cy.xpath(CartElements.xpathInput_VoucherCode).click().type(checkoutsData.discount.name);
-        cy.xpath(CartElements.cssBtn_VoucherRedeem).click();
+        cy.get(CartElements.cssBtn_VoucherRedeem).click();
     };
     removeDiscountFromPrinter(){
-        cy.xpath(CartElements.cssBtn_RemoveDiscount).click();
+        cy.get(CartElements.cssBtn_RemoveDiscount).click();
     };
 
 }

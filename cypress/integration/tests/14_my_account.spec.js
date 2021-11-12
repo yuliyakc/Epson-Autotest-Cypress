@@ -1,7 +1,5 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
-import UpdateDataActions from "../../framework/page_actions/14_updateData/UpdateDataActions";
-import UpdateDataAsserts from "../../framework/page_actions/14_updateData/UpdateDataAsserts";
 
 describe("Checking tabs on My Account menu", ()=> {
     let perform = new Actions();
