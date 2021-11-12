@@ -18,7 +18,7 @@
     "@testing-library/cypress": "^8.0.1",
     "allure-commandline": "^2.13.8",
     "cy-verify-downloads": "0.0.5",
-    "cypress": "^8.7.0",
+    "cypress": "^9.0.0",
     "cypress-iframe": "^1.0.1",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
@@ -29,7 +29,6 @@
     "mochawesome-report-generator": "^6.0.1"
   },
   "dependencies": {
-    "cypress-mochawesome-reporter": "^2.3.0",
     "uniqid": "^5.4.0"
   }
 }
