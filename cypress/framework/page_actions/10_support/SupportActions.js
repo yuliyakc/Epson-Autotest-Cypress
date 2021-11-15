@@ -71,7 +71,7 @@ class SupportActions{
       cy.get(SupportElements.cssBtn_PrintersHomePage).click();
     };
     openSupportPage(){
-        cy.xpath(SupportElements.xpathLink_Support).click();
+        cy.get(SupportElements.cssLink_Support).click();
     };
     performSearchByProductName(){
       cy.get(SupportElements.cssInput_ProductName).click().type(supportsData.support.searchName);

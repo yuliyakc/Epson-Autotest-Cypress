@@ -17,15 +17,16 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
-module.exports = () => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
+module.exports = (on, config) => {
+    // `on` is used to hook into various events Cypress emits
+    // `config` is the resolved Cypress config
+};
 const { isFileExist } = require('cy-verify-downloads');
 
-module.exports = (on) => {
+module.exports = (on, config) => {
     on('task', { isFileExist })
 };
+
 //index.js inside plugin folder
 const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
 const exec = require('child_process').execSync;

@@ -19,6 +19,7 @@ describe("Check Learn More page is opens correctly", ()=> {
         perform.learnMoreActions.clickLearnMoreBtn();
         check.assertions.checkLearnMorePageIsOpened();
     });
+//a[contains(text(),'Support')]
     it('should open Learn More page for Dot Matrix Printers', function () {
         perform.mainHeaderActions.openDotMatrixPrintersPage();
         perform.learnMoreActions.clickLearnMoreBtn();

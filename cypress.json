@@ -4,7 +4,7 @@
   "pageLoadTimeout": 75000,
   "watchForFileChanges": false,
   "screenshotOnRunFailure": true,
-
+  "screenshotsFolder": "cypress/report/mochareports/assets",
 
   "reporter": "cypress-multi-reporters",
   "reporterOptions": {

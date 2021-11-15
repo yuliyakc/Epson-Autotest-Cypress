@@ -7,7 +7,7 @@ class MyAccountElements {
     static cssTab_AddressBook = "nav > li:nth-child(7) > a";
     static xpathText_FirstOrderNumber = "//tbody/tr[2]//a[@class='order-history__order-id']";
     static cssLink_OrderHistory = "div:nth-child(1) > section > div > a";
-    static cssLink_UpdatePersonalDetails = "myaccount__account-info > div:nth-child(3)";
+    static cssLink_UpdatePersonalDetails = ".myaccount__account-info > div:nth-child(3)";
     static cssLink_UpdateEmail = ".myaccount__account-info > div:nth-child(4)";
     static cssLink_UpdatePassword = ".myaccount__account-info > div:nth-child(5)";
     static cssLink_AddressBook = ".myaccount__account-info > div:nth-child(6)";

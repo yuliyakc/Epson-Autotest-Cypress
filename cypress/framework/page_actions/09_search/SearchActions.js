@@ -1,4 +1,3 @@
-import CommonElements from "../../locators/CommonElements";
 import printersData from "../../../data/printers";
 import productsData from "../../../data/products";
 import SearchElements from "../../locators/09_search/SearchElements";
@@ -29,8 +28,6 @@ class SearchActions {
         cy.get(SearchElements.cssBtn_SearchLabel).click();
         cy.get(SearchElements.cssInput_SearchForText).click().type(productsData.options.name);
     };
-
-
 
 }
 export default SearchActions

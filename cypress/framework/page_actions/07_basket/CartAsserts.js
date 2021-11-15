@@ -28,8 +28,8 @@ class CartAsserts {
     checkThatCartIsEmpty(){
         cy.get("div").should("have.class", "empty-cart")
     };
-    checkThatPriseHasChanged(){
-        cy.get(CheckoutElements.cssItem_TotalCart).should('contain', checkoutsData.price.withVoucher)
+    checkThatVoucherIsApplied(){
+        cy.get(CheckoutElements.cssItem_VoucherMessage).should("be.visible");
     };
     checkCartPage(){
         cy.url().should("include", "/cart");

@@ -18,8 +18,8 @@ class Assertions {
     checkActiveDotFilters(){
         cy.get(CommonElements.cssBlock_ActiveFilter)
             .children()
-            .should('contain', filtersData.info.name)
-            .and('contain', filtersData.info.priceFromTo);
+            .should('contain', filtersData.info.name);
+            //.and('contain', filtersData.info.priceFromTo);
     };
     checkActiveFilter(){
         cy.get(CommonElements.cssBlock_ActiveFilter).eq(0).should("be.visible");

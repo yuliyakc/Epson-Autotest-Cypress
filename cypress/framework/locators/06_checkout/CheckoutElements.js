@@ -20,7 +20,8 @@ class CheckoutElements {
     static cssCheckbox_AgreeTerms = ".form-group:nth-child(1) .checkbox";
     static cssCheckbox_MarketingEmails = ".form-group:nth-child(2) .checkbox";
     static cssButton_AddAddressManually = "a[class='address-form__address-finder-toggler js-address-finder-toggler']";
-    static cssItem_TotalCart = ".col-md-4 > .cart__items-total--all";
+    static cssItem_TotalCart = "div.js-cart-totals > div:nth-child(1) > div.col-xs-6.col-md-4.text-right";
+    static cssItem_VoucherMessage = ".basket-voucher__voucher-msg";
     static xpathDropdown_DeliveryMethod = "//select[@id='delivery_method']";
 }
 export default CheckoutElements

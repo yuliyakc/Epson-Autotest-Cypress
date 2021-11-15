@@ -4,7 +4,6 @@
   "description": "auto tests",
   "main": "index.js",
   "scripts": {
-    "cy:run": "cypress run --env allure=true",
     "open": "./node_modules/.bin/cypress open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,9 +13,7 @@
   "author": "Yuliya",
   "license": "ISC",
   "devDependencies": {
-    "@shelex/cypress-allure-plugin": "^2.19.5",
     "@testing-library/cypress": "^8.0.1",
-    "allure-commandline": "^2.13.8",
     "cy-verify-downloads": "0.0.5",
     "cypress": "^9.0.0",
     "cypress-iframe": "^1.0.1",
