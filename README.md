@@ -4,7 +4,7 @@ Autotests repo https://github.com/MariyaQA/Epson-Autotest.git
 
 Cypress settings
 
-If, for any reason, autotests doesn’t launch iin IDE correctly > there are few things that should be checked
+If, for any reason, autotests doesn’t launch in IDE correctly > there are few things that should be checked
 * NodeJS should be installed
 * Git should be installed
 * WebStorm should be installed
