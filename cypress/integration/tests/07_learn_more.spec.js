@@ -25,11 +25,6 @@ describe("Check Learn More page is opens correctly", ()=> {
         perform.learnMoreActions.clickLearnMoreBtn();
         check.assertions.checkLearnMorePageIsOpened();
     });
-    it('should open Learn More page for Large Format Printers', function () {
-        perform.mainHeaderActions.openLargeFormatPrintersPage();
-        perform.learnMoreActions.clickLearnMoreBtn();
-        check.assertions.checkLearnMorePageIsOpened();
-    });
     it('should open Learn More page for Label Maker Printers', function () {
         perform.mainHeaderActions.openLabelMakerRemotePrinters();
         perform.learnMoreActions.clickLearnMoreBtn();

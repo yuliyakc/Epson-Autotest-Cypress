@@ -26,6 +26,7 @@ class MyAccAsserts {
         cy.url().should("include", "my-account/address-book");
     };
     checkThatUserTransferToAccessoriesPage(){
+        cy.wait(1000);
         cy.url().should("include", "my-account/my-products");
     };
 

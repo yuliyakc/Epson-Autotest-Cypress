@@ -11,7 +11,7 @@ class MyAccountElements {
     static cssLink_UpdateEmail = ".myaccount__account-info > div:nth-child(4)";
     static cssLink_UpdatePassword = ".myaccount__account-info > div:nth-child(5)";
     static cssLink_AddressBook = ".myaccount__account-info > div:nth-child(6)";
-    static cssLink_Accessories = ".myaccount__myproduct-info > div"
+    static cssLink_Accessories = " .myaccount__myproduct-info > div a"
 
 
 }

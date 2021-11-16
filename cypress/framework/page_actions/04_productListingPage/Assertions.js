@@ -12,9 +12,6 @@ class Assertions {
     checkConsumablePage(){
       cy.get(CheckoutElements.cssBlock_ConsumablesPage).should("be.visible");
     };
-    checkErrorWhenLogin(){
-        cy.xpath(SignUpElements.xpathError_IncorrectLoginData).should("be.visible");
-    };
     checkActiveDotFilters(){
         cy.get(CommonElements.cssBlock_ActiveFilter)
             .children()

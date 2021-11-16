@@ -10,7 +10,7 @@ describe("Checking Update Email Tab", ()=> {
         perform.myAccountActions.openMyAccountMenu();
         perform.updateDetailsActions.openUpdateEmailTab()
         check.updateDataAsserts.checkUpdateEmailTabIsOpened();
-        perform.updateDetailsActions.fillOldAndNewMenu();
+        perform.updateDetailsActions.fillOldAndNewEmails();
         perform.updateDetailsActions.fillOldPassword();
         perform.updateDetailsActions.clickUpdateInfoBtn();
         check.commonAsserts.checkGlobalAlertIsDisplayed();

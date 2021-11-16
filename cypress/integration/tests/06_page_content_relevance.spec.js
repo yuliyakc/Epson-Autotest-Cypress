@@ -21,10 +21,6 @@ describe ("Testing of pages relevance by breadcrumbs", ()=> {
         perform.mainHeaderActions.openDotMatrixPrintersPage();
         check.assertions.checkDotMatrixPrintersPageIsOpened();
     });
-    it('should hover over Large Format Printers and open page', function () {
-        perform.mainHeaderActions.openLargeFormatPrintersPage();
-        check.assertions.checkLFPPageIsOpened();
-    });
     it('should hover over Label maker Printers and open random page', function () {
         perform.pageContentRelevanceActions.openLabelMakersPcRemoteAndConnectedPrintersPage();
         check.assertions.checkBothRemoteAndConnectedPageIsOpened();

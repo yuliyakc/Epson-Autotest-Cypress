@@ -13,8 +13,6 @@ class SignUpElements{
     static idCheckbox_UnderageNo = "input[name=notUnderage]";
     static idCheckbox_TermsCheck = "input[name=termsCheck]";
     static cssButton_Submit = "#epsonRegisterForm > div.form-actions.clearfix > button";
-    static xpathError_IncorrectRegisterData = "//div[@class='container-fluid'][contains(.,'"+ notificationsData.errors.registration +"')]";
-    static xpathError_IncorrectLoginData = "//div[@class='container-fluid'][contains(.,'"+ notificationsData.errors.login +"')]"
     static cssText_EmailError = "span[id='email.errors']";
 
 }

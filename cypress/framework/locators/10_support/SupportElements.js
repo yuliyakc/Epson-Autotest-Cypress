@@ -26,9 +26,9 @@ class SupportElements {
     static cssLink_Support = ".navigation__list-item:nth-child(7) a";
     static cssInput_ProductName = "input[name='searchText']";
     static cssInput_SerialNumber = "input[name='serialNumber']";
-    static xpathBtn_Search = "#epsonSupportSearchForm > div.support-search__form-elements > button";
-    static xpathBtn_Check = "#warrantyCheckerForm > div.support-search__form-elements > button";
-    static xpathResult_SearchResult = " div.container-fluid > div > div.support-homepage__search > div > a:nth-child(1)";
+    static cssBtn_Search = "#epsonSupportSearchForm > div.support-search__form-elements > button";
+    static cssBtn_Check = "#warrantyCheckerForm > div.support-search__form-elements > button";
+    static cssResult_SearchResult = " div.container-fluid > div > div.support-homepage__search > div > a:nth-child(1)";
     static cssBtn_SupportPLP = ".product-card .product-card__supportlink";
     static cssBtn_SearchResult = "div.support-homepage__search > div > a";
 

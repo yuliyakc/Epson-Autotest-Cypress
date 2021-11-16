@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="45.1040" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-11-16T07:18:25" tests="0" file="cypress/integration/tests/14_my_account.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Checking tabs on My Account menu" timestamp="2021-11-16T07:18:25" tests="2" time="45.0840" failures="0">
+    <testcase name="Checking tabs on My Account menu should check that tabs on My account menu is opened and correct ones" time="17.7160" classname="should check that tabs on My account menu is opened and correct ones">
+    </testcase>
+    <testcase name="Checking tabs on My Account menu should open My Accounts tab and check Inner blocks" time="25.0410" classname="should open My Accounts tab and check Inner blocks">
+    </testcase>
+  </testsuite>
+</testsuites>

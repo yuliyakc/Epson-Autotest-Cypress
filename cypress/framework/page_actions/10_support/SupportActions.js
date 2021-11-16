@@ -75,10 +75,10 @@ class SupportActions{
     };
     performSearchByProductName(){
       cy.get(SupportElements.cssInput_ProductName).click().type(supportsData.support.searchName);
-      cy.xpath(SupportElements.xpathBtn_Search).click();
+      cy.get(SupportElements.cssBtn_Search).click();
     };
     selectAndOpenFindPrinter(){
-        cy.xpath(SupportElements.xpathResult_SearchResult).click();
+        cy.get(SupportElements.cssResult_SearchResult).click();
     };
     openFindPrinterFromSearchResults(){
         cy.get(SupportElements.cssBtn_SearchResult).click();
@@ -86,7 +86,7 @@ class SupportActions{
     performSearchBySerialNumber(){
       cy.get(SupportElements.cssInput_SerialNumber).click().type(supportsData.support.searchSerial)
         cy.wait(500)
-        cy.xpath(SupportElements.xpathBtn_Check).click({force:true});
+        cy.get(SupportElements.cssBtn_Check).click({force:true});
     };
     clickSupportBtnFromPLP(){
         cy.get(SupportElements.cssBtn_SupportPLP).first().click()

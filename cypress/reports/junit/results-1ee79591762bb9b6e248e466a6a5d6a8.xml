@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="14.7490" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-11-16T07:20:04" tests="0" file="cypress/integration/tests/17_update_details.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Checking Update Details Tab" timestamp="2021-11-16T07:20:04" tests="1" time="14.7360" failures="0">
+    <testcase name="Checking Update Details Tab should check that new Details are saved successfully" time="12.6290" classname="should check that new Details are saved successfully">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="25.1250" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-11-16T07:16:54" tests="0" file="cypress/integration/tests/09_support_search.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Check Support search page works correctly" timestamp="2021-11-16T07:16:54" tests="2" time="25.1120" failures="0">
+    <testcase name="Check Support search page works correctly should open Support page and perform search by Product name" time="12.3030" classname="should open Support page and perform search by Product name">
+    </testcase>
+    <testcase name="Check Support search page works correctly should open Support page and perform search by Serial Number" time="10.5650" classname="should open Support page and perform search by Serial Number">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -17,7 +17,7 @@ class FiltersActions {
      useClassificationFilter(){
        cy.get(FiltersElements.cssCheckbox_Classification).check().should('be.checked').and('have.value','on');
      };
-     useLargeFormatPrinters(){
+     useLargeFormatPrintersFilter(){
        cy.get(FiltersElements.cssCheckbox_LargePrinters).check().should('be.checked').and('have.value','on');
      };
      resetFilters(){

@@ -12,6 +12,6 @@ describe("Checking Update Details Tab", ()=> {
         perform.updateDetailsActions.selectAndAddDateOfBirth();
         perform.updateDetailsActions.changeTelephoneNumber();
         perform.updateDetailsActions.clickUpdateInfoBtn();
-        check.updateDataAsserts.checkCorrectMessageIsDisplayed();
+        check.commonAsserts.checkGlobalAlertIsDisplayed();
     });
 });

@@ -19,7 +19,6 @@ class SignInActions {
         cy.viewport(1200, 800);
         cy.get(CommonElements.idModal_AcceptCookies).click();
         cy.get(CommonElements.cssButton_CreateAccount).click();
-        //cy.get(CommonElements.idModal_AcceptCookies).click();
         cy.get(SignInElements.idInput_Email).click().type(usersData.passChange.email);
         cy.get(SignInElements.idInput_Password).click().type(usersData.passChange.oldPassword);
         cy.get(SignInElements.idBtn_Login).click();

@@ -22,9 +22,6 @@ class CartAsserts {
     checkPrintersPriceForTwoItems(){
         cy.get(CheckoutElements.cssItem_TotalCart).should('contain', checkoutsData.price.forTwo)
     };
-    checkErrorMessage(){
-        cy.get(CommonElements.cssGlobal_Message).should("contain", "Product has been removed from your cart.")
-    };
     checkThatCartIsEmpty(){
         cy.get("div").should("have.class", "empty-cart")
     };

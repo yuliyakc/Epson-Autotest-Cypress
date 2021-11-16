@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="44.7790" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-11-16T07:19:16" tests="0" file="cypress/integration/tests/16_address_book.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Checking Address Book Tab" timestamp="2021-11-16T07:19:16" tests="3" time="44.7630" failures="0">
+    <testcase name="Checking Address Book Tab should check negative testcases while creating new Address" time="19.4830" classname="should check negative testcases while creating new Address">
+    </testcase>
+    <testcase name="Checking Address Book Tab should edit created before Address and check for changes" time="11.8460" classname="should edit created before Address and check for changes">
+    </testcase>
+    <testcase name="Checking Address Book Tab should delete created before Address" time="11.1240" classname="should delete created before Address">
+    </testcase>
+  </testsuite>
+</testsuites>

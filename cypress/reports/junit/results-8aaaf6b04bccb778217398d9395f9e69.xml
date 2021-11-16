@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="83.9910" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-11-16T07:10:52" tests="0" file="cypress/integration/tests/04_filters.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Checking filter for all printers" timestamp="2021-11-16T07:10:52" tests="5" time="83.9760" failures="0">
+    <testcase name="Checking filter for all printers should check that filters are working correct for Ink Printer" time="23.8430" classname="should check that filters are working correct for Ink Printer">
+    </testcase>
+    <testcase name="Checking filter for all printers should check that several filters shows correct result for Dot Printer" time="9.1420" classname="should check that several filters shows correct result for Dot Printer">
+    </testcase>
+    <testcase name="Checking filter for all printers should check that filter is working correct for Laser Printer" time="17.6850" classname="should check that filter is working correct for Laser Printer">
+    </testcase>
+    <testcase name="Checking filter for all printers should check that filter is working correct for Laser Printer and clear filter" time="18.4130" classname="should check that filter is working correct for Laser Printer and clear filter">
+    </testcase>
+    <testcase name="Checking filter for all printers should check that filter is working correct for Label Maker Printers" time="12.6380" classname="should check that filter is working correct for Label Maker Printers">
+    </testcase>
+  </testsuite>
+</testsuites>

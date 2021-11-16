@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="43.9330" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-11-16T07:13:31" tests="0" file="cypress/integration/tests/06_page_content_relevance.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Testing of pages relevance by breadcrumbs" timestamp="2021-11-16T07:13:32" tests="5" time="43.9180" failures="0">
+    <testcase name="Testing of pages relevance by breadcrumbs should hover over InkJet Printers and open random page" time="10.0550" classname="should hover over InkJet Printers and open random page">
+    </testcase>
+    <testcase name="Testing of pages relevance by breadcrumbs should hover over Laser Printers and open random page" time="7.6630" classname="should hover over Laser Printers and open random page">
+    </testcase>
+    <testcase name="Testing of pages relevance by breadcrumbs should hover over Dot Matrix Printers and open page" time="8.2590" classname="should hover over Dot Matrix Printers and open page">
+    </testcase>
+    <testcase name="Testing of pages relevance by breadcrumbs should hover over Large Format Printers and open page" time="7.7790" classname="should hover over Large Format Printers and open page">
+    </testcase>
+    <testcase name="Testing of pages relevance by breadcrumbs should hover over Label maker Printers and open random page" time="7.6910" classname="should hover over Label maker Printers and open random page">
+    </testcase>
+  </testsuite>
+</testsuites>

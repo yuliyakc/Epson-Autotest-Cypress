@@ -23,7 +23,7 @@ class OrderHistoryActions {
       cy.get(OrderHistoryElements.cssBtn_BackToPreviousPage).eq(0).click();
     };
     clickBackToYourAccountBtn(){
-        cy.get(OrderHistoryElements.cssBtn_BackToPreviousPage).eq(1).click();
+        cy.get(OrderHistoryElements.cssBtn_BackToPreviousPage).eq(0).click();
     };
 }
 export default OrderHistoryActions

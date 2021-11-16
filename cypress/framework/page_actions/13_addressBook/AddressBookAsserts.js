@@ -12,7 +12,7 @@ class AddressBookAsserts {
       cy.get(AddressBookElements.cssText_AddressFistName).should("contain.text", usersData.address2.firstName);
     };
     checkDefaultAddressIsAbsent(){
-        cy.get(AddressBookElements.cssText_AddressTitle).should("not.have.text", usersData.address2.firstName)
+        cy.get(AddressBookElements.cssText_AddressTitle).should("not.have.text", usersData.address.default)
     };
 
 }

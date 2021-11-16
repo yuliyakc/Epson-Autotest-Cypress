@@ -24,7 +24,7 @@ class UpdateDataActions {
     openUpdateEmailTab(){
         cy.get(MyAccountElements.cssTab_UpdateEmail).click();
     };
-    fillOldAndNewMenu(){
+    fillOldAndNewEmails(){
       cy.get(UpdateDataElements.idInput_NewEmail).click().clear().type(usersData.register.email);
       cy.get(UpdateDataElements.idInput_CheckEmail).click().clear().type(usersData.register.email);
     };

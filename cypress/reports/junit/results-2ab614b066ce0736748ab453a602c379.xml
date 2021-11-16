@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="54.2810" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-11-16T07:17:28" tests="0" file="cypress/integration/tests/13_shipping_methods.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Check different types of Shipping Methods" timestamp="2021-11-16T07:17:28" tests="2" time="54.2590" failures="0">
+    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Multiple Consumables to purchase" time="28.5680" classname="should check Shipping Method &quot;Standard&quot; when add Multiple Consumables to purchase">
+    </testcase>
+    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Hardware with CoverPlus to purchase" time="23.4180" classname="should check Shipping Method &quot;Standard&quot; when add Hardware with CoverPlus to purchase">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -17,11 +17,11 @@ describe("Checking Address Book Tab", ()=> {
         check.addressBookAsserts.checkAddressCreationPageIsOpened();
 
         perform.addressBookActions.clickSubmitChanges();
-        check.signAsserts.checkErrorMessage();
+        check.commonAsserts.checkGlobalAlertIsDisplayed();
 
         perform.addressBookActions.enterCorrectDataForNewAddress();
         perform.addressBookActions.clickSubmitChanges();
-        check.signAsserts.checkErrorMessage();
+        check.commonAsserts.checkGlobalAlertIsDisplayed();
 
         perform.checkoutActions.searchAndSetAnAddress();
         perform.checkoutActions.setDefaultCheckboxes();
@@ -42,6 +42,6 @@ describe("Checking Address Book Tab", ()=> {
         check.addressBookAsserts.checkCreatedByDefaultAddress();
         perform.addressBookActions.clickDeleteAddressBtn();
         perform.addressBookActions.clickDeleteOnModalWindow();
-        check.addressBookAsserts.checkDefaultAddressIsAbsent();
+        check.commonAsserts.checkGlobalAlertIsDisplayed();
     });
 });

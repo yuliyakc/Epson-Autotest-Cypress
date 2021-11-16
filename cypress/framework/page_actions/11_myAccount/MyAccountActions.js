@@ -24,7 +24,7 @@ class MyAccountActions {
         cy.get(MyAccountElements.cssLink_AddressBook).click();
     };
     openBuyAccessoriesPage(){
-        cy.get(MyAccountElements.cssLink_Accessories).click();
+        cy.get(MyAccountElements.cssLink_Accessories).click({force:true});
     };
 
 }
