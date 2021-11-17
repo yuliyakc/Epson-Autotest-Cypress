@@ -1,6 +1,5 @@
 # Epson-Autotest
-Epson Autotest
-Autotests repo https://github.com/MariyaQA/Epson-Autotest.git  
+Epson Autotests repo https://github.com/MariyaQA/Epson-Autotest.git  
 
 Cypress settings
 
