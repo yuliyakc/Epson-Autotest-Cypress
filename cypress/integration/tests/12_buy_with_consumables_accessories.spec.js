@@ -4,7 +4,7 @@
 // describe("Add several consumables and  Accessories to cart ", ()=> {
 //     let perform = new Actions();
 //     let check = new Asserts();
-//     it('should login, add printer and several addons', function () {
+//     it('should login, add printer, several accessories and purchase', function () {
 //         perform.signInActions.openWebsiteAndLogin();
 //
 //         perform.productLinksForPDP.openEcoTankPrinter();

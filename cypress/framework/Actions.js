@@ -8,7 +8,7 @@ import CheckoutActions from "../framework/page_actions/06_checkout/CheckoutActio
 import SearchActions from "../framework/page_actions/09_search/SearchActions";
 import ConsumablesActions from "../framework/page_actions/08_extraAccessories/ConsumablesActions";
 import BuyNowPLPActions from "../framework/page_actions/04_productListingPage/BuyNowPLPActions";
-import BuyNowPDPActions from "../framework/page_actions/05_productDisplayPage/BuyNowPDPActions";
+import PdpActions from "./page_actions/05_productDisplayPage/pdpActions";
 import SupportActions from "./page_actions/10_support/SupportActions";
 import MainHeaderActions from "./page_actions/00_mainHeader/MainHeaderActions";
 import LearnMoreActions from "./page_actions/04_productListingPage/LearnMoreActions";
@@ -21,6 +21,7 @@ import SignOutActions from "./page_actions/03_signOut/SignOutActions";
 import AddressBookActions from "./page_actions/13_addressBook/AddressBookActions";
 import ProductLinksForPDP from "./page_actions/05_productDisplayPage/ProductLinksForPDP";
 import UpdateDataActions from "./page_actions/14_updateData/UpdateDataActions";
+import ComparePrintersActions from "./page_actions/15_comparePrinters/ComparePrintersActions";
 
 
 class Actions {
@@ -33,7 +34,7 @@ class Actions {
     searchActions = new SearchActions();
     consumablesActions = new ConsumablesActions();
     buyNowPLPActions = new BuyNowPLPActions();
-    buyNowPDPActions = new BuyNowPDPActions();
+    buyNowPDPActions = new PdpActions();
     commonActions = new CommonActions();
     supportActions = new SupportActions();
     mainHeaderActions = new MainHeaderActions();
@@ -48,6 +49,7 @@ class Actions {
     productLinksForPDP = new ProductLinksForPDP();
     updateDetailsActions = new UpdateDataActions();
     updateDataActions = new UpdateDataActions();
+    comparePrintersActions = new ComparePrintersActions();
 
 
 

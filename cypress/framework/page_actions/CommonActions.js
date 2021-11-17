@@ -1,6 +1,7 @@
 import FiltersElements from "../locators/04_productListingPage/FiltersElements";
 import MyAccountElements from "../locators/11_myAccount/MyAccountElements";
 import CommonElements from "../locators/CommonElements";
+import ComparePrintersElements from "../locators/15_comparePrinters/ComparePrintersElements";
 
 class CommonActions {
     confirmAllCookies(){
@@ -21,10 +22,12 @@ class CommonActions {
     goBackToPreviousPage(){
         cy.wait(1000);
         cy.go("back");
+        cy.wait(1000);
     };
     acceptWebsiteCookies(){
         cy.get(CommonElements.idModal_AcceptCookies).click();
     };
+
 
 
 }

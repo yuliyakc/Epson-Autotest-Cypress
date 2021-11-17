@@ -15,9 +15,6 @@
 //         check.cartAsserts.checkPrintersPriceForOneItem();
 //     });
 //     it('should login, add printer to Cart and Update it - change and delete', function () {
-//
-//
-//
 //         perform.cartActions.clickToRaisePrintersQuantity();
 //         check.cartAsserts.checkQuantityIsTwo();
 //         check.cartAsserts.checkPrintersPriceForTwoItems();
@@ -27,8 +24,6 @@
 //         check.cartAsserts.checkThatCartIsEmpty();
 //     });
 //     it('should login, add printer to Cart and use a voucher to change the price', function () {
-//
-//
 //         perform.cartActions.putVoucherCodeAndApply();
 //         check.cartAsserts.checkThatVoucherIsApplied();
 //         perform.cartActions.removeDiscountFromPrinter();

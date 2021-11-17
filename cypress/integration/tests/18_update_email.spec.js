@@ -5,7 +5,7 @@ describe("Checking Update Email Tab", ()=> {
     let perform = new Actions();
     let check = new Asserts();
 
-    it('should check that new Details are saved successfully', function () {
+    it('should check that new Email is saved successfully', function () {
         perform.signInActions.openWebsiteAndLogin();
         perform.myAccountActions.openMyAccountMenu();
         perform.updateDetailsActions.openUpdateEmailTab()

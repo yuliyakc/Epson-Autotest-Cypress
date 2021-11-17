@@ -10,6 +10,8 @@ import ForgotPassAsserts from "./page_actions/02_forgotPassword/ForgotPassAssert
 import AddressBookAsserts from "./page_actions/13_addressBook/AddressBookAsserts";
 import SignAsserts from "./page_actions/01_userSign/SignAsserts";
 import UpdateDataAsserts from "./page_actions/14_updateData/UpdateDataAsserts";
+import ComparePrintersAsserts from "./page_actions/15_comparePrinters/ComparePrintersAsserts";
+import PdpAssertions from "./page_actions/05_productDisplayPage/pdpAssertions";
 
 
 class Asserts {
@@ -25,6 +27,8 @@ class Asserts {
     addressBookAsserts = new AddressBookAsserts();
     signAsserts = new SignAsserts();
     updateDataAsserts = new UpdateDataAsserts();
+    comparePrintersAsserts = new ComparePrintersAsserts();
+    pdpAssertions = new PdpAssertions();
 
 
 }

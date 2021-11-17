@@ -1,7 +1,7 @@
 import ConsumablesElements from "../../locators/08_extraAccessories/ConsumablesElements";
 import CommonElements from "../../locators/CommonElements";
 import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
-import BuyNowPDPElements from "../../locators/05_productDisplayPage/BuyNowPDPElements";
+import PdpElements from "../../locators/05_productDisplayPage/pdpElements";
 
 class ConsumablesActions {
     clickCheckoutBtnOnConsumablesPage(){
