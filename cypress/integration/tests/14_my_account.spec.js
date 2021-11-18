@@ -11,29 +11,29 @@ describe("Checking tabs on My Account menu", ()=> {
         perform.myAccountActions.openMyAccountMenu();
         perform.myAccountActions.openMyAccountTab();
     });
-    it('should check that tabs on My account menu is opened and correct ones', function () {
-        check.myAccAsserts.checkMyAccountTabIsOpened();
-
-        perform.myAccountActions.openMyAccountMenu();
-        perform.updateDetailsActions.openUpdateDetailsTab();
-        check.updateDataAsserts.checkUpdateDetailsTabIsOpened();
-
-        perform.myAccountActions.openMyAccountMenu();
-        perform.updateDetailsActions.openUpdateEmailTab();
-        check.updateDataAsserts.checkUpdateEmailTabIsOpened();
-
-        perform.myAccountActions.openMyAccountMenu();
-        perform.updateDataActions.openChangePasswordTab();
-        check.updateDataAsserts.checkChangePassTabIsOpened();
-
-        perform.myAccountActions.openMyAccountMenu();
-        perform.orderHistoryActions.openOrderHistoryTab();
-        check.orderHistoryAsserts.checkOrderHistoryTabIsOpened();
-
-        perform.myAccountActions.openMyAccountMenu();
-        perform.addressBookActions.openAddressBookTab();
-        check.myAccAsserts.checkAddressBookTabIsOpened();
-    });
+    // it('should check that tabs on My account menu is opened and correct ones', function () {
+    //     check.myAccAsserts.checkMyAccountTabIsOpened();
+    //
+    //     perform.myAccountActions.openMyAccountMenu();
+    //     perform.updateDetailsActions.openUpdateDetailsTab();
+    //     check.updateDataAsserts.checkUpdateDetailsTabIsOpened();
+    //
+    //     perform.myAccountActions.openMyAccountMenu();
+    //     perform.updateDetailsActions.openUpdateEmailTab();
+    //     check.updateDataAsserts.checkUpdateEmailTabIsOpened();
+    //
+    //     perform.myAccountActions.openMyAccountMenu();
+    //     perform.updateDataActions.openChangePasswordTab();
+    //     check.updateDataAsserts.checkChangePassTabIsOpened();
+    //
+    //     perform.myAccountActions.openMyAccountMenu();
+    //     perform.orderHistoryActions.openOrderHistoryTab();
+    //     check.orderHistoryAsserts.checkOrderHistoryTabIsOpened();
+    //
+    //     perform.myAccountActions.openMyAccountMenu();
+    //     perform.addressBookActions.openAddressBookTab();
+    //     check.myAccAsserts.checkAddressBookTabIsOpened();
+    // });
     it('should open My Accounts tab and check Inner blocks', function () {
         perform.myAccountActions.openOrderHistoryPage();
         check.orderHistoryAsserts.checkThatUserTransferToOrdersHistoryPage();

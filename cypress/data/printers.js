@@ -3,10 +3,11 @@ const UNIQID = Cypress.env('UNIQID')
 module.exports = {
     "inkJet": {
         "name" : "Eco tank{enter}",
+        "name2": "ET-2715{enter}",
         "business": "Business Inkjet Printers",
         "prophoto": "Prophoto and Graphic Arts",
         "consumer": "EcoTank ET-2750{enter}",
-        "ink": "EcoTank ET-M1120{enter}"
+        "ink": "LabelWorks LW-Z5000BE{enter}"
     },
     "consumer":{
       "name" : "Consumer Printers",

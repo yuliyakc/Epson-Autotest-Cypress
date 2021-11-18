@@ -8,7 +8,7 @@ class ComparePrintersElements {
     static cssBtn_DeletePrinterFromComparePage = ".product-comparator__product-remove-button";
     static cssBtn_DeletePrintersFromCompareMenu = "div.product-compare__products.js-compare-products-container > div:nth-child(1) > button";
     static cssLink_ProductHome = " div:nth-child(1) > a.product-compare__product-name";
-    static cssLink_ProductLink = "div:nth-child(2) > div > div.product-comparator__product-information > div > a.product-comparator__product-name";
+    static cssLink_ProductLink = ".product-comparator__products > .product-comparator__product-container:nth-child(2) .product-comparator__product-name";
 
 
 }

@@ -14,5 +14,8 @@ class ProductLinksForPDP {
     openWorkForcePrinterPDP(){
         cy.visitWebsite("/products/printers/inkjet/microbusiness/workforce-wf-2010w/p/11998");
     };
+    openMediaPaperProduct(){
+      cy.visitWebsite("products/ink-and-paper/paper-and-media/ultra-glossy-photo-paper---a4---15-sheets/p/1640")
+    };
 }
 export default ProductLinksForPDP

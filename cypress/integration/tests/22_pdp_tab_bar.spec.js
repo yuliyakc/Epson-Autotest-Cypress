@@ -1,0 +1,56 @@
+import Actions from "../../framework/Actions";
+import Asserts from "../../framework/Asserts";
+
+describe("Testing Tab Bar for each product", ()=> {
+    let perform = new Actions();
+    let check = new Asserts();
+    beforeEach(function () {
+        cy.clearCookies();
+        cy.viewport(1200, 800);
+    });
+    it('should open website on a specific PDP to check tabs for Printers', function () {
+        perform.signInActions.openWebsiteAndLogin();
+        perform.productLinksForPDP.openEcoTankPrinterPDPPage();
+        perform.pdpActions.scrollDownToTabBar();
+        perform.pdpActions.clickOverviewTab();
+        check.pdpAssertions.checkOverviewBlock();
+
+        perform.pdpActions.clickTechSpecTab();
+        check.pdpAssertions.checkTechSpecBlock();
+
+        perform.pdpActions.clickAccessoriesTab();
+        check.pdpAssertions.checkAccessoriesBlock();
+
+        perform.pdpActions.clickSupportTab();
+        check.pdpAssertions.checkSupportBlock();
+
+        perform.pdpActions.clickSupportBtn();
+        check.supportAsserts.checkSearchSupportPageIsOpened();
+    });
+    it('should open website on a specific PDP to check tabs for Options', function () {
+        perform.signInActions.openWebsiteAndLogin();
+        perform.productLinksForPDP.openSpecificOptionPDPPage();
+
+        perform.pdpActions.clickSupportTab();
+        check.pdpAssertions.checkSupportBlock();
+
+        perform.pdpActions.clickCompatibilityTab();
+        check.pdpAssertions.checkCompatibilityBlock();
+        perform.pdpActions.clickCompatibilityLink();
+        check.pdpAssertions.checkThatSKUIsDisplayed();
+    });
+    it('should open website on a specific Option PDP to check tabs', function () {
+        perform.signInActions.openWebsiteAndLogin();
+        perform.productLinksForPDP.openMediaPaperProduct();
+        check.pdpAssertions.checkOverviewBlock();
+
+        perform.pdpActions.clickSeriesModelsTab();
+        check.pdpAssertions.checkSeriesModelsBlock();
+
+        perform.pdpActions.clickCompatibilityTab();
+        check.pdpAssertions.checkCompatibilityBlock();
+        perform.pdpActions.clickCompatibilityLink();
+        check.pdpAssertions.checkThatSKUIsDisplayed();
+
+    });
+});

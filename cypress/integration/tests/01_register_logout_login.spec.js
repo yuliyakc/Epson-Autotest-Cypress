@@ -1,44 +1,37 @@
-// import SignUpActions from "../../framework/page_actions/01_userSign/SignUpActions";
-// import CommonActions from "../../framework/page_actions/CommonActions";
-// import SignAsserts from "../../framework/page_actions/01_userSign/SignAsserts";
-// import SignOutActions from "../../framework/page_actions/03_signOut/SignOutActions";
-// import SignInActions from "../../framework/page_actions/01_userSign/SignInActions";
-// import MyAccAsserts from "../../framework/page_actions/11_myAccount/MyAccAsserts";
-//
-// const signUpActions = new SignUpActions();
-// const signOutActions = new SignOutActions();
-// const signInActions = new SignInActions();
-// const myAccAsserts = new MyAccAsserts();
-// const commonActions = new CommonActions();
-// const signAsserts  = new SignAsserts();
+// import Actions from "../../framework/Actions";
+// import Asserts from "../../framework/Asserts";
 //
 // describe ("Register, logout and relogin", ()=> {
-//
-//     it('should register new user, logout and relogin', function () {
-//         commonActions.openWebsite();
+//     let perform = new Actions();
+//     let check = new Asserts();
+//     beforeEach(function () {
+//         cy.clearCookies();
 //         cy.viewport(1200, 800);
-//         commonActions.confirmAllCookies();
-//         commonActions.clickCreateNewAccountBtn();
-//         signUpActions.submitAndRegisterBtnClick();
+//     });
+//     it('should register new user, logout and relogin', function () {
+//         perform.commonActions.openWebsite();
+//         perform.commonActions.confirmAllCookies();
+//         perform.commonActions.clickCreateNewAccountBtn();
+//         perform.signUpActions.submitAndRegisterBtnClick();
 //         check.commonAsserts.checkGlobalAlertIsDisplayed();
 //
-//         signUpActions.enterIncorrectDataForRegistration();
-//         signUpActions.submitAndRegisterBtnClick();
-//         signAsserts.checkIncorrectEmailError();
+//         perform.signUpActions.enterIncorrectDataForRegistration();
+//         perform.signUpActions.submitAndRegisterBtnClick();
+//         check.signAsserts.checkIncorrectEmailError();
 //         check.commonAsserts.checkGlobalAlertIsDisplayed();
 //
-//         signUpActions.enterRequiredDataForRegistration();
-//         signUpActions.setCustomerTypePersonal();
-//         signUpActions.setAgeRequirements();
-//         signUpActions.setTermsOfUse();
-//         signUpActions.submitAndRegisterBtnClick();
-//         signOutActions.clickSignOutBtn();
-//         signAsserts.checkUserLogsOut();
+//         perform.signUpActions.enterRequiredDataForRegistration();
+//         perform.signUpActions.setCustomerTypePersonal();
+//         perform.signUpActions.setAgeRequirements();
+//         perform.signUpActions.setTermsOfUse();
+//         perform.signUpActions.submitAndRegisterBtnClick();
+//         perform.signOutActions.clickSignOutBtn();
+//         check.signAsserts.checkUserLogsOut();
 //
-//         commonActions.clickCreateNewAccountBtn();
-//         signInActions.enterEmailToLogin();
-//         signInActions.enterPasswordToLogin();
-//         signInActions.clickLogInBtn();
-//         myAccAsserts.checkMyAccountBtnIsVisible();
+//         perform.commonActions.clickCreateNewAccountBtn();
+//         perform.signInActions.enterEmailToLogin();
+//         perform.signInActions.enterPasswordToLogin();
+//         perform.signInActions.clickLogInBtn();
+//         check.myAccAsserts.checkMyAccountBtnIsVisible();
 //     });
 // });

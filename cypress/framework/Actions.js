@@ -50,6 +50,7 @@ class Actions {
     updateDetailsActions = new UpdateDataActions();
     updateDataActions = new UpdateDataActions();
     comparePrintersActions = new ComparePrintersActions();
+    pdpActions = new PdpActions();
 
 
 

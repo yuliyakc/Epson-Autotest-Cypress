@@ -29,7 +29,6 @@
 //         perform.checkoutActions.fillRequiredInfo();
 //         perform.checkoutActions.searchAndSetAnAddress();
 //         perform.checkoutActions.saveAndGoToNextStep();
-//         perform.checkoutActions.selectShipmentMethodUpsExpress();
 //         perform.checkoutActions.goNextToBilling();
 //         perform.checkoutActions.saveAndGoToNextStep();
 //         // checkoutActions.agreeTermsAndPlaceAnOrder();
@@ -39,5 +38,6 @@
 //         perform.checkoutActions.agreeTermsAndPlaceAnOrder();
 //         check.checkoutAsserts.checkThankYouPageAfterPurchasing();
 //         check.checkoutAsserts.checkDeliveryItemsOnThankYouPage();
+//         check.checkoutAsserts.checkOrderInfoBlockIsVisible();
 //     });
 // });
