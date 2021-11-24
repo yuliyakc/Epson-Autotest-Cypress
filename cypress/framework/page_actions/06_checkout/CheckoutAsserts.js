@@ -1,36 +1,76 @@
 import CommonElements from "../../locators/CommonElements";
 import usersData from "../../../data/users";
-import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
 import ConsumablesElements from "../../locators/08_extraAccessories/ConsumablesElements";
 import checkoutsData from "../../../data/checkouts";
+import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
 
 class CheckoutAsserts {
     checkSelectedCountry(){
-        cy.get(CommonElements.cssStaticField_Country).should("have.value", usersData.purchase.country)
+        cy.get(CommonElements.cssStaticField_Country)
+            .should("have.value", usersData.purchase.country)
     };
     checkThankYouPageAfterPurchasing(){
         cy.get(CommonElements.cssStatic_ThankYouPage).should("be.visible");
     }
-    checkOrderInfoBlockIsVisible(){
-        cy.get(CommonElements.cssBlock_OrderBlock).should("be.visible");
-        cy.get(CommonElements.cssBlock_OrderNumber).should("be.visible");
-        cy.get(CommonElements.cssBlock_OrderConfirmTo).should("be.visible");
-        cy.get(CommonElements.cssBlock_OrderDate).should("be.visible");
-    };
     checkAllItemsInCart(){
-        cy.get(ConsumablesElements.cssBlock_CheckoutOrderList).should('have.length', 4);
+        cy.get(ConsumablesElements.cssBlock_CheckoutOrderList)
+            .should('have.length', 4);
     };
     checkItemsInsideCheckout(){
-        cy.get(ConsumablesElements.cssBlock_OrderList).should('have.length', 4);
+        cy.get(ConsumablesElements.cssBlock_OrderList)
+            .should('have.length', 4);
     };
     checkDeliveryItemsOnThankYouPage(){
-        cy.get(ConsumablesElements.cssBlock_DeliveredItemsList).should('have.length', 4);
+        cy.get(ConsumablesElements.cssBlock_DeliveredItemsList)
+            .should('have.length', 4);
     };
     checkTotalOnThankYouPage(){
-        cy.get(".order-totals__row:nth-child(2)") .should('contain', checkoutsData.discount.price)
+        cy.get(CheckoutElements.cssText_CheckoutFinalPage)
+            .should('contain', checkoutsData.discount.price)
     };
     checkTotalPriceOnShipmentPage(){
-        cy.get("div > div.checkout-summary__row.checkout-summary__price.checkout-summary__price--total").should('contain', checkoutsData.discount.price)
+        cy.get(CheckoutElements.cssText_CheckoutSummaryPrice)
+            .should('contain', checkoutsData.discount.price)
+    };
+    checkQuantityOfProducts(){
+        cy.get(CheckoutElements.cssText_ProductQuantity).should("include.text", 1);
+    };
+    checkShippingName(){
+      cy.get(CheckoutElements.cssText_ShipToName).should("contain.text", usersData.register.firstName)
+          .and("contain.text", usersData.register.lastName)
+    };
+    checkShippingTelephone(){
+        cy.get(CheckoutElements.cssText_ShipToTelephone).should("contain.text", usersData.purchase.fullPhone)
+    };
+    checkShippingAddress(){
+      cy.get(CheckoutElements.cssText_ShipToAddress).should("contain.text", usersData.purchase.fullAddress)
+    };
+    checkBillingInfoBlockIsVisible(){
+      cy.get(CheckoutElements.cssBlock_BillingInfo).should("be.visible");
+    };
+    checkPaymentMethodIsPresent(){
+      cy.get(CheckoutElements.cssBlock_PaymentMethod).should("contain.text", "Card");
+    };
+    checkDeliveryDetailsBlockOnThankYouPage(){
+      cy.get(CheckoutElements.cssBlock_DeliveryDetails).should("be.visible");
+    };
+    checkShippingMethodBlockOnThankYouPage(){
+        cy.get(CheckoutElements.cssBlock_PaymentDetails).should("be.visible");
+    };
+    checkPaymentDetailsBlockOnThankYouPage(){
+        cy.get(CheckoutElements.cssBlock_PaymentDetails).should("be.visible");
+    };
+    checkPaymentMethodBlockOnThankYouPage(){
+        cy.get(CheckoutElements.cssBlock_Payment).should("be.visible");
+    };
+    checkOrderEntriesBlockIsVisible(){
+        cy.get(CheckoutElements.cssBlock_OrderEntries).should("be.visible");
+    };
+    checkOrderTotalOverviewBlockIsVisible(){
+        cy.get(CheckoutElements.cssBlock_OrderTotalOverview).should("be.visible");
+    };
+    checkReturnToStoreBtnIsVisible(){
+        cy.get(CheckoutElements.cssBtn_ReturnToStore).should("be.visible");
     };
 }
 export default CheckoutAsserts

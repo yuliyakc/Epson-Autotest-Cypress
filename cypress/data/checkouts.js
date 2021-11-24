@@ -9,14 +9,17 @@ module.exports = {
 
     },
     "discount": {
-        "name": "S2-Automation",
+        "name": "Automation",
         "price": "30.00"
     },
     "shippingMethods": {
         "standard": "gb-ups-standard-149",
         "electronic": "gb-electronic-free",
-        "easymail": "gb-deutschepost-easymail-508",
+        "easymail": "gb-deutchepost-easymail-free-508",
     },
+    "quantity":{
+        "num": "-1{enter}"
+    }
 
 
 }

@@ -8,7 +8,7 @@ describe("Checking pagination and sorting on PLP", ()=> {
         cy.clearCookies();
         cy.viewport(1200, 800);
         perform.signInActions.openWebsiteAndLogin();
-        perform.searchActions.searchInkPrinterPLP();
+        perform.searchActions.searchInkPrinterPLPByFullName();
         check.assertions.checkMainProductsQuantity();
     });
     it('should check that pagination working correct for PLP', function () {

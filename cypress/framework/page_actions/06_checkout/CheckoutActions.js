@@ -1,14 +1,18 @@
 import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
 import usersData from "../../../data/users";
 import checkoutsData from "../../../data/checkouts";
+import SignUpElements from "../../locators/01_userSign/SignUpElements";
 
 class CheckoutActions {
     fillRequiredInfo(){
-        cy.get(CheckoutElements.idInput_Nickname).click().clear().type(usersData.purchase.addressNickname);
+        // cy.get(CheckoutElements.idInput_Nickname).click().clear().type(usersData.purchase.addressNickname);
         cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
         cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
         cy.get(CheckoutElements.idInput_Telephone).click().clear().type(usersData.purchase.telephone);
         cy.get(CheckoutElements.idInput_CompanyName).click().clear().type(usersData.purchase.companyName);
+    };
+    setBusinessCustomerOff(){
+        cy.get(SignUpElements.cssBoolean_BusinessCustomerOff).click();
     };
     searchAndSetAnAddress(){
         let addressBox = cy.get(CheckoutElements.idInput_AddressFinder);
@@ -36,7 +40,8 @@ class CheckoutActions {
       cy.get(CheckoutElements.idButton_SubmitDeliveryMethod).click();
     };
     setCardName(){
-       cy.get(CheckoutElements.cssInput_CardName).click().clear().type(usersData.register.fullName);
+       cy.get(CheckoutElements.cssInput_CardName).click()
+           .clear().type(usersData.register.fullName);
     };
     goNext(){
       cy.get(CheckoutElements.cssButton_ToNextStep).click();
@@ -68,6 +73,7 @@ class CheckoutActions {
     performPayoutWithCreditCardMethod(){
         cy.selectCardToPay();
     };
+
 
 }
 export default CheckoutActions

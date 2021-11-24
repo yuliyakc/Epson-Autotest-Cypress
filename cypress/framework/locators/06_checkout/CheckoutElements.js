@@ -23,5 +23,21 @@ class CheckoutElements {
     static cssItem_TotalCart = "div.js-cart-totals > div:nth-child(1) > div.col-xs-6.col-md-4.text-right";
     static cssItem_VoucherMessage = ".basket-voucher__voucher-msg";
     static xpathDropdown_DeliveryMethod = "//select[@id='delivery_method']";
+    static cssText_ProductQuantity = ".checkout-summary__product-quantity";
+    static cssText_CheckoutSummaryPrice = "div > div.checkout-summary__row.checkout-summary__price.checkout-summary__price--total";
+    static cssText_CheckoutFinalPage = ".order-totals__row:nth-child(2)";
+    static cssText_ShipToName = "div:nth-child(2) > div.checkout-summary__section-content > div";
+    static cssText_ShipToAddress = "div:nth-child(2) > div.checkout-summary__section-content > div > div:nth-child(5)";
+    static cssText_ShipToTelephone = "div:nth-child(2) > div.checkout-summary__section-content > div > div:nth-child(6)";
+    static cssBlock_BillingInfo = "div.checkout-section__review > div > div.checkout-summary__sections > div:nth-child(3)";
+    static cssBlock_PaymentMethod = "div.checkout-section__review > div > div.checkout-summary__sections > div:nth-child(4)";
+    static cssBlock_DeliveryDetails = ".order-summary__section:nth-child(1)";
+    static cssBlock_ShipmentMethod = ".order-summary__section:nth-child(2))";
+    static cssBlock_PaymentDetails = ".order-summary__section:nth-child(3)";
+    static cssBlock_Payment = " div.order-summary.order-summary--grid.order-summary--order-confirmation > div:nth-child(4)";
+    static cssBlock_OrderEntries = ".order-entries.order-entries--order-confirmation";
+    static cssBlock_OrderTotalOverview = ".order-totals.order-totals--order-confirmation";
+    static cssBtn_ReturnToStore = ".order-confirmation__buttons a";
+
 }
 export default CheckoutElements

@@ -10,6 +10,6 @@ class CartElements {
     static cssBtn_VoucherRedeem = "#voucherForm > button";
     static cssBtn_RemoveDiscount = "#removeVoucherForm0 > div.basket-voucher__voucher-applied > a";
     static cssButton_BasketCheckout = ".btn-primary:nth-child(2)";
-
+    static xpathInput_ItemsQuantity = "//input[@id='quantity_0']";
 }
 export default CartElements

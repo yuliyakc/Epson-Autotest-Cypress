@@ -20,10 +20,10 @@ class OrderHistoryActions {
       cy.get(OrderHistoryElements.cssBtn_Reorder).click();
     };
     clickBackToOrderHistoryBtn(){
-      cy.get(OrderHistoryElements.cssBtn_BackToPreviousPage).eq(0).click();
+      cy.get(OrderHistoryElements.cssBtn_BakToOrderHistoryListPage).eq(0).click();
     };
     clickBackToYourAccountBtn(){
-        cy.get(OrderHistoryElements.cssBtn_BackToPreviousPage).eq(0).click();
+        cy.get(OrderHistoryElements.cssBtn_BackToMyAccountPage).eq(0).click();
     };
 }
 export default OrderHistoryActions

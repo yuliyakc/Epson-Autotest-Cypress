@@ -2,7 +2,7 @@ const UNIQID = Cypress.env('UNIQID')
 
 module.exports = {
     "inkJet": {
-        "name" : "Eco tank{enter}",
+        "name" : "Eco tank ET-2715{enter}",
         "name2": "ET-2715{enter}",
         "business": "Business Inkjet Printers",
         "prophoto": "Prophoto and Graphic Arts",
@@ -16,6 +16,7 @@ module.exports = {
     "dotMatrix": {
         "name" : "LX-350{enter}",
         "name2" : "Dot Matrix Printers",
+        "name3":"LQ-350"
     },
     "laserPrinters": {
         "name" : "WorkForce AL-C300N Series{enter}",

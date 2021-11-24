@@ -3,9 +3,14 @@ import productsData from "../../../data/products";
 import SearchElements from "../../locators/09_search/SearchElements";
 
 class SearchActions {
-    searchInkPrinterPLP(){
+    searchInkPrinterPLPByFullName(){
         cy.get(SearchElements.cssBtn_SearchLabel).click();
         cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.inkJet.name);
+        cy.wait(2000)
+    };
+    searchInkPrinterPLP(){
+        cy.get(SearchElements.cssBtn_SearchLabel).click();
+        cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.inkJet.name2);
         cy.wait(2000)
     };
     searchInkEcoPrinterPLP(){

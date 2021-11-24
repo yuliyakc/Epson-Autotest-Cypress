@@ -10,7 +10,7 @@ describe("Checking filter for all printers", ()=> {
         perform.signInActions.openWebsiteAndLogin();
     });
     it('should check that filters are working correct for Ink Printer', function () {
-        perform.searchActions.searchInkPrinterPLP();
+        perform.searchActions.searchInkPrinterPLPByFullName();
         check.assertions.checkMainProductsQuantity();
         perform.filtersActions.useAppSegmentFilter();
         check.assertions.checkActiveFilter();

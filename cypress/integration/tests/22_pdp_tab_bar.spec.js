@@ -7,9 +7,9 @@ describe("Testing Tab Bar for each product", ()=> {
     beforeEach(function () {
         cy.clearCookies();
         cy.viewport(1200, 800);
+        perform.signInActions.openWebsiteAndLogin();
     });
     it('should open website on a specific PDP to check tabs for Printers', function () {
-        perform.signInActions.openWebsiteAndLogin();
         perform.productLinksForPDP.openEcoTankPrinterPDPPage();
         perform.pdpActions.scrollDownToTabBar();
         perform.pdpActions.clickOverviewTab();
@@ -28,7 +28,6 @@ describe("Testing Tab Bar for each product", ()=> {
         check.supportAsserts.checkSearchSupportPageIsOpened();
     });
     it('should open website on a specific PDP to check tabs for Options', function () {
-        perform.signInActions.openWebsiteAndLogin();
         perform.productLinksForPDP.openSpecificOptionPDPPage();
 
         perform.pdpActions.clickSupportTab();
@@ -40,7 +39,6 @@ describe("Testing Tab Bar for each product", ()=> {
         check.pdpAssertions.checkThatSKUIsDisplayed();
     });
     it('should open website on a specific Option PDP to check tabs', function () {
-        perform.signInActions.openWebsiteAndLogin();
         perform.productLinksForPDP.openMediaPaperProduct();
         check.pdpAssertions.checkOverviewBlock();
 
@@ -51,6 +49,5 @@ describe("Testing Tab Bar for each product", ()=> {
         check.pdpAssertions.checkCompatibilityBlock();
         perform.pdpActions.clickCompatibilityLink();
         check.pdpAssertions.checkThatSKUIsDisplayed();
-
     });
 });

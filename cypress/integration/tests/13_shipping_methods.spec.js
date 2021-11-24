@@ -15,7 +15,6 @@ describe("Check different types of Shipping Methods", ()=> {
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
-        check.checkoutAsserts.checkSelectedCountry();
         perform.checkoutActions.fillRequiredInfo();
         perform.checkoutActions.searchAndSetAnAddress();
         perform.checkoutActions.saveAndGoToNextStep();
@@ -30,7 +29,6 @@ describe("Check different types of Shipping Methods", ()=> {
         perform.buyNowPLPActions.clickBuyNowBtnPLP();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
-        check.checkoutAsserts.checkSelectedCountry();
         perform.checkoutActions.fillRequiredInfo();
         perform.checkoutActions.searchAndSetAnAddress();
         perform.checkoutActions.saveAndGoToNextStep();
@@ -45,7 +43,6 @@ describe("Check different types of Shipping Methods", ()=> {
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
-        check.checkoutAsserts.checkSelectedCountry();
         perform.checkoutActions.fillRequiredInfo();
         perform.checkoutActions.searchAndSetAnAddress();
         perform.checkoutActions.saveAndGoToNextStep();
@@ -65,24 +62,22 @@ describe("Check different types of Shipping Methods", ()=> {
         perform.consumablesActions.clickBuyNowForCoverPlusAndGoToCart();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
-        check.checkoutAsserts.checkSelectedCountry();
         perform.checkoutActions.fillRequiredInfo();
         perform.checkoutActions.searchAndSetAnAddress();
         perform.checkoutActions.saveAndGoToNextStep();
         perform.checkoutActions.selectAndCheckStandardMethod();
 
-        perform.checkoutActions.goBackToCartSection();
-        perform.cartActions.deleteTwoItemsFromCart();
-        check.commonAsserts.checkGlobalAlertIsDisplayed();
+        // perform.checkoutActions.goBackToCartSection();
+        // perform.cartActions.deleteTwoItemsFromCart();
+        // check.commonAsserts.checkGlobalAlertIsDisplayed();
 
-        // perform.checkoutActions.goNextToBilling();
-        // perform.checkoutActions.saveAndGoToNextStep();
-        // perform.checkoutActions.performPayoutWithCreditCardMethod();
-        // perform.checkoutActions.setCardName();
-        // perform.checkoutActions.goNext();
-        // perform.checkoutActions.agreeTermsAndPlaceAnOrder();
-        // check.checkoutAsserts.checkThankYouPageAfterPurchasing();
-        // check.checkoutAsserts.checkOrderInfoBlockIsVisible();
+        perform.checkoutActions.goNextToBilling();
+        perform.checkoutActions.saveAndGoToNextStep();
+        perform.checkoutActions.performPayoutWithCreditCardMethod();
+        perform.checkoutActions.setCardName();
+        perform.checkoutActions.goNext();
+        perform.checkoutActions.agreeTermsAndPlaceAnOrder();
+        check.checkoutAsserts.checkThankYouPageAfterPurchasing();
     });
     it('should check Shipping Method "Standard" when add Hardware with CoverPlus to purchase', function () {
         perform.productLinksForPDP.openEcoTankPrinterPDPPage();
@@ -91,31 +86,29 @@ describe("Check different types of Shipping Methods", ()=> {
         perform.consumablesActions.clickBuyNowForCoverPlusAndGoToCart();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
-        check.checkoutAsserts.checkSelectedCountry();
         perform.checkoutActions.fillRequiredInfo();
         perform.checkoutActions.searchAndSetAnAddress();
         perform.checkoutActions.saveAndGoToNextStep();
         perform.checkoutActions.selectAndCheckStandardMethod();
 
-        perform.checkoutActions.goBackToCartSection();
-        perform.cartActions.deleteTwoItemsFromCart();
-        check.commonAsserts.checkGlobalAlertIsDisplayed();
+        // perform.checkoutActions.goBackToCartSection();
+        // perform.cartActions.deleteTwoItemsFromCart();
+        // check.commonAsserts.checkGlobalAlertIsDisplayed();
 
-        // perform.checkoutActions.goNextToBilling();
-        // perform.checkoutActions.saveAndGoToNextStep();
-        // perform.checkoutActions.performPayoutWithCreditCardMethod();
-        // perform.checkoutActions.setCardName();
-        // perform.checkoutActions.goNext();
-        // perform.checkoutActions.agreeTermsAndPlaceAnOrder();
-        // check.checkoutAsserts.checkThankYouPageAfterPurchasing();
-        // check.checkoutAsserts.checkOrderInfoBlockIsVisible();
+        perform.checkoutActions.goNextToBilling();
+        perform.checkoutActions.saveAndGoToNextStep();
+        perform.checkoutActions.performPayoutWithCreditCardMethod();
+        perform.checkoutActions.setCardName();
+        perform.checkoutActions.goNext();
+        perform.checkoutActions.agreeTermsAndPlaceAnOrder();
+        check.checkoutAsserts.checkThankYouPageAfterPurchasing();
+
     });
     it('should check Shipping Method "Deutsche Post" when add EasyMail to purchase', function () {
         perform.productLinksForPDP.openEasyMailProduct();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
-        check.checkoutAsserts.checkSelectedCountry();
         perform.checkoutActions.fillRequiredInfo();
         perform.checkoutActions.searchAndSetAnAddress();
         perform.checkoutActions.saveAndGoToNextStep();
@@ -132,6 +125,5 @@ describe("Check different types of Shipping Methods", ()=> {
         // perform.checkoutActions.goNext();
         // perform.checkoutActions.agreeTermsAndPlaceAnOrder();
         // check.checkoutAsserts.checkThankYouPageAfterPurchasing();
-        // check.checkoutAsserts.checkOrderInfoBlockIsVisible();
     });
 });

@@ -29,6 +29,9 @@ class CartActions {
     removeDiscountFromPrinter(){
         cy.get(CartElements.cssBtn_RemoveDiscount).click();
     };
+    clickPrintersQuantityAndChangeIt(){
+        cy.xpath(CartElements.xpathInput_ItemsQuantity).click().clear().type(checkoutsData.quantity.num);
+    };
 
 }
 export default CartActions

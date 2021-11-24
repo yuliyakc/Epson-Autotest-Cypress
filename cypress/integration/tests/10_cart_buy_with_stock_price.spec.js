@@ -1,6 +1,5 @@
 // import Actions from "../../framework/Actions";
 // import Asserts from "../../framework/Asserts";
-// import CommonActions from "../../framework/page_actions/CommonActions";
 //
 // describe("Find discount price and purchase", ()=> {
 //     let perform = new Actions();

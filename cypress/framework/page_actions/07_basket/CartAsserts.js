@@ -2,6 +2,7 @@ import CartElements from "../../locators/07_basket/CartElements";
 import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
 import checkoutsData from "../../../data/checkouts";
 import CommonElements from "../../locators/CommonElements";
+import printersData from "../../../data/printers";
 
 class CartAsserts {
     checkUserOpenCartSection(){
@@ -33,6 +34,12 @@ class CartAsserts {
     };
     checkCartSection(){
         cy.get(CheckoutElements.cssBlock_CartHeaders).should("be.visible");
+    };
+    checkAlertForSpecificPrinter(){
+        cy.get("div.global-alerts a").should("include.text", printersData.dotMatrix.name3)
+    };
+    checkPrintersQuantityShouldBeOne(){
+        cy.xpath(CartElements.xpathInput_ItemsQuantity).should("include.value", 1);
     };
 }
 export default CartAsserts

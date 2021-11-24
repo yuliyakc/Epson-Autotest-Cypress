@@ -17,7 +17,7 @@ class CommonElements {
     static cssBtn_ContinueShopping = "#simple-modal a:nth-child(1)";
     static cssBtn_BuyNowForConsumable = ".cross-sell-list:nth-child(1) > .cross-sell-list__footer > .btn";
     static cssDropdown_Sorting = "select[id='sortOptions1']";
-    static cssGlobal_Message = "div.main__inner-wrapper > div.global-alerts > div";
+    static cssGlobal_Message = ".global-alerts > .alert-dismissable";
 
 }
 export default CommonElements

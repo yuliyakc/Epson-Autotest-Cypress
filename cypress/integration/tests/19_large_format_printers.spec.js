@@ -48,5 +48,10 @@ describe("Checking Large format printer functionality", ()=> {
         check.supportAsserts.checkSupportPageIsOpened();
         check.supportAsserts.checkSupportSku();
     });
+    // it('should purchase the printer, using Credit card', function () {
+    //     perform.mainHeaderActions.openLargeFormatPrintersPage();
+    //
+    //
+    // });
 
 });

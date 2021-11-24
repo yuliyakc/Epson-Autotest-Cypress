@@ -7,7 +7,15 @@ module.exports = {
         "email": `maria.bobrova+${UNIQID}@keenethics.com`,
         "password": "Qwe123456!",
         "newPassword": "Qwe13579!",
-        "fullName":"J.Smith"
+        "fullName":"J.Smith",
+        "email2": "maria.bobrova@emailua",
+        "email3": "maria.bobrovaemail.ua",
+        "email4": "maria.bobrova@email,ua" ,
+        "email5": "maria.bobrova@\"£$"
+    },
+    "guest": {
+        "email": `b.maria.qa+${UNIQID}@gmail.com`,
+        "password": "Qwe12345!"
     },
     "purchase": {
         "country" : "GB",
@@ -19,6 +27,8 @@ module.exports = {
         "address2" : "Bradford, BD9,",
         "town": "Bradford",
         "postcode" : "BD9 4NP",
+        "fullAddress": "Bradford, BD9 4NP, United Kingdom",
+        "fullPhone" : "Telephone: +442079460001"
     },
     "address":{
         "nickname": "Title",

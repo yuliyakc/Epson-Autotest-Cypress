@@ -1,7 +1,7 @@
 class MyAccountElements {
     static cssTab_MyAccount = "nav > li:nth-child(2) > a";
-    static cssTab_UpdateDetails = "nav > li:nth-child(3) > a";
-    static cssTab_UpdateEmail = "nav > li:nth-child(4) > a";
+    static cssTab_UpdateDetails = "nav > li:nth-child(4) > a";
+    static cssTab_UpdateEmail = "nav > li:nth-child(3) > a";
     static cssTab_ChangePassword = "nav > li:nth-child(5) > a";
     static cssTab_OrderHistory = "nav > li:nth-child(6) > a";
     static cssTab_AddressBook = "nav > li:nth-child(7) > a";
