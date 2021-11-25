@@ -7,7 +7,7 @@ class CommonAsserts {
         cy.get("div").should("have.class", "product-pricing__price--discount")
     };
     checkPriceWithDiscount(){
-        cy.get(CheckoutElements.cssItem_TotalCart).should('contain', checkoutsData.discount.price)
+        cy.get(CheckoutElements.cssItem_TotalDiscountCart).should('contain', checkoutsData.discount.price)
     };
     checkTotalOnPaymentSelectPage(){
       cy.get(".checkout-summary__product").should('contain', checkoutsData.discount.price)

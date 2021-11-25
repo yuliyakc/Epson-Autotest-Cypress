@@ -2,6 +2,9 @@ import CartElements from "../../locators/07_basket/CartElements";
 import checkoutsData from "../../../data/checkouts";
 
 class CartActions {
+    openCartPage(){
+      cy.visitWebsite("/cart");
+    };
     clickToRaisePrintersQuantity(){
       cy.get(CartElements.cssBtn_RaisePrintersQuantity).click();
     };
@@ -32,6 +35,7 @@ class CartActions {
     clickPrintersQuantityAndChangeIt(){
         cy.xpath(CartElements.xpathInput_ItemsQuantity).click().clear().type(checkoutsData.quantity.num);
     };
+
 
 }
 export default CartActions

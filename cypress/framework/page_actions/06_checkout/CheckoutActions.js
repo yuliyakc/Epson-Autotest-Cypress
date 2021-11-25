@@ -16,18 +16,21 @@ class CheckoutActions {
     };
     searchAndSetAnAddress(){
         let addressBox = cy.get(CheckoutElements.idInput_AddressFinder);
-        cy.get("body").then($body => {
-            cy.get(CheckoutElements.idInput_AddressFinder).then($header => {
-                if ($header.is(':visible')){
+
+            cy.get(CheckoutElements.idInput_AddressFinder).then($header =>
+            {
+                if ($header.is(':visible'))
+                {
                     addressBox.click().type(usersData.purchase.addressFinder);
                     cy.wait(3000);
-                } else {
+                }
+                else
+                {
                     cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
                     cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
                     cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
                 }
             });
-        });
     };
     setDefaultCheckboxes(){
         cy.get('.checkbox__input ').eq(0).click();
@@ -73,7 +76,76 @@ class CheckoutActions {
     performPayoutWithCreditCardMethod(){
         cy.selectCardToPay();
     };
-
+    setShippingInfoEmpty(){
+        cy.get('div').then(($div) =>
+        {
+            if($div.text().includes(usersData.address.nickname))
+            {   cy.get(CheckoutElements.idInput_FirstName).click().clear();
+                cy.get(CheckoutElements.idInput_LastName).click().clear();
+                cy.get(CheckoutElements.idInput_Telephone).click().clear();
+                cy.get(CheckoutElements.idInput_CompanyName).click().clear();
+                cy.get(CheckoutElements.idInput_Address1).click().clear();
+                cy.get(CheckoutElements.idInput_Town).click().clear();
+                cy.get(CheckoutElements.idInput_Postcode).click().clear();
+                cy.get(CheckoutElements.cssButton_Submit).click();
+            }
+            else
+            {
+                cy.get(CheckoutElements.cssButton_Submit).click();
+            }
+        });
+    };
+    fillAllInfoOnShipInfoExceptFirstName(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear();
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_Telephone).click().clear().type(usersData.purchase.telephone);
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllInfoOnShipInfoExceptLastName(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear();
+        cy.get(CheckoutElements.idInput_Telephone).click().clear().type(usersData.purchase.telephone);
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllInfoOnShipInfoExceptTelephone(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_Telephone).click().clear();
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllInfoOnShipInfoExceptAddress(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_Telephone).click().clear().type(usersData.purchase.telephone);
+        cy.get(CheckoutElements.idInput_Address1).click().clear();
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllInfoOnShipInfoExceptTown(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_Telephone).click().clear().type(usersData.purchase.telephone);
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear();
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllInfoOnShipInfoExceptPostcode(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_Telephone).click().clear().type(usersData.purchase.telephone);
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear();
+    };
+    enterPostCode(){
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
 
 }
 export default CheckoutActions

@@ -20,7 +20,8 @@ class CheckoutElements {
     static cssCheckbox_AgreeTerms = ".form-group:nth-child(1) .checkbox";
     static cssCheckbox_MarketingEmails = ".form-group:nth-child(2) .checkbox";
     static cssButton_AddAddressManually = "a[class='address-form__address-finder-toggler js-address-finder-toggler']";
-    static cssItem_TotalCart = "div.js-cart-totals > div:nth-child(1) > div.col-xs-6.col-md-4.text-right";
+    static cssItem_TotalCart = " div.js-cart-totals > div:nth-child(2) > div.col-xs-6.col-md-4.text-right";
+    static cssItem_TotalDiscountCart = " div.js-cart-totals > div:nth-child(3) > div.col-xs-6.col-md-4.text-right";
     static cssItem_VoucherMessage = ".basket-voucher__voucher-msg";
     static xpathDropdown_DeliveryMethod = "//select[@id='delivery_method']";
     static cssText_ProductQuantity = ".checkout-summary__product-quantity";
@@ -38,6 +39,15 @@ class CheckoutElements {
     static cssBlock_OrderEntries = ".order-entries.order-entries--order-confirmation";
     static cssBlock_OrderTotalOverview = ".order-totals.order-totals--order-confirmation";
     static cssBtn_ReturnToStore = ".order-confirmation__buttons a";
+    static cssError_FirstNameError = "span[id='firstName.errors']";
+    static cssError_LastNameError = "span[id='lastName.errors']";
+    static cssError_TelephoneError = "span[id='telephone.errors']";
+    static cssError_Address1Error = "span[id='line1.errors']";
+    static cssError_TownError = "span[id='townCity.errors']";
+    static cssError_PostcodeError = "span[id='postcode.errors']";
+
+
+
 
 }
 export default CheckoutElements

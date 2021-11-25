@@ -72,5 +72,27 @@ class CheckoutAsserts {
     checkReturnToStoreBtnIsVisible(){
         cy.get(CheckoutElements.cssBtn_ReturnToStore).should("be.visible");
     };
+    checkErrorIfFirstNameIsEmpty(){
+      cy.get(CheckoutElements.cssError_FirstNameError).should("be.visible");
+    };
+    checkErrorIfLastNameIsEmpty(){
+        cy.get(CheckoutElements.cssError_LastNameError).should("be.visible");
+    };
+    checkErrorIfTelephoneIsEmpty(){
+        cy.get(CheckoutElements.cssError_TelephoneError).should("be.visible");
+    };
+    checkErrorIfAddressIsEmpty(){
+        cy.get(CheckoutElements.cssError_Address1Error).should("be.visible");
+    };
+    checkErrorIfTownIsEmpty(){
+        cy.get(CheckoutElements.cssError_TownError).should("be.visible");
+    };
+    checkErrorIfPostcodeIsEmpty(){
+        cy.get(CheckoutElements.cssError_PostcodeError).should("be.visible");
+    };
+
+
+
+
 }
 export default CheckoutAsserts
