@@ -90,6 +90,15 @@ class CheckoutAsserts {
     checkErrorIfPostcodeIsEmpty(){
         cy.get(CheckoutElements.cssError_PostcodeError).should("be.visible");
     };
+    checkErrorIfCompanyNameIsEmpty(){
+        cy.get(CheckoutElements.cssError_CompanyNameError).should("be.visible");
+    };
+    checkAlertsForEmptyCreditCard(){
+      cy.get(CheckoutElements.cssError_CreditCardErrors).should("be.visible").and("have.length", 4)
+    };
+    checkOneAlertForEmptyCreditCard(){
+        cy.get(CheckoutElements.cssError_CreditCardErrors).should("be.visible").and("have.length", 1)
+    };
 
 
 

@@ -77,7 +77,7 @@ Cypress.Commands.add("visitWebsite", (url) => {
     })
 });
 
-Cypress.Commands.add('selectCardToPay', (iframeSelector, elSelector) => {
+Cypress.Commands.add("selectCardToPay", (iframeSelector, elSelector) => {
     cy.get("label[for='paymentMethod-adyen_cc']")
         .click();
 
@@ -100,4 +100,60 @@ Cypress.Commands.add('selectCardToPay', (iframeSelector, elSelector) => {
                 .type("737");
         });
 });
-//Cypress.Commands.add('setKlarnaToPay')
+Cypress.Commands.add('setAllInfoExceptCardNumber', (iframeSelector, elSelector) => {
+    return cy
+        .get(`iframe${iframeSelector || ''}`, { timeout: 10000 })
+        .should($iframe => {
+            expect($iframe.contents().find(elSelector||'body')).to.exist
+        })
+        .then($iframe => {
+            const $body = $iframe.contents().find('body');
+
+            cy.wrap( $body.find('input[id="encryptedCardNumber"]') )
+                .click({ force: true }).clear();
+            cy.wrap( $body.find('input[id="encryptedExpiryDate"]') )
+                .click({ force: true })
+                .type("0330" );
+            cy.wrap( $body.find('input[id="encryptedSecurityCode"]') )
+                .click({ force: true })
+                .type("737");
+        });
+});
+Cypress.Commands.add('setAllInfoExceptExpDate', (iframeSelector, elSelector) => {
+    return cy
+        .get(`iframe${iframeSelector || ''}`, { timeout: 10000 })
+        .should($iframe => {
+            expect($iframe.contents().find(elSelector||'body')).to.exist
+        })
+        .then($iframe => {
+            const $body = $iframe.contents().find('body');
+
+            cy.wrap( $body.find('input[id="encryptedCardNumber"]') )
+                .click({ force: true })
+                .type( "5555 4444 3333 1111");
+            cy.wrap( $body.find('input[id="encryptedExpiryDate"]') )
+                .click({ force: true }).clear();
+            cy.wrap( $body.find('input[id="encryptedSecurityCode"]') )
+                .click({ force: true })
+                .type("737");
+        });
+});
+Cypress.Commands.add('setAllInfoExceptCvvCode', (iframeSelector, elSelector) => {
+    return cy
+        .get(`iframe${iframeSelector || ''}`, { timeout: 10000 })
+        .should($iframe => {
+            expect($iframe.contents().find(elSelector||'body')).to.exist
+        })
+        .then($iframe => {
+            const $body = $iframe.contents().find('body');
+
+            cy.wrap( $body.find('input[id="encryptedCardNumber"]') )
+                .click({ force: true })
+                .type( "5555 4444 3333 1111");
+            cy.wrap( $body.find('input[id="encryptedExpiryDate"]') )
+                .click({ force: true })
+                .type("0330" );
+            cy.wrap( $body.find('input[id="encryptedSecurityCode"]') )
+                .click({ force: true }).clear();
+        });
+});

@@ -4,6 +4,9 @@ import checkoutsData from "../../../data/checkouts";
 import SignUpElements from "../../locators/01_userSign/SignUpElements";
 
 class CheckoutActions {
+    openPaymentPage(){
+      cy.visitWebsite("checkout/multi/adyen/select-payment-method");
+    };
     fillRequiredInfo(){
         // cy.get(CheckoutElements.idInput_Nickname).click().clear().type(usersData.purchase.addressNickname);
         cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
@@ -76,6 +79,7 @@ class CheckoutActions {
     performPayoutWithCreditCardMethod(){
         cy.selectCardToPay();
     };
+/// Shipping Page ___________________________________________________________________________________________________
     setShippingInfoEmpty(){
         cy.get('div').then(($div) =>
         {
@@ -146,6 +150,103 @@ class CheckoutActions {
     enterPostCode(){
         cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
     };
+
+/// Billing Page ___________________________________________________________________________________________
+
+    setBillingInfoEmpty(){
+        cy.get('div').then(($div) =>
+        {
+            if($div.text().includes(usersData.address.nickname))
+            {   cy.get(CheckoutElements.idInput_FirstName).click().clear();
+                cy.get(CheckoutElements.idInput_LastName).click().clear();
+                cy.get(CheckoutElements.idInput_CompanyName).click().clear();
+                cy.get(CheckoutElements.idInput_Address1).click().clear();
+                cy.get(CheckoutElements.idInput_Town).click().clear();
+                cy.get(CheckoutElements.idInput_Postcode).click().clear();
+                cy.get(CheckoutElements.cssButton_Submit).click();
+            }
+            else
+            {
+                cy.get(CheckoutElements.cssButton_Submit).click();
+            }
+        });
+    };
+    fillAllBillingIInfoExceptFirstName(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear();
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_CompanyName).click().clear().type(usersData.address2.companyName);
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllBillingIInfoExceptLastName(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear();
+        cy.get(CheckoutElements.idInput_CompanyName).click().clear().type(usersData.address2.companyName);
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllBillingIInfoExceptCompanyName(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_CompanyName).click().clear();
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllBillingIInfoExceptAddress(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_CompanyName).click().clear().type(usersData.address2.companyName);
+        cy.get(CheckoutElements.idInput_Address1).click().clear();
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllBillingIInfoExceptTown(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_CompanyName).click().clear().type(usersData.address2.companyName);
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear();
+        cy.get(CheckoutElements.idInput_Postcode).click().clear().type(usersData.purchase.postcode);
+    };
+    fillAllBillingIInfoExceptPostcode(){
+        cy.get(CheckoutElements.idInput_FirstName).click().clear().type(usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).click().clear().type(usersData.register.lastName);
+        cy.get(CheckoutElements.idInput_CompanyName).click().clear().type(usersData.address2.companyName);
+        cy.get(CheckoutElements.idInput_Address1).click().clear().type(usersData.purchase.shippingAddress);
+        cy.get(CheckoutElements.idInput_Town).click().clear().type(usersData.purchase.town);
+        cy.get(CheckoutElements.idInput_Postcode).click().clear();
+    };
+
+/// Payment method ____________________________________________________________________________________________
+    SelectPaymentMethod(){
+        cy.get(CheckoutElements.cssBtn_CreditCardMethod).click();
+    };
+    setAllDataExceptCardNumber(){
+        cy.setAllInfoExceptCardNumber();
+    };
+    setAllDataExceptExpDate(){
+      cy.setAllInfoExceptExpDate();
+    };
+    setAllDataExceptCvvCode(){
+      cy.setAllInfoExceptCvvCode();
+    };
+    deleteCardName(){
+        cy.get(CheckoutElements.cssInput_CardName).click().clear();
+
+    };
+    placeAnOrder(){
+        cy.get(CheckoutElements.cssButton_PlaceAnOrder).click();
+    };
+    agreeWithMarketingEmails(){
+        cy.get(CheckoutElements.cssCheckbox_MarketingEmails).click();
+    };
+    agreeWithTermsOfUse(){
+        cy.get(CheckoutElements.cssCheckbox_AgreeTerms).click();
+    };
+
 
 }
 export default CheckoutActions

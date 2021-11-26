@@ -45,6 +45,9 @@ class CheckoutElements {
     static cssError_Address1Error = "span[id='line1.errors']";
     static cssError_TownError = "span[id='townCity.errors']";
     static cssError_PostcodeError = "span[id='postcode.errors']";
+    static cssError_CompanyNameError = "span[id='companyName.errors']";
+    static cssBtn_CreditCardMethod = "label[for='paymentMethod-adyen_cc']";
+    static cssError_CreditCardErrors = "span[class='adyen-checkout__error-text']";
 
 
 
