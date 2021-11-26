@@ -7,7 +7,8 @@ module.exports = {
         "business": "Business Inkjet Printers",
         "prophoto": "Prophoto and Graphic Arts",
         "consumer": "EcoTank ET-2750{enter}",
-        "ink": "LabelWorks LW-Z5000BE{enter}"
+        "ink": "LabelWorks LW-Z5000BE{enter}",
+        "individual": "LW-Z5000BE{enter}"
     },
     "consumer":{
       "name" : "Consumer Printers",

@@ -15,7 +15,7 @@ class SearchActions {
     };
     searchInkEcoPrinterPLP(){
         cy.get(SearchElements.cssBtn_SearchLabel).click();
-        cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.inkJet.ink);
+        cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.inkJet.individual);
     };
     searchDotPrinterPLP(){
         cy.get(SearchElements.cssBtn_SearchLabel).click();

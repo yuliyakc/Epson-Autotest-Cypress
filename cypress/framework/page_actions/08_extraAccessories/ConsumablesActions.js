@@ -29,7 +29,7 @@ class ConsumablesActions {
     };
     selectCoverPlusZeroFiveYears(){
         cy.wait(2000)
-        cy.get(CommonElements.cssBtn_BtnPrimary).eq(99).click();
+        cy.get(CommonElements.cssBtn_BtnPrimary).eq(96).click();
     };
     clickBuyNowForCoverPlusAndGoToCart(){
         cy.get(CommonElements.cssBtn_BuyNowForCoverPlus).click();
