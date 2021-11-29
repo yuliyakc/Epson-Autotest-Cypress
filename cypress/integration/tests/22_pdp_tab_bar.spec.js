@@ -38,7 +38,7 @@ describe("Testing Tab Bar for each product", ()=> {
         perform.pdpActions.clickCompatibilityLink();
         check.pdpAssertions.checkThatSKUIsDisplayed();
     });
-    it('should open website on a specific Option PDP to check tabs', function () {
+    it('should open website on a specific accessories PDP to check tabs', function () {
         perform.productLinksForPDP.openMediaPaperProduct();
         check.pdpAssertions.checkOverviewBlock();
 

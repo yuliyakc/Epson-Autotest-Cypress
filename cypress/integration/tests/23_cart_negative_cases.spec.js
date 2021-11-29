@@ -1,7 +1,7 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
 
-describe("Find specific printer, add to cart and perform negative cases", ()=> {
+describe("Find specific printer, add to cart and perform quantity checking", ()=> {
     let perform = new Actions();
     let check = new Asserts();
 

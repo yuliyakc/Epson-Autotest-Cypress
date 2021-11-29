@@ -12,7 +12,7 @@ import SignAsserts from "./page_actions/01_userSign/SignAsserts";
 import UpdateDataAsserts from "./page_actions/14_updateData/UpdateDataAsserts";
 import ComparePrintersAsserts from "./page_actions/15_comparePrinters/ComparePrintersAsserts";
 import PdpAssertions from "./page_actions/05_productDisplayPage/pdpAssertions";
-import SiteSelectorElements from "./locators/16_siteSelector/SiteSelectorElements";
+import SiteSelectorAsserts from "./page_actions/16_siteSelector/SiteSelectorAsserts";
 
 
 class Asserts {
@@ -30,7 +30,7 @@ class Asserts {
     updateDataAsserts = new UpdateDataAsserts();
     comparePrintersAsserts = new ComparePrintersAsserts();
     pdpAssertions = new PdpAssertions();
-    siteSelectorElements = new SiteSelectorElements();
+    siteSelectorAsserts = new SiteSelectorAsserts();
 
 
 }
