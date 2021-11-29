@@ -1,7 +1,5 @@
-import CommonElements from "../../locators/CommonElements";
 import printersData from "../../../data/printers";
 import MainHeaderElements from "../../locators/00_mainHeader/MainHeaderElements";
-import SupportElements from "../../locators/10_support/SupportElements";
 
 class MainHeaderActions {
     openInkJetBusinessPrinters(){

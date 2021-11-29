@@ -22,6 +22,7 @@ import AddressBookActions from "./page_actions/13_addressBook/AddressBookActions
 import ProductLinksForPDP from "./page_actions/05_productDisplayPage/ProductLinksForPDP";
 import UpdateDataActions from "./page_actions/14_updateData/UpdateDataActions";
 import ComparePrintersActions from "./page_actions/15_comparePrinters/ComparePrintersActions";
+import SiteSelectorActions from "./page_actions/16_siteSelector/SiteSelectorActions";
 
 
 class Actions {
@@ -51,6 +52,7 @@ class Actions {
     updateDataActions = new UpdateDataActions();
     comparePrintersActions = new ComparePrintersActions();
     pdpActions = new PdpActions();
+    siteSelectorActions = new SiteSelectorActions();
 
 
 
