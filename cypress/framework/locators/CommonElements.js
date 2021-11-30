@@ -1,6 +1,4 @@
 class CommonElements {
-    static idModal_AcceptCookies = "#onetrust-button-group-parent #onetrust-accept-btn-handler";
-    static cssButton_CreateAccount = "ul.navigation-top__list.navigation-top__list--right > li:nth-child(2)";
     static cssStaticField_Country = "select[id='country']";
     static cssStatic_ThankYouPage = "span[class='order-confirmation__intro']";
     static cssBlock_OrderBlock = "div[class='order-overview__sections']";

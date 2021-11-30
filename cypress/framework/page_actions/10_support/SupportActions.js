@@ -2,11 +2,11 @@ import printersData from "../../../data/printers";
 import CommonElements from "../../locators/CommonElements";
 import SupportElements from "../../locators/10_support/SupportElements";
 import supportsData from "../../../data/supports";
-import MainHeaderElements from "../../locators/00_mainHeader/MainHeaderElements";
+import HeaderElements from "../../locators/00_header/HeaderElements";
 
 class SupportActions{
     openInkJetProphotoPrinters(){
-        cy.get(MainHeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.inkJet.prophoto).click({force:true});
     };
     clickBtnAndDownloadTheFile(){

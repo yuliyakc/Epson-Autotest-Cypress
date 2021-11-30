@@ -11,9 +11,11 @@ describe("Login and buy a printer", ()=> {
         perform.buyNowPLPActions.clickBuyNowBtnPLP();
         //assertions.checkConsumablePage();
         //commonActions.clickCheckoutBtnOnConsumablesPage();
-        perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
-        perform.cartActions.clickCheckoutBtnOnBasketPage();
+        // perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
 
+        perform.cartActions.clickOnCartMiniBtn();
+        perform.cartActions.clickCheckoutBtnOnPopup();
+        perform.cartActions.clickCheckoutBtnOnBasketPage();
         check.checkoutAsserts.checkSelectedCountry();
         perform.checkoutActions.fillRequiredInfo();
         perform.checkoutActions.searchAndSetAnAddress();

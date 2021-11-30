@@ -2,13 +2,12 @@ import FiltersElements from "../locators/04_productListingPage/FiltersElements";
 import MyAccountElements from "../locators/11_myAccount/MyAccountElements";
 import CommonElements from "../locators/CommonElements";
 import ComparePrintersElements from "../locators/15_comparePrinters/ComparePrintersElements";
+import HeaderElements from "../locators/00_header/HeaderElements";
+import CookiesDialogElements from "../locators/17_cookiesDialog/CookiesDialogElements";
 
 class CommonActions {
-    confirmAllCookies(){
-      cy.get(CommonElements.idModal_AcceptCookies).click();
-    };
     clickCreateNewAccountBtn(){
-      cy.get(CommonElements.cssButton_CreateAccount).click();
+      cy.get(HeaderElements.cssButton_CreateAccount).click();
     };
     openWebsite(){
         cy.visitWebsite("/");
@@ -25,7 +24,7 @@ class CommonActions {
         cy.wait(1000);
     };
     acceptWebsiteCookies(){
-        cy.get(CommonElements.idModal_AcceptCookies).click();
+        cy.get(CookiesDialogElements.idModal_AcceptCookies).click();
     };
 
 

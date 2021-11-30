@@ -1,4 +1,5 @@
 class MyAccountElements {
+    static cssDropdown_MyAccount = ".navigation-top__links-trigger--caret";
     static cssTab_MyAccount = "nav > li:nth-child(2) > a";
     static cssTab_UpdateDetails = "nav > li:nth-child(4) > a";
     static cssTab_UpdateEmail = "nav > li:nth-child(3) > a";
@@ -12,7 +13,6 @@ class MyAccountElements {
     static cssLink_UpdatePassword = ".myaccount__account-info > div:nth-child(5)";
     static cssLink_AddressBook = ".myaccount__account-info > div:nth-child(6)";
     static cssLink_Accessories = " .myaccount__myproduct-info > div a"
-
 
 }
 export default MyAccountElements

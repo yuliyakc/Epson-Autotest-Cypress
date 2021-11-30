@@ -55,7 +55,7 @@ class SignUpActions {
     };
     submitAndRegisterBtnClick(){
         cy.get(SignUpElements.cssButton_Submit).click();
-        //cy.get(CommonElements.idModal_AcceptCookies).click()
+        //cy.get(CookiesDialogElements.idModal_AcceptCookies).click()
     };
     enterExistedEmailFromData(){
         cy.get(SignUpElements.idInput_GuestEmail).click().type(usersData.register.email);

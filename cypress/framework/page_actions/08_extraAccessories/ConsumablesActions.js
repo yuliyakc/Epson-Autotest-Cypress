@@ -6,7 +6,7 @@ import PdpElements from "../../locators/05_productDisplayPage/pdpElements";
 class ConsumablesActions {
     clickCheckoutBtnOnConsumablesPage(){
         cy.get(CheckoutElements.cssButton_ConsumablesCheckout).click();
-        // cy.get(CommonElements.idModal_AcceptCookies).click();
+        // cy.get(CookiesDialogElements.idModal_AcceptCookies).click();
     };
 
     selectMediaBusinessPaper(){

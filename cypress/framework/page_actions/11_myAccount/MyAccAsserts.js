@@ -1,5 +1,5 @@
 import MyAccountElements from "../../locators/11_myAccount/MyAccountElements";
-import MainHeaderElements from "../../locators/00_mainHeader/MainHeaderElements";
+import HeaderElements from "../../locators/00_header/HeaderElements";
 
 class MyAccAsserts {
     checkAddressBookTabIsOpened(){
@@ -11,7 +11,7 @@ class MyAccAsserts {
         cy.get("div").should("have.class","manage-account");
     };
     checkMyAccountBtnIsVisible(){
-        cy.get(MainHeaderElements.cssDropdown_MyAccount).should("be.visible");
+        cy.get(MyAccountElements.cssDropdown_MyAccount).should("be.visible");
     };
     checkThatUserTransferToUpdateProfilePage(){
         cy.url().should("include", "my-account/update-profile");

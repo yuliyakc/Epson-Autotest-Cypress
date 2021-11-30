@@ -13,6 +13,7 @@ import UpdateDataAsserts from "./page_actions/14_updateData/UpdateDataAsserts";
 import ComparePrintersAsserts from "./page_actions/15_comparePrinters/ComparePrintersAsserts";
 import PdpAssertions from "./page_actions/05_productDisplayPage/pdpAssertions";
 import SiteSelectorAsserts from "./page_actions/16_siteSelector/SiteSelectorAsserts";
+import CookiesDialogAsserts from "./page_actions/17_cookiesDialog/CookiesDialogAsserts";
 
 
 class Asserts {
@@ -31,6 +32,7 @@ class Asserts {
     comparePrintersAsserts = new ComparePrintersAsserts();
     pdpAssertions = new PdpAssertions();
     siteSelectorAsserts = new SiteSelectorAsserts();
+    cookiesDialogAsserts = new CookiesDialogAsserts();
 
 
 }

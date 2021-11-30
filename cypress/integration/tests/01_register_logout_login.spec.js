@@ -1,5 +1,6 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
+import CookiesDialogActions from "../../framework/page_actions/17_cookiesDialog/CookiesDialogActions";
 
 describe ("Register, logout and relogin", ()=> {
     let perform = new Actions();
@@ -10,7 +11,7 @@ describe ("Register, logout and relogin", ()=> {
     });
     // it('should register new user, logout and relogin', function () {
     //     perform.commonActions.openWebsite();
-    //     perform.commonActions.confirmAllCookies();
+    //     perform.cookiesDialogActions.confirmAllCookies();
     //     perform.commonActions.clickCreateNewAccountBtn();
     //     perform.signUpActions.submitAndRegisterBtnClick();
     //     check.commonAsserts.checkGlobalAlertIsDisplayed();
@@ -36,7 +37,7 @@ describe ("Register, logout and relogin", ()=> {
     // });
     it('should check negative cases with emails when register', function () {
         perform.commonActions.openWebsite();
-        perform.commonActions.confirmAllCookies();
+        perform.cookiesDialogActions.confirmAllCookies();
         perform.commonActions.clickCreateNewAccountBtn();
         perform.signUpActions.EnterRequiredInfoButWithoutEmails()
         perform.signUpActions.enterEmailsWithMissingDot();

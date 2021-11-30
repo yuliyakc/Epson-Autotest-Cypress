@@ -10,19 +10,20 @@ import ConsumablesActions from "../framework/page_actions/08_extraAccessories/Co
 import BuyNowPLPActions from "../framework/page_actions/04_productListingPage/BuyNowPLPActions";
 import PdpActions from "./page_actions/05_productDisplayPage/pdpActions";
 import SupportActions from "./page_actions/10_support/SupportActions";
-import MainHeaderActions from "./page_actions/00_mainHeader/MainHeaderActions";
+import HeaderActions from "./page_actions/00_header/HeaderActions";
 import LearnMoreActions from "./page_actions/04_productListingPage/LearnMoreActions";
 import PageContentRelevanceActions from "./page_actions/04_productListingPage/PageContentRelevanceActions";
 import FiltersActions from "./page_actions/04_productListingPage/FiltersActions";
 import SortingActions from "./page_actions/04_productListingPage/SortingActions";
 import ForgotPassActions from "./page_actions/02_forgotPassword/ForgotPassActions";
 import SignUpActions from "./page_actions/01_userSign/SignUpActions";
-import SignOutActions from "./page_actions/03_signOut/SignOutActions";
+import SignOutActions from "./page_actions/01_userSign/SignOutActions";
 import AddressBookActions from "./page_actions/13_addressBook/AddressBookActions";
 import ProductLinksForPDP from "./page_actions/05_productDisplayPage/ProductLinksForPDP";
 import UpdateDataActions from "./page_actions/14_updateData/UpdateDataActions";
 import ComparePrintersActions from "./page_actions/15_comparePrinters/ComparePrintersActions";
 import SiteSelectorActions from "./page_actions/16_siteSelector/SiteSelectorActions";
+import CookiesDialogActions from "./page_actions/17_cookiesDialog/CookiesDialogActions";
 
 
 class Actions {
@@ -38,7 +39,7 @@ class Actions {
     buyNowPDPActions = new PdpActions();
     commonActions = new CommonActions();
     supportActions = new SupportActions();
-    mainHeaderActions = new MainHeaderActions();
+    mainHeaderActions = new HeaderActions();
     learnMoreActions = new LearnMoreActions();
     pageContentRelevanceActions = new PageContentRelevanceActions();
     filtersActions = new FiltersActions();
@@ -53,6 +54,7 @@ class Actions {
     comparePrintersActions = new ComparePrintersActions();
     pdpActions = new PdpActions();
     siteSelectorActions = new SiteSelectorActions();
+    cookiesDialogActions = new CookiesDialogActions();
 
 
 
