@@ -10,23 +10,23 @@ describe("Check Learn More page is opens correctly", ()=> {
         perform.signInActions.openWebsiteAndLogin();
     });
     it('should open Learn More page for InkJet printers', function () {
-        perform.mainHeaderActions.openInkJetBusinessPrinters();
+        perform.homePageMenuActions.openInkJetBusinessPrinters();
         perform.learnMoreActions.clickLearnMoreBtn();
         check.assertions.checkLearnMorePageIsOpened();
     });
     it('should open Learn More page for Laser Printers', function () {
-        perform.mainHeaderActions.openLaserColourPrinters();
+        perform.homePageMenuActions.openLaserColourPrinters();
         perform.learnMoreActions.clickLearnMoreBtn();
         check.assertions.checkLearnMorePageIsOpened();
     });
 //a[contains(text(),'Support')]
     it('should open Learn More page for Dot Matrix Printers', function () {
-        perform.mainHeaderActions.openDotMatrixPrintersPage();
+        perform.homePageMenuActions.openDotMatrixPrintersPage();
         perform.learnMoreActions.clickLearnMoreBtn();
         check.assertions.checkLearnMorePageIsOpened();
     });
     it('should open Learn More page for Label Maker Printers', function () {
-        perform.mainHeaderActions.openLabelMakerRemotePrinters();
+        perform.homePageMenuActions.openLabelMakerRemotePrinters();
         perform.learnMoreActions.clickLearnMoreBtn();
         check.assertions.checkLearnMorePageIsOpened();
     });

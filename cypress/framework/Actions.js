@@ -24,6 +24,7 @@ import UpdateDataActions from "./page_actions/14_updateData/UpdateDataActions";
 import ComparePrintersActions from "./page_actions/15_comparePrinters/ComparePrintersActions";
 import SiteSelectorActions from "./page_actions/16_siteSelector/SiteSelectorActions";
 import CookiesDialogActions from "./page_actions/17_cookiesDialog/CookiesDialogActions";
+import HomePageMenuActions from "./page_actions/03_homepageMenu/HomePageMenuActions";
 
 
 class Actions {
@@ -39,7 +40,7 @@ class Actions {
     buyNowPDPActions = new PdpActions();
     commonActions = new CommonActions();
     supportActions = new SupportActions();
-    mainHeaderActions = new HeaderActions();
+    headerActions = new HeaderActions();
     learnMoreActions = new LearnMoreActions();
     pageContentRelevanceActions = new PageContentRelevanceActions();
     filtersActions = new FiltersActions();
@@ -55,6 +56,7 @@ class Actions {
     pdpActions = new PdpActions();
     siteSelectorActions = new SiteSelectorActions();
     cookiesDialogActions = new CookiesDialogActions();
+    homePageMenuActions = new HomePageMenuActions();
 
 
 

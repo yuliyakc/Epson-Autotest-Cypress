@@ -34,6 +34,22 @@ class ComparePrintersActions {
     clickProductLinkToOpenProductInfoPage(){
         cy.get(ComparePrintersElements.cssLink_ProductLink).click();
     };
+    clickLearnMoreBtnToOpenCorrectPage(){
+      cy.get(ComparePrintersElements.cssLink_LearnMore).click();
+    };
+    clickFindADealerBtnToOpenModalWindow(){
+        cy.get(ComparePrintersElements.cssBtn_FindADealer).click();
+        cy.wait(1000);
+    };
+    clickRequestCallbackBtn(){
+      cy.get(ComparePrintersElements.cssBtn_RequestCallback).click();
+    };
+    clickSupportBtn(){
+      cy.get(ComparePrintersElements.cssBtn_Support).click();
+    };
+    clickPrintBtn(){
+      cy.get(ComparePrintersElements.cssBtn_Print).click();
+    };
 
 }
 export default ComparePrintersActions

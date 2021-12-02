@@ -76,5 +76,8 @@ class SupportAsserts {
     checkSupportDownloadsTabIsActive(){
         cy.get(SupportElements.cssTab_ActiveTab).should("contain", "Downloads");
     };
+    checkSupportPanelIsDisplayed(){
+      cy.get(SupportElements.cssBlock_SupportPanel).should("be.visible");
+    };
 }
 export default SupportAsserts

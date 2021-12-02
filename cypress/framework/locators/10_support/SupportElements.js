@@ -20,6 +20,7 @@ class SupportElements {
     static idModal_Chat = "#botonic-webchat";
     static cssBtn_FindRepairCenter = "div.tab-panel__section-content > div > div > div > button";
     static cssWidget_Main = "#widgetMain > div:nth-child(4) > div";
+    static cssWidget_CloseWindow = "#ccDialogCloseBtn > svg";
     static idSelect_OperatingSystems = "select[id='operating-system']";
     static cssBtn_Go = " div.support-product__operating-system > div > form > button";
     static cssBtn_PrintersHomePage = "div.support-product__headline-sidebar > div > a";
@@ -31,6 +32,7 @@ class SupportElements {
     static cssResult_SearchResult = " div.container-fluid > div > div.support-homepage__search > div > a:nth-child(1)";
     static cssBtn_SupportPLP = ".product-card .product-card__supportlink";
     static cssBtn_SearchResult = "div.support-homepage__search > div > a";
+    static cssBlock_SupportPanel = ".tab-panel__tab-container";
 
 
 

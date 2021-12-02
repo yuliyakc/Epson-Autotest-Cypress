@@ -28,5 +28,8 @@ describe("Find discount price and purchase", ()=> {
         perform.checkoutActions.agreeTermsAndPlaceAnOrder();
         check.checkoutAsserts.checkThankYouPageAfterPurchasing();
         check.checkoutAsserts.checkTotalOnThankYouPage();
+
+        perform.homePageMenuActions.clickEpsonLogoToOpenHomePage();
+        check.homePageMenuAsserts.checkHomePageServerResponseStatusIs200();
     });
 });

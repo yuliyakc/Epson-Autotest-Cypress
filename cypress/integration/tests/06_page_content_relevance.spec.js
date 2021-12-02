@@ -18,7 +18,7 @@ describe ("Testing of pages relevance by breadcrumbs", ()=> {
         check.assertions.checkMonochromePageIsOpened();
     });
     it('should hover over Dot Matrix Printers and open page', function () {
-        perform.mainHeaderActions.openDotMatrixPrintersPage();
+        perform.homePageMenuActions.openDotMatrixPrintersPage();
         check.assertions.checkDotMatrixPrintersPageIsOpened();
     });
     it('should hover over Label maker Printers and open random page', function () {

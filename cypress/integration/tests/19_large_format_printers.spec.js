@@ -10,7 +10,7 @@ describe("Checking Large format printer functionality", ()=> {
         perform.signInActions.openWebsiteAndLogin();
     });
     it('should hover Large Format Printers and check that correct page was opened', function () {
-        perform.mainHeaderActions.openLargeFormatPrintersPage();
+        perform.homePageMenuActions.openLargeFormatPrintersPage();
         check.assertions.checkLFPPageIsOpened();
     });
     it('should check that filter is working correct for Large format and clear filter', function () {
@@ -22,12 +22,12 @@ describe("Checking Large format printer functionality", ()=> {
         check.assertions.checkMainProductsQuantity();
     });
     it('should open Learn More page for Large Format Printers', function () {
-        perform.mainHeaderActions.openLargeFormatPrintersPage();
+        perform.homePageMenuActions.openLargeFormatPrintersPage();
         perform.learnMoreActions.clickLearnMoreBtn();
         check.assertions.checkLearnMorePageIsOpened();
     });
     it('should open LFP page and use pagination', function () {
-        perform.mainHeaderActions.openLargeFormatPrintersPage();
+        perform.homePageMenuActions.openLargeFormatPrintersPage();
         perform.paginationActions.clickTopPaginationButtonNext();
         check.assertions.checkSecondPageIsOpened();
         perform.paginationActions.clickTopPaginationButtonNext();
@@ -36,20 +36,20 @@ describe("Checking Large format printer functionality", ()=> {
         check.assertions.checkSecondPageIsOpened();
     });
     it('should open LFP page and use sorting by price and name', function () {
-        perform.mainHeaderActions.openLargeFormatPrintersPage();
+        perform.homePageMenuActions.openLargeFormatPrintersPage();
         perform.sortingActions.selectSortingNameAscending();
         check.assertions.checkSortingByNameApplyAscending();
         perform.sortingActions.selectSortingPriceDescending();
         check.assertions.checkSortingApplyDescending();
     });
     it('should open Support page from PLP', function () {
-        perform.mainHeaderActions.openLargeFormatPrintersPage();
+        perform.homePageMenuActions.openLargeFormatPrintersPage();
         perform.supportActions.clickSupportBtnFromPLP();
         check.supportAsserts.checkSupportPageIsOpened();
         check.supportAsserts.checkSupportSku();
     });
     // it('should purchase the printer, using Credit card', function () {
-    //     perform.mainHeaderActions.openLargeFormatPrintersPage();
+    //     perform.homePageMenuActions.openLargeFormatPrintersPage();
     //
     //
     // });

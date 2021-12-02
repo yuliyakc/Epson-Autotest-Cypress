@@ -64,7 +64,7 @@ class Assertions {
         cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.labelMaker.name2);
     };
     checkDotMatrixPrintersPageIsOpened(){
-        cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.dotMatrix.name2);
+        cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.dotMatrix.main);
     };
     checkLFPPageIsOpened(){
         cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.largeFormat.name2);

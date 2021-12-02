@@ -10,6 +10,10 @@ class PdpElements {
     static cssBtn_Support = ".support-panel__support-cta";
     static cssLink_CompatibilityPanel = ".compatibility-panel__list-item:nth-child(1) > .compatibility-panel__link";
     static xpathLink_SeriesModels = "//button[@data-tab='series-models']";
+    static cssText_Title = ".page-title";
+    static cssBlock_ProductSummaryInfo = ".product-summary__information";
+    static cssText_Price = ".product-pricing--pdp .product-pricing__prices";
+    static cssText_StatusInStock = ".product-pricing--pdp .product-stock__status";
 
 }
 export default PdpElements

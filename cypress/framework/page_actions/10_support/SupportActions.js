@@ -61,6 +61,9 @@ class SupportActions{
         cy.wait(2000);
       cy.get(SupportElements.cssBtn_FindRepairCenter).click({force:true});
     };
+    clickCloseBtnToCloseWidget(){
+      cy.get(SupportElements.cssWidget_CloseWindow).click();
+    };
     selectOperatingSystem(){
       cy.get(SupportElements.idSelect_OperatingSystems).select("macOS 11 (Big Sur)", {force:true});
     };

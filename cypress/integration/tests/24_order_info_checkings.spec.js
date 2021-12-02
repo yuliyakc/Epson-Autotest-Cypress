@@ -1,5 +1,6 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
+import HomePageMenuActions from "../../framework/page_actions/03_homepageMenu/HomePageMenuActions";
 
 describe ("Checking information on Checkout pages", ()=> {
     let perform = new Actions();
@@ -10,7 +11,7 @@ describe ("Checking information on Checkout pages", ()=> {
         perform.signInActions.openWebsiteAndLogin();
     });
     it('should check main info about the order and a buyer', function () {
-        perform.mainHeaderActions.openDotMatrixPrintersPage();
+        perform.homePageMenuActions.openDotMatrixPrintersPage();
         check.assertions.checkDotMatrixPrintersPageIsOpened();
         perform.buyNowPLPActions.clickBuyNowBtnPLP();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();

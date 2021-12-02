@@ -1,6 +1,7 @@
 import CheckoutElements from "../locators/06_checkout/CheckoutElements";
 import checkoutsData from "../../data/checkouts";
 import CommonElements from "../locators/CommonElements";
+import productsData from "../../data/products";
 
 class CommonAsserts {
     checkPrinterHasDiscountPrice(){
@@ -16,6 +17,7 @@ class CommonAsserts {
       cy.get(CommonElements.cssGlobal_Message).should("be.visible");
 
     };
+
 
 
 

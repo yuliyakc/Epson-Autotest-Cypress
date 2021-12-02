@@ -19,6 +19,9 @@ class ComparePrintersAsserts {
     checkCorrectPageWasRedirected(){
         cy.url() .should("include", "printers");
     };
+    checkRequestCallbackUrlIsOpenedCorrect(){
+      cy.url().should("include", "request-callback");
+    };
 
 }
 export default ComparePrintersAsserts

@@ -1,14 +1,12 @@
 import ConsumablesElements from "../../locators/08_extraAccessories/ConsumablesElements";
 import CommonElements from "../../locators/CommonElements";
 import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
-import PdpElements from "../../locators/05_productDisplayPage/pdpElements";
 
 class ConsumablesActions {
     clickCheckoutBtnOnConsumablesPage(){
         cy.get(CheckoutElements.cssButton_ConsumablesCheckout).click();
         // cy.get(CookiesDialogElements.idModal_AcceptCookies).click();
     };
-
     selectMediaBusinessPaper(){
         cy.wait(3000)
         cy.scrollTo(0, 500)
@@ -56,6 +54,19 @@ class ConsumablesActions {
     minimizeConsumablesAccordion(){
       cy.get(ConsumablesElements.cssToggle_Consumables).click();
     };
+    clickSecondMediaToggleToExpand(){
+      cy.get(ConsumablesElements.cssToggle_MediaSecond).click();
+    };
+    clickSecondMediaToggleToCollapse(){
+        cy.get(ConsumablesElements.cssToggle_MediaSecond).click();
+    };
+    clickSecondConsumableToggleToExpand(){
+        cy.get(ConsumablesElements.cssToggle_ConsumablesSecond).click();
+    };
+    clickSecondConsumableToggleToCollapse(){
+        cy.get(ConsumablesElements.cssToggle_ConsumablesSecond).click();
+    };
+
 
 
 

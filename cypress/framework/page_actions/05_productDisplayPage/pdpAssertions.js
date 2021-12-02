@@ -1,4 +1,3 @@
-import PdpActions from "./pdpActions";
 import PdpElements from "../../locators/05_productDisplayPage/pdpElements";
 
 class PdpAssertions {
@@ -25,6 +24,20 @@ class PdpAssertions {
     };
     checkSeriesModelsBlock(){
         cy.get("div").should("have.class", "cross-sell-list--series-products");
+    };
+    checkTitleIsDisplayed(){
+      cy.get(PdpElements.cssText_Title).should("be.visible");
+    };
+    checkMainBlockWithInformationIsDisplayed(){
+      cy.get("div").should("have.class", "product-summary__headline")
+          .and("have.class", "product-summary__secondary-information")
+          .and("have.class", "product-summary__sku");
+    };
+    checkThatPriceIsVisible(){
+      cy.get(PdpElements.cssText_Price).should("be.visible")
+    };
+    checkThatInStockStatusIsVisible(){
+      cy.get(PdpElements.cssText_StatusInStock).should("be.visible");
     };
 }
 export default PdpAssertions

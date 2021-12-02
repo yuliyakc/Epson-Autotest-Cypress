@@ -28,7 +28,7 @@ module.exports = {
         "town": "Bradford",
         "postcode" : "BD9 4NP",
         "fullAddress": "Bradford, BD9 4NP, United Kingdom",
-        "fullPhone" : "Telephone: +442079460001"
+        "fullPhone" : "Telephone: +442079460000"
     },
     "address":{
         "nickname": "Title",
@@ -36,7 +36,7 @@ module.exports = {
         "lastName": "Doe",
         "companyName": "Autotest",
         "default": "Default Address",
-        "telephone": "+442079460001",
+        "telephone": "+442079460000",
     },
     "address2":{
         "nick": "Nick",
