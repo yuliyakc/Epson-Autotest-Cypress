@@ -25,6 +25,7 @@ import ComparePrintersActions from "./page_actions/15_comparePrinters/ComparePri
 import SiteSelectorActions from "./page_actions/16_siteSelector/SiteSelectorActions";
 import CookiesDialogActions from "./page_actions/17_cookiesDialog/CookiesDialogActions";
 import HomePageMenuActions from "./page_actions/03_homepageMenu/HomePageMenuActions";
+import BuyAccessoriesActions from "./page_actions/18_buy_accesories_page/BuyAccessoriesActions";
 
 
 class Actions {
@@ -57,6 +58,7 @@ class Actions {
     siteSelectorActions = new SiteSelectorActions();
     cookiesDialogActions = new CookiesDialogActions();
     homePageMenuActions = new HomePageMenuActions();
+    buyAccessoriesActions = new BuyAccessoriesActions();
 
 
 
