@@ -2,6 +2,7 @@ import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
 import usersData from "../../../data/users";
 import checkoutsData from "../../../data/checkouts";
 import SignUpElements from "../../locators/01_userSign/SignUpElements";
+import CommonElements from "../../locators/CommonElements";
 
 class CheckoutActions {
     openPaymentPage(){
@@ -18,9 +19,9 @@ class CheckoutActions {
         cy.get(SignUpElements.cssBoolean_BusinessCustomerOff).click();
     };
     searchAndSetAnAddress(){
-        let addressBox = cy.get(CheckoutElements.idInput_AddressFinder);
+        let addressBox = cy.get(CommonElements.idInput_AddressFinder);
 
-            cy.get(CheckoutElements.idInput_AddressFinder).then($header =>
+            cy.get(CommonElements.idInput_AddressFinder).then($header =>
             {
                 if ($header.is(':visible'))
                 {
@@ -152,6 +153,21 @@ class CheckoutActions {
     };
 
 /// Billing Page ___________________________________________________________________________________________
+    activateShippingAddressCheckbox(){
+      cy.get(CheckoutElements.cssCheckbox_UseShippingAddress).click();
+      cy.wait(2000);
+    };
+    deactivateShippingAddressCheckbox(){
+        cy.get(CheckoutElements.cssCheckbox_UseShippingAddress).click();
+        cy.wait(2000);
+    };
+    clickUseSavedAddressBtn(){
+      cy.get(CheckoutElements.cssBtn_UseSavedAddress).click();
+    };
+    clickToAddFirstAddressForBilling(){
+      cy.get(CheckoutElements.cssBtn_UseThisAddress).click();
+    };
+
 
     setBillingInfoEmpty(){
         cy.get('div').then(($div) =>
@@ -245,6 +261,9 @@ class CheckoutActions {
     };
     agreeWithTermsOfUse(){
         cy.get(CheckoutElements.cssCheckbox_AgreeTerms).click();
+    };
+    clickProductNameToCheckRedirectOnPdpPage(){
+      cy.get(CheckoutElements.cssLink_ProductName).click();
     };
 
 

@@ -12,11 +12,7 @@ describe("Add several consumables and  Accessories to cart ", ()=> {
         check.consumablesAsserts.checkUserIsOnConsumablesPage();
         perform.consumablesActions.selectMediaBusinessPaper();
         perform.consumablesActions.clickBuyNowForMediaAndContinueShopping();
-        perform.consumablesActions.clickSecondMediaToggleToExpand();
-        perform.consumablesActions.clickSecondMediaToggleToCollapse();
         perform.consumablesActions.selectConsumablesColourMultiPac();
-        perform.consumablesActions.clickSecondConsumableToggleToExpand();
-        perform.consumablesActions.clickSecondConsumableToggleToCollapse();
         perform.consumablesActions.clickBuyNowForConsumablesAndContinueShopping();
         perform.consumablesActions.selectCoverPlusZeroFiveYears();
         perform.consumablesActions.clickBuyNowForCoverPlusAndGoToCart();

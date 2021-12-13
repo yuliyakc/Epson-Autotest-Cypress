@@ -8,6 +8,12 @@ describe("Checking Update Details Tab", ()=> {
         perform.signInActions.openWebsiteAndLogin();
         perform.myAccountActions.openMyAccountMenu();
         perform.updateDetailsActions.openUpdateDetailsTab();
+        perform.updateDetailsActions.saveChangesWithoutAName();
+        perform.updateDetailsActions.clickUpdateInfoBtn();
+        check.commonAsserts.checkGlobalAlertIsDisplayed();
+        check.checkoutAsserts.checkErrorIfFirstNameIsEmpty();
+        check.checkoutAsserts.checkErrorIfLastNameIsEmpty();
+
         perform.updateDetailsActions.enterFirstAndLastNames();
         perform.updateDetailsActions.selectAndAddDateOfBirth();
         perform.updateDetailsActions.changeTelephoneNumber();

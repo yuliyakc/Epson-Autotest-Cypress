@@ -7,6 +7,7 @@ import supportsData from "../../../data/supports";
 import SupportElements from "../../locators/10_support/SupportElements";
 import ConsumablesElements from "../../locators/08_extraAccessories/ConsumablesElements";
 import CartElements from "../../locators/07_basket/CartElements";
+import SearchElements from "../../locators/09_search/SearchElements";
 
 class Assertions {
     checkConsumablePage(){
@@ -82,6 +83,9 @@ class Assertions {
     };
     checkActiveFilterIsAbsent(){
         cy.get(CommonElements.cssBlock_ActiveFilter).should('not.exist')
+    };
+    checkPlpPageForSearch(){
+        cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.dotMatrix.searchResult);
     };
 
 

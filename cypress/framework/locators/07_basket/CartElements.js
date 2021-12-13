@@ -12,5 +12,6 @@ class CartElements {
     static cssButton_BasketCheckout = ".btn-primary:nth-child(2)";
     static xpathInput_ItemsQuantity = "//input[@id='quantity_0']";
     static cssBtn_Checkout = ".mini-cart__row .mini-cart-checkout-button";
+    static cssLink_CardTitle = ".product-card__title";
 }
 export default CartElements

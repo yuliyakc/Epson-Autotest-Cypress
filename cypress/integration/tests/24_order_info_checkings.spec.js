@@ -11,10 +11,13 @@ describe ("Checking information on Checkout pages", ()=> {
         perform.signInActions.openWebsiteAndLogin();
     });
     it('should check main info about the order and a buyer', function () {
-        perform.homePageMenuActions.openDotMatrixPrintersPage();
-        check.assertions.checkDotMatrixPrintersPageIsOpened();
+        perform.homePageMenuActions.openLabelMakerPrintersPage();
         perform.buyNowPLPActions.clickBuyNowBtnPLP();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
+        perform.cartActions.clickCheckoutBtnOnBasketPage();
+        perform.checkoutActions.clickProductNameToCheckRedirectOnPdpPage();
+        check.pdpAssertions.checkThatSKUIsDisplayed();
+        perform.checkoutActions.goBackToCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
         check.checkoutAsserts.checkSelectedCountry();
         check.signAsserts.checkOldEmailOnCheckoutPage();

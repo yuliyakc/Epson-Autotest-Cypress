@@ -12,26 +12,47 @@ describe("Checking Address Book Tab", ()=> {
         perform.addressBookActions.openAddressBookTab();
         check.myAccAsserts.checkThatUserTransferToAddressBookPage();
     });
-    it('should check negative testcases while creating new Address', function () {
+   it('should check negative testcases while creating new Address', function () {
         perform.addressBookActions.scrollDownAndClickAddNewAddressBtn();
         check.addressBookAsserts.checkAddressCreationPageIsOpened();
 
         perform.addressBookActions.clickSubmitChanges();
         check.commonAsserts.checkGlobalAlertIsDisplayed();
 
-        perform.addressBookActions.enterCorrectDataForNewAddress();
+        perform.addressBookActions.fillAllInfoExceptFirstName();
+        perform.checkoutActions.saveAndGoToNextStep();
+        check.checkoutAsserts.checkErrorIfFirstNameIsEmpty();
+
+        perform.addressBookActions.fillAllInfoExceptLastName();
+        perform.checkoutActions.saveAndGoToNextStep();
+        check.checkoutAsserts.checkErrorIfLastNameIsEmpty();
+
+        perform.addressBookActions.fillAllInfoExceptAddress();
+        perform.checkoutActions.saveAndGoToNextStep();
+        check.checkoutAsserts.checkErrorIfAddressIsEmpty();
+
+        perform.addressBookActions.fillAllInfoExceptTown();
+        perform.checkoutActions.saveAndGoToNextStep();
+        check.checkoutAsserts.checkErrorIfTownIsEmpty();
+
+        perform.addressBookActions.fillAllInfoExceptPostcode();
+        perform.checkoutActions.saveAndGoToNextStep();
+        check.checkoutAsserts.checkErrorIfPostcodeIsEmpty();
+        perform.addressBookActions.enterPostCode();
+
+        perform.checkoutActions.setDefaultCheckboxes();
+
         perform.addressBookActions.clickSubmitChanges();
         check.commonAsserts.checkGlobalAlertIsDisplayed();
 
-        perform.checkoutActions.searchAndSetAnAddress();
-        perform.checkoutActions.setDefaultCheckboxes();
-        perform.addressBookActions.clickSubmitChanges();
-
         check.addressBookAsserts.checkCreatedByDefaultAddress();
     });
-    it('should edit created before Address and check for changes', function () {
+    it('should edit created before Address by search with Postcode and check for changes', function () {
         perform.addressBookActions.clickEditAddressBtn();
-        perform.addressBookActions.editDataForOldAddress();
+        perform.addressBookActions.editDataForOldInfo();
+        perform.addressBookActions.clickSearchAgainBtn();
+        perform.addressBookActions.enterPostcodeToAddressAndSelect();
+
         perform.addressBookActions.clickSubmitChanges();
         check.addressBookAsserts.checkNewDataWasSaved();
     });

@@ -5,11 +5,11 @@ module.exports = {
         "forOne": "349.99",
         "forTwo": "699.98",
         "withDiscount": "49.99",
-        "withVoucher": "262.49"
+        "withVoucher": "319.99"
 
     },
     "discount": {
-        "name": "Automation",
+        "name": "Automation_Fixed_Code",
         "price": "30.00"
     },
     "shippingMethods": {

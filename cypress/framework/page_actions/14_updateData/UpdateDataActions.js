@@ -43,7 +43,50 @@ class UpdateDataActions {
     confirmNewPassword(){
         cy.get(UpdateDataElements.idInput_CheckNewPassword).click().clear().type(usersData.register.newPassword);
     };
-
+    saveChangesWithoutAName(){
+        cy.get(UpdateDataElements.idInput_ProfileFirstName).click().clear();
+        cy.get(UpdateDataElements.idInput_ProfileLastName).click().clear();
+    };
+    eraseAllFields(){
+        cy.get(UpdateDataElements.idInput_NewEmail).click().clear();
+        cy.get(UpdateDataElements.idInput_CheckEmail).click().clear();
+        cy.get(UpdateDataElements.idInput_Password).click().clear();
+    };
+    fillAllFieldsExceptEmail(){
+        cy.get(UpdateDataElements.idInput_NewEmail).click().clear();
+        cy.get(UpdateDataElements.idInput_CheckEmail).click().clear();
+        cy.get(UpdateDataElements.idInput_Password).click().clear().type(usersData.register.password);
+    };
+    fillAllFieldsExceptCheckEmail(){
+        cy.get(UpdateDataElements.idInput_NewEmail).click().clear().type(usersData.register.email);
+        cy.get(UpdateDataElements.idInput_CheckEmail).click().clear();
+        cy.get(UpdateDataElements.idInput_Password).click().clear().type(usersData.register.password);
+    };
+    fillAllFieldsExceptPassword(){
+        cy.get(UpdateDataElements.idInput_NewEmail).click().clear().type(usersData.register.email);
+        cy.get(UpdateDataElements.idInput_CheckEmail).click().clear().type(usersData.register.email);
+        cy.get(UpdateDataElements.idInput_Password).click().clear();
+    };
+    fillAllFieldsExceptOldPassword(){
+        cy.get(UpdateDataElements.idInput_CurrentPassword).click().clear();
+        cy.get(UpdateDataElements.idInput_NewPassword).click().clear().type(usersData.register.newPassword);
+        cy.get(UpdateDataElements.idInput_CheckNewPassword).click().clear().type(usersData.register.newPassword);
+    };
+    fillAllFieldsExceptNewPassword(){
+        cy.get(UpdateDataElements.idInput_CurrentPassword).click().clear().type(usersData.register.password);
+        cy.get(UpdateDataElements.idInput_NewPassword).click().clear();
+        cy.get(UpdateDataElements.idInput_CheckNewPassword).click().clear().type(usersData.register.newPassword);
+    };
+    fillAllFieldsExceptConfirmNewPass(){
+        cy.get(UpdateDataElements.idInput_CurrentPassword).click().clear().type(usersData.register.password);
+        cy.get(UpdateDataElements.idInput_NewPassword).click().clear().type(usersData.register.newPassword);
+        cy.get(UpdateDataElements.idInput_CheckNewPassword).click().clear();
+    };
+    addShortPasswordForValidationChecking(){
+        cy.get(UpdateDataElements.idInput_CurrentPassword).click().clear().type(usersData.register.password);
+        cy.get(UpdateDataElements.idInput_NewPassword).click().clear().type(usersData.register.short);
+        cy.get(UpdateDataElements.idInput_CheckNewPassword).click().clear().type(usersData.register.short);
+    };
 
 }
 export default UpdateDataActions

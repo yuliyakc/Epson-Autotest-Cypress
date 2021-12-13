@@ -1,12 +1,6 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
 
-// Have added checking of redirect to HomePage when click Epson logo in
-// 10_cart_buy_with_stock_price.spec test. Also, have added new test
-// 29_menu_links_checking.spec with checking 200 status code for each
-// link at Printers main menu(for Parent, Child and Subchild level). Continue with other links
-
-
 describe ("Checking of all the links on main menu to have status 200", ()=> {
     let perform = new Actions();
     let check = new Asserts();

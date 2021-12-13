@@ -99,6 +99,19 @@ class CheckoutAsserts {
     checkOneAlertForEmptyCreditCard(){
         cy.get(CheckoutElements.cssError_CreditCardErrors).should("be.visible").and("have.length", 1)
     };
+    checkThatShippingDataIsAbsent(){
+      cy.get(CheckoutElements.idInput_Nickname).should("be.empty");
+      cy.get(CheckoutElements.idInput_FirstName).should("be.empty");
+      cy.get(CheckoutElements.idInput_LastName).should("be.empty");
+    };
+    checkSavedAddressesListModalIsDisplayed(){
+      cy.get(CheckoutElements.idModal_SavedAddressesList).should("be.visible");
+    };
+    checkThatShippingDataIsPresent(){
+        cy.get(CheckoutElements.idInput_Nickname).should("contain.value", usersData.purchase.addressNickname);
+        cy.get(CheckoutElements.idInput_FirstName).should("contain.value", usersData.register.firstName);
+        cy.get(CheckoutElements.idInput_LastName).should("contain.value", usersData.register.lastName);
+    };
 
 
 

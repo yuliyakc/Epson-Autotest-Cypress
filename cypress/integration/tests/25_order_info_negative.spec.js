@@ -49,6 +49,15 @@ describe("Open Cart and perform negative cases for Checkout", ()=> {
         perform.checkoutActions.goNextToBilling();
 
         // Billing details tests performing
+        perform.checkoutActions.activateShippingAddressCheckbox();
+        perform.checkoutActions.deactivateShippingAddressCheckbox();
+        check.checkoutAsserts.checkThatShippingDataIsAbsent();
+
+        perform.checkoutActions.clickUseSavedAddressBtn();
+        check.checkoutAsserts.checkSavedAddressesListModalIsDisplayed();
+        perform.checkoutActions.clickToAddFirstAddressForBilling();
+        check.checkoutAsserts.checkThatShippingDataIsPresent();
+
         perform.checkoutActions.setBillingInfoEmpty();
         check.commonAsserts.checkGlobalAlertIsDisplayed();
 

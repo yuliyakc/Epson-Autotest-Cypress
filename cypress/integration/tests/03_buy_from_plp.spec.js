@@ -9,9 +9,6 @@ describe("Login and buy a printer", ()=> {
 
         perform.searchActions.searchInkPrinterPLP();
         perform.buyNowPLPActions.clickBuyNowBtnPLP();
-        //assertions.checkConsumablePage();
-        //commonActions.clickCheckoutBtnOnConsumablesPage();
-        // perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
 
         perform.cartActions.clickOnCartMiniBtn();
         perform.cartActions.clickCheckoutBtnOnPopup();

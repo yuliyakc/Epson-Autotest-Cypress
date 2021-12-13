@@ -12,5 +12,13 @@ class UpdateDataElements {
     static idInput_CurrentPassword = "input[id='currentPassword']";
     static idInput_NewPassword = "input[id='newPassword']";
     static idInput_CheckNewPassword = "input[id='checkNewPassword']";
+    static idError_Email = "span[id='email.errors']";
+    static idError_ConfirmEmail = "span[id='chkEmail.errors']";
+    static idError_Password = "span[id='password.errors']";
+    static idErrors_OldPassword = "span[id='currentPassword.errors']";
+    static idErrors_NewPassword = "span[id='newPassword.errors']";
+    static idError_ConfirmNewPass = "span[id='checkNewPassword.errors']";
+    static idError_MinCharacter = "div[id='newPassword_minchar']";
+
 }
 export default UpdateDataElements

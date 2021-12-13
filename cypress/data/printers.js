@@ -15,12 +15,15 @@ module.exports = {
     },
     "consumer":{
       "name" : "Consumer Printers",
-        "name2": "Consumer"
+        "name2": "Consumer",
+        "search": "C11CH02401"
     },
     "dotMatrix": {
         "name" : "LX-350{enter}",
         "main" : "Dot Matrix Printers",
-        "name3":"LQ-350"
+        "name3":"LQ-350",
+        "search": "Epson PLQ-50M",
+        "searchResult": "Epson 50mm"
     },
     "laserPrinters": {
         "name" : "WorkForce AL-C300N Series{enter}",
@@ -45,6 +48,23 @@ module.exports = {
       "main" : "Large Format Printers",
       "name2": "LFP"
     },
+    "projectors": {
+        "main" : "Projectors",
+        "ultraMobile": "Ultra Mobile",
+        "mobile" : "Mobile",
+        "short" : "Short",
+        "ultraShort" : "Ultra Short",
+        "installation" : "Installation",
+        "allInOne" : "All In One",
+        "homeCinema" : "Home Cinema"
+    },
+    "ink": {
+        "labelMakers" : "Label makers"
+    },
+    "shopOnline": {
+        "home" : "For Home",
+        "business" : "For Business"
+    }
 
 
 }

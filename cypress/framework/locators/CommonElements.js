@@ -16,6 +16,9 @@ class CommonElements {
     static cssBtn_BuyNowForConsumable = ".cross-sell-list:nth-child(1) > .cross-sell-list__footer > .btn";
     static cssDropdown_Sorting = "select[id='sortOptions1']";
     static cssGlobal_Message = ".global-alerts > .alert-dismissable";
+    static cssBtn_SearchAgain = ".js-address-finder-fields-container > a";
+    static idInput_AddressFinder = "input[id='address-finder']";
+    static
 
 }
 export default CommonElements

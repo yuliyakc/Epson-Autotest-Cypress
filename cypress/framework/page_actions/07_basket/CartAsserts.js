@@ -41,5 +41,8 @@ class CartAsserts {
     checkPrintersQuantityShouldBeOne(){
         cy.xpath(CartElements.xpathInput_ItemsQuantity).should("include.value", 1);
     };
+    checkPriceWithVoucherCode(){
+        cy.get(CheckoutElements.cssItem_TotalDiscount).should('contain', checkoutsData.price.withVoucher)
+    };
 }
 export default CartAsserts

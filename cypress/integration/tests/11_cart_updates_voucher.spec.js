@@ -26,6 +26,7 @@ describe("Open Cart and make some manipulations", ()=> {
     it('should login, add printer to Cart and use a voucher to change the price', function () {
         perform.cartActions.putVoucherCodeAndApply();
         check.cartAsserts.checkThatVoucherIsApplied();
+        check.cartAsserts.checkPriceWithVoucherCode();
         perform.cartActions.removeDiscountFromPrinter();
         check.cartAsserts.checkPrintersPriceForOneItem();
 

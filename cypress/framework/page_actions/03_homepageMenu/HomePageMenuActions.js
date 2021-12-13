@@ -73,6 +73,51 @@ class HomePageMenuActions{
         cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.labelMaker.pcRemote).click({force:true});
     };
+    openProjectorsMainPage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.projectors.main).click({force:true});
+    };
+    openProjectorsUltraMobilePage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.projectors.ultraMobile).click({force:true});
+    };
+    openProjectorsMobilePage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.projectors.mobile).click({force:true});
+    };
+    openProjectorsShortPage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.projectors.short).click({force:true});
+    };
+    openProjectorsUltraShortPage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.projectors.ultraShort).click({force:true});
+    };
+    openProjectorsInstallationPage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.projectors.installation).click({force:true});
+    };
+    openProjectorsAllInOnePage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.projectors.allInOne).click({force:true});
+    };
+    openProjectorsHomeCinemaPage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.projectors.homeCinema).click({force:true});
+    };
+    openInkLabelMakersPage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.ink.labelMakers).click({force:true});
+    };
+    openShopOnlineHomePage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.shopOnline.home).click({force:true});
+    };
+    openShopOnlineBusinessPage(){
+        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.shopOnline.business).click({force:true});
+    };
+
 
 
 

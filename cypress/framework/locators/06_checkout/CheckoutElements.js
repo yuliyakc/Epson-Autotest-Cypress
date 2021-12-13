@@ -7,7 +7,6 @@ class CheckoutElements {
     static idInput_LastName = "input[id='last-name']";
     static idInput_Telephone = "input[id='telephone']";
     static idInput_CompanyName = "input[id='company-name']";
-    static idInput_AddressFinder = "input[id='address-finder']";
     static cssButton_Submit = "div.address-form__footer > button[type='submit']";
     static cssButton_PlaceAnOrder = "div.place-order-form > button[type='submit']"
     static idButton_SubmitDeliveryMethod = "button[id='deliveryMethodSubmit']";
@@ -21,6 +20,7 @@ class CheckoutElements {
     static cssCheckbox_MarketingEmails = ".form-group:nth-child(2) .checkbox";
     static cssButton_AddAddressManually = "a[class='address-form__address-finder-toggler js-address-finder-toggler']";
     static cssItem_TotalCart = " div.js-cart-totals > div:nth-child(2) > div.col-xs-6.col-md-4.text-right";
+    static cssItem_TotalDiscount = "div.js-cart-totals > div:nth-child(3) > div.col-xs-6.col-md-4.text-right";
     static cssItem_TotalDiscountCart = " div.js-cart-totals > div:nth-child(3) > div.col-xs-6.col-md-4.text-right";
     static cssItem_VoucherMessage = ".basket-voucher__voucher-msg";
     static xpathDropdown_DeliveryMethod = "//select[@id='delivery_method']";
@@ -48,8 +48,11 @@ class CheckoutElements {
     static cssError_CompanyNameError = "span[id='companyName.errors']";
     static cssBtn_CreditCardMethod = "label[for='paymentMethod-adyen_cc']";
     static cssError_CreditCardErrors = "span[class='adyen-checkout__error-text']";
-
-
+    static cssCheckbox_UseShippingAddress = ".address-selector .address-selector__buttons .action-checkbox";
+    static cssBtn_UseSavedAddress = "div.address-selector__buttons > button";
+    static idModal_SavedAddressesList = "#simple-modal";
+    static cssBtn_UseThisAddress = "#simple-modal .address-list__address:nth-child(1) button";
+    static cssLink_ProductName = ".checkout-summary__product-details a";
 
 
 }

@@ -14,13 +14,37 @@
 //         perform.updateDataActions.openChangePasswordTab();
 //         check.updateDataAsserts.checkChangePassTabIsOpened();
 //
+//         perform.updateDataActions.clickUpdateInfoBtn();
+//         check.updateDataAsserts.checkErrorsForOldPasswordIsDisplayed();
+//         check.updateDataAsserts.checkErrorsForNewPasswordIsDisplayed();
+//         check.updateDataAsserts.checkErrorForPasswordConfirmIsDisplayed();
+//
+//         perform.updateDataActions.fillAllFieldsExceptOldPassword();
+//         perform.updateDataActions.clickUpdateInfoBtn();
+//         check.updateDataAsserts.checkErrorsForOldPasswordIsDisplayed();
+//         check.commonAsserts.checkGlobalAlertIsDisplayed();
+//
+//         perform.updateDataActions.fillAllFieldsExceptNewPassword();
+//         perform.updateDataActions.clickUpdateInfoBtn();
+//         check.updateDataAsserts.checkErrorsForNewPasswordIsDisplayed();
+//         check.commonAsserts.checkGlobalAlertIsDisplayed();
+//
+//         perform.updateDataActions.addShortPasswordForValidationChecking();
+//         perform.updateDataActions.clickUpdateInfoBtn();
+//         check.updateDataAsserts.checkUserGetMinCharacterError();
+//
+//         perform.updateDataActions.fillAllFieldsExceptConfirmNewPass();
+//         perform.updateDataActions.clickUpdateInfoBtn();
+//         check.updateDataAsserts.checkErrorForPasswordConfirmIsDisplayed();
+//         check.commonAsserts.checkGlobalAlertIsDisplayed();
+//
 //         perform.updateDataActions.enterCurrentPassword();
 //         perform.updateDataActions.enterNewPassword();
 //         perform.updateDataActions.confirmNewPassword();
 //         perform.updateDataActions.clickUpdateInfoBtn();
 //         check.commonAsserts.checkGlobalAlertIsDisplayed();
 //     });
-//     it('should check that user can re-login with new password', function () {
+//     it('should check that user re-login with new password', function () {
 //         perform.commonActions.openWebsite();
 //         perform.commonActions.acceptWebsiteCookies();
 //         perform.commonActions.clickCreateNewAccountBtn();
@@ -29,5 +53,4 @@
 //         perform.signInActions.clickLogInBtn();
 //         check.myAccAsserts.checkMyAccountBtnIsVisible();
 //     });
-//
 // });

@@ -7,6 +7,7 @@ module.exports = {
         "email": `maria.bobrova+${UNIQID}@keenethics.com`,
         "password": "Qwe123456!",
         "newPassword": "Qwe13579!",
+        "short": "Qwe",
         "fullName":"J.Smith",
         "email2": "maria.bobrova@emailua",
         "email3": "maria.bobrovaemail.ua",
@@ -37,6 +38,7 @@ module.exports = {
         "companyName": "Autotest",
         "default": "Default Address",
         "telephone": "+442079460000",
+        "postcode" : "SN14 6RZ"
     },
     "address2":{
         "nick": "Nick",
@@ -46,7 +48,7 @@ module.exports = {
         "default": "Baker str 221bB"
     },
     "passChange":{
-        "email": "maria.bobrova+1@keenethics.com",
+        "email": `maria.bobrova+${UNIQID}@keenethics.com`,
         "newPassword": "Qwe13579!",
         "oldPassword": "Qwe123456!"
     }

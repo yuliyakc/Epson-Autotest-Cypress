@@ -43,6 +43,9 @@ class CartActions {
     clickCheckoutBtnOnPopup(){
         cy.get(CartElements.cssBtn_Checkout).click();
     };
+    clickProductTitleToOpenPdpPage(){
+      cy.get(CartElements.cssLink_CardTitle).click();
+    };
 
 
 }
