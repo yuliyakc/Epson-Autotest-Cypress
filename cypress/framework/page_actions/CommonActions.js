@@ -4,6 +4,8 @@ import CommonElements from "../locators/CommonElements";
 import ComparePrintersElements from "../locators/15_comparePrinters/ComparePrintersElements";
 import HeaderElements from "../locators/00_header/HeaderElements";
 import CookiesDialogElements from "../locators/17_cookiesDialog/CookiesDialogElements";
+import PLPInfoElements from "../locators/04_productListingPage/PLPInfoElements";
+import BuyNowPLPElements from "../locators/04_productListingPage/BuyNowPLPElements";
 
 class CommonActions {
     clickCreateNewAccountBtn(){
@@ -26,6 +28,7 @@ class CommonActions {
     acceptWebsiteCookies(){
         cy.get(CookiesDialogElements.idModal_AcceptCookies).click();
     };
+
 
 
 

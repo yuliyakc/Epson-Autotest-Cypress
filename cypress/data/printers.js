@@ -10,8 +10,9 @@ module.exports = {
         "name" : "Eco tank ET-2715{enter}",
         "name2": "ET-2715{enter}",
         "consumer": "EcoTank ET-2750{enter}",
-        "ink": "LabelWorks LW-Z5000BE{enter}",
-        "individual": "LW-Z5000BE{enter}"
+        "ink": "WorkForce WF-7310DTW{enter}",
+        "individual": "WorkForce WF-7310DTW{enter}",
+        "microBusinessSku": "C11CH70401{enter}"
     },
     "consumer":{
       "name" : "Consumer Printers",
@@ -23,7 +24,7 @@ module.exports = {
         "main" : "Dot Matrix Printers",
         "name3":"LQ-350",
         "search": "Epson PLQ-50M",
-        "searchResult": "Epson 50mm"
+        "searchResult": "Epson 50ml"
     },
     "laserPrinters": {
         "name" : "WorkForce AL-C300N Series{enter}",
@@ -64,6 +65,12 @@ module.exports = {
     "shopOnline": {
         "home" : "For Home",
         "business" : "For Business"
+    },
+    "printer" :{
+        "main": "Printers",
+    },
+    "product" : {
+        "main": "Products",
     }
 
 

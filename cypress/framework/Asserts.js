@@ -17,6 +17,7 @@ import CookiesDialogAsserts from "./page_actions/17_cookiesDialog/CookiesDialogA
 import HeaderAsserts from "./page_actions/00_header/HeaderAsserts";
 import HomePageMenuAsserts from "./page_actions/03_homepageMenu/HomePageMenuAsserts";
 import BuyAccessoriesAsserts from "./page_actions/18_buy_accesories_page/BuyAccessoriesAsserts";
+import FooterAsserts from "./page_actions/19_footer/FooterAsserts";
 
 
 class Asserts {
@@ -39,6 +40,7 @@ class Asserts {
     headerAsserts = new HeaderAsserts();
     homePageMenuAsserts = new HomePageMenuAsserts();
     buyAccessoriesAsserts = new BuyAccessoriesAsserts();
+    footerAsserts = new FooterAsserts();
 
 }
 export default Asserts

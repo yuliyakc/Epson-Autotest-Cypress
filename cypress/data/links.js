@@ -32,6 +32,35 @@ module.exports = {
     "shopOnline": {
         "home": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/products/projectors/home-cinema/c/homecinema",
         "business" : "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/products/printers/inkjet/business/c/businessinkjet"
-    }
+    },
+    "product": {
+        "printersAllInOne" : "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/products/printers/c/printers",
+        "scanners": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/products/scanners/c/scanner",
+        "projectorsDisplay": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/products/projectors/c/projector",
+        "profImaging" : "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/products/c/pro-imaging"
+    },
+    "support": {
+        "printers": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/products/printers/large-format/c/lfp",
+        "scanner": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/support/scanners",
+        "projector": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/support/projectors",
+        "wearables": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/support/wearales"
+    },
+    "industries": {
+        "k12Education": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/k12-education",
+        "higherEducation": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/higher-education",
+        "financial": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/financials",
+        "healthCare": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/health-care"
+    },
+    "technologies": {
+        "appleCompatibility": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/apple-compatibility",
+        "directPrinting": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/direct-cd-dvd-print",
+        "docCapturePro": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/document-capture-pro",
+        "printScanSolutions": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/print-scan-solutions"
+    },
+    "company" : {
+        "aboutUs": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/about-us",
+        "ourHistory": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/our-history",
+        "contactUs": "https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_GB/contact-us"
+    },
 
 }

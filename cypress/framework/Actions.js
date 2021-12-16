@@ -26,6 +26,8 @@ import SiteSelectorActions from "./page_actions/16_siteSelector/SiteSelectorActi
 import CookiesDialogActions from "./page_actions/17_cookiesDialog/CookiesDialogActions";
 import HomePageMenuActions from "./page_actions/03_homepageMenu/HomePageMenuActions";
 import BuyAccessoriesActions from "./page_actions/18_buy_accesories_page/BuyAccessoriesActions";
+import FooterActions from "./page_actions/19_footer/FooterActions";
+import PLPInfoActions from "./page_actions/04_productListingPage/PLPInfoActions";
 
 
 class Actions {
@@ -59,8 +61,8 @@ class Actions {
     cookiesDialogActions = new CookiesDialogActions();
     homePageMenuActions = new HomePageMenuActions();
     buyAccessoriesActions = new BuyAccessoriesActions();
-
-
+    footerActions = new FooterActions();
+    plpInfoActions = new PLPInfoActions();
 
 }
 

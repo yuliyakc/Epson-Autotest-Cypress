@@ -1,7 +1,7 @@
 import Actions from "../../framework/Actions.js"
 import Asserts from "../../framework/Asserts.js"
 
-describe("Checking Address Book Tab", ()=> {
+describe("Checking Search widget when perform search", ()=> {
     let perform = new Actions();
     let check = new Asserts();
     beforeEach(function () {

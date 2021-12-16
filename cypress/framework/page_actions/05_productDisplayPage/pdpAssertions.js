@@ -1,4 +1,5 @@
 import PdpElements from "../../locators/05_productDisplayPage/pdpElements";
+import CommonElements from "../../locators/CommonElements";
 
 class PdpAssertions {
     checkThatSKUIsDisplayed(){
@@ -29,7 +30,7 @@ class PdpAssertions {
       cy.get(PdpElements.cssText_Title).should("be.visible");
     };
     checkMainBlockWithInformationIsDisplayed(){
-      cy.get("div").should("have.class", "product-summary__headline")
+      cy.get("div").should("have.class", "product-summary")
           .and("have.class", "product-summary__secondary-information")
           .and("have.class", "product-summary__sku");
     };
@@ -37,7 +38,7 @@ class PdpAssertions {
       cy.get(PdpElements.cssText_Price).should("be.visible")
     };
     checkThatInStockStatusIsVisible(){
-      cy.get(PdpElements.cssText_StatusInStock).should("be.visible");
+      cy.get(CommonElements.cssBlock_InStock).should("be.visible");
     };
 }
 export default PdpAssertions

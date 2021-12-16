@@ -7,6 +7,7 @@ module.exports = {
         "name" : "support",
         "searchName" : "LQ-690",
         "searchSerial": "QJPY000768",
+        "partialName": "XP-9"
     }
 
 

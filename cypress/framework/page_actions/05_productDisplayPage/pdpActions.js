@@ -20,8 +20,8 @@ class PdpActions {
         cy.scrollTo(0,500);
         cy.wait(1000);
     };
-    clickSupportBtn(){
-      cy.get(PdpElements.cssBtn_Support).click();
+    clickSupportBtnAtSupportTab(){
+      cy.get(PdpElements.cssBtn_GoToSupport).click();
     };
     clickCompatibilityTab(){
       cy.xpath(PdpElements.xpathTab_Compatibility).click() ;
@@ -31,6 +31,9 @@ class PdpActions {
     };
     clickSeriesModelsTab(){
       cy.xpath(PdpElements.xpathLink_SeriesModels).click();
+    };
+    clickSupportButtonInProductSection(){
+      cy.get(PdpElements.cssBtn_Support).click();
     };
 
 

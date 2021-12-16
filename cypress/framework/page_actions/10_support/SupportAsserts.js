@@ -8,6 +8,7 @@ class SupportAsserts {
     };
     checkSupportPageIsOpened(){
         cy.get(CommonElements.cssBreadcrumbs_PageList).contains(supportsData.support.breadcrumbs);
+        cy.get(SupportElements.cssTab_Support).should("be.visible");
     };
     checkThatPrintersPageWasOpened(){
         cy.url().should("include", "support/sc/epson-workforce-wf-2520nf/s/s1117");
@@ -78,6 +79,9 @@ class SupportAsserts {
     };
     checkSupportPanelIsDisplayed(){
       cy.get(SupportElements.cssBlock_SupportPanel).should("be.visible");
+    };
+    checkOperatingSystemListIsVisible(){
+        cy.get(SupportElements.cssBLock_OperatingSystemList).should("be.visible");
     };
 }
 export default SupportAsserts

@@ -10,7 +10,6 @@ describe("Find discount price and purchase", ()=> {
         perform.productLinksForPDP.openWorkForcePrinterPDP();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
-
         check.cartAsserts.checkCartSection();
         check.commonAsserts.checkPriceWithDiscount();
         perform.cartActions.clickCheckoutBtnOnBasketPage();

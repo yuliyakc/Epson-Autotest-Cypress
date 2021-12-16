@@ -29,10 +29,12 @@ class SupportElements {
     static cssInput_SerialNumber = "input[name='serialNumber']";
     static cssBtn_Search = "#epsonSupportSearchForm > div.support-search__form-elements > button";
     static cssBtn_Check = "#warrantyCheckerForm > div.support-search__form-elements > button";
-    static cssResult_SearchResult = " div.container-fluid > div > div.support-homepage__search > div > a:nth-child(1)";
     static cssBtn_SupportPLP = ".product-card .product-card__supportlink";
     static cssBtn_SearchResult = "div.support-homepage__search > div > a";
     static cssBlock_SupportPanel = ".tab-panel__tab-container";
+    static cssTab_Support = "div.tab-panel__tab-container.tab-panel__container.js-tab-panel-tab-container";
+    static cssDropdown_SearchAuto = "ul[id='ui-id-2']";
+    static cssBLock_OperatingSystemList = ".form-group.support-filter__select";
 
 
 

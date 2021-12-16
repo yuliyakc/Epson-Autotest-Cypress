@@ -3,6 +3,8 @@ import CommonElements from "../../locators/CommonElements";
 import SupportElements from "../../locators/10_support/SupportElements";
 import supportsData from "../../../data/supports";
 import HeaderElements from "../../locators/00_header/HeaderElements";
+import SearchActions from "../09_search/SearchActions";
+import SearchElements from "../../locators/09_search/SearchElements";
 
 class SupportActions{
     openInkJetProphotoPrinters(){
@@ -80,9 +82,6 @@ class SupportActions{
       cy.get(SupportElements.cssInput_ProductName).click().type(supportsData.support.searchName);
       cy.get(SupportElements.cssBtn_Search).click();
     };
-    selectAndOpenFindPrinter(){
-        cy.get(SupportElements.cssResult_SearchResult).click();
-    };
     openFindPrinterFromSearchResults(){
         cy.get(SupportElements.cssBtn_SearchResult).click();
     }
@@ -95,6 +94,13 @@ class SupportActions{
         cy.get(SupportElements.cssBtn_SupportPLP).first().click()
         //cy.wait(2000);
     };
+    performSearchByPartialPrintersName(){
+        cy.get(SupportElements.cssInput_ProductName).click().type(supportsData.support.partialName, {delay:100});
+    };
+    selectSecondPrinterAndClick(){
+      cy.get(SupportElements.cssDropdown_SearchAuto).get("li").get(CommonElements.cssLink_SearchResult).eq(1).click();
+    };
+
 
 
 

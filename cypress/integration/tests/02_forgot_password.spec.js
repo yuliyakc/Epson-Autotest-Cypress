@@ -1,6 +1,5 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
-import CookiesDialogActions from "../../framework/page_actions/17_cookiesDialog/CookiesDialogActions";
 
 describe ("Send a message when forgot password", ()=> {
     let perform = new Actions();

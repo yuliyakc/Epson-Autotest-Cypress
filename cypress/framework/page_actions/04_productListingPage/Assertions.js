@@ -8,6 +8,9 @@ import SupportElements from "../../locators/10_support/SupportElements";
 import ConsumablesElements from "../../locators/08_extraAccessories/ConsumablesElements";
 import CartElements from "../../locators/07_basket/CartElements";
 import SearchElements from "../../locators/09_search/SearchElements";
+import PdpElements from "../../locators/05_productDisplayPage/pdpElements";
+import BuyNowPLPElements from "../../locators/04_productListingPage/BuyNowPLPElements";
+import PLPInfoElements from "../../locators/04_productListingPage/PLPInfoElements";
 
 class Assertions {
     checkConsumablePage(){
@@ -87,8 +90,29 @@ class Assertions {
     checkPlpPageForSearch(){
         cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.dotMatrix.searchResult);
     };
-
-
+    checkLinkAndBreadcrumbForFifthItem(){
+      cy.url().should("include", "products/printers/inkjet/consumer/c/consumer");
+        cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.consumer.name2);
+    };
+    checkLinkAndBreadcrumbForFourthItem(){
+        cy.url().should("include", "products/printers/inkjet/c/inkjet");
+        cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.inkJet.main);
+    };
+    checkLinkAndBreadcrumbForThirdItem(){
+        cy.url().should("include", "products/printers/c/printers");
+        cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.printer.main);
+    };
+    checkLinkAndBreadcrumbForSecondItem(){
+        cy.url().should("include", "products/c/categories");
+        cy.get(CommonElements.cssBreadcrumbs_PageList).contains(printersData.product.main);
+    };
+    checkLinkAndBreadcrumbForFirstItem(){
+        cy.url().should("include", "en_GB");
+        cy.get(CommonElements.cssBreadcrumbs_PageList).should("not.exist");
+    };
+    checkProductPricingDiscountIsVisible(){
+        cy.get(CommonElements.cssBlock_Price).find(CommonElements.cssBlock_DiscountPrice).should('be.visible');
+    };
 
 
 

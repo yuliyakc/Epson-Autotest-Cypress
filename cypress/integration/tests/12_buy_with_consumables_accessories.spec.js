@@ -10,12 +10,15 @@ describe("Add several consumables and  Accessories to cart ", ()=> {
         perform.productLinksForPDP.openEcoTankPrinter();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         check.consumablesAsserts.checkUserIsOnConsumablesPage();
+
+        perform.consumablesActions.selectCoverPlusZeroFiveYears();
+        perform.consumablesActions.clickBuyNowForConsumablesAndContinueShopping();
+
         perform.consumablesActions.selectMediaBusinessPaper();
         perform.consumablesActions.clickBuyNowForMediaAndContinueShopping();
+
         perform.consumablesActions.selectConsumablesColourMultiPac();
-        perform.consumablesActions.clickBuyNowForConsumablesAndContinueShopping();
-        perform.consumablesActions.selectCoverPlusZeroFiveYears();
-        perform.consumablesActions.clickBuyNowForCoverPlusAndGoToCart();
+        perform.consumablesActions.clickBuyNowForThirdBlockOfAccessoriesAndGoToCart();
         check.cartAsserts.checkCartPage();
 
         perform.consumablesActions.addAnotherConsumable();

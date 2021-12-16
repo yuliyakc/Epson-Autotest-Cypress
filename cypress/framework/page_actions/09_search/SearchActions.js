@@ -1,6 +1,7 @@
 import printersData from "../../../data/printers";
 import productsData from "../../../data/products";
 import SearchElements from "../../locators/09_search/SearchElements";
+import CommonElements from "../../locators/CommonElements";
 
 class SearchActions {
     searchInkPrinterPLPByFullName(){
@@ -33,20 +34,24 @@ class SearchActions {
         cy.get(SearchElements.cssBtn_SearchLabel).click();
         cy.get(SearchElements.cssInput_SearchForText).click().type(productsData.options.name);
     };
+    searchMicroBusinessPrinterBySku(){
+        cy.get(SearchElements.cssBtn_SearchLabel).click();
+        cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.inkJet.microBusinessSku);
+    };
     clickPrinterInSearchWidget(){
         cy.get(SearchElements.cssBtn_SearchLabel).click();
         cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.consumer.search, {delay:100});
-        cy.get(SearchElements.cssBlock_AutocompleteWidget).get("li").get(".ui-menu-item").eq(0).click();
+        cy.get(SearchElements.cssBlock_AutocompleteWidget).get("li").get(CommonElements.cssLink_SearchResult).eq(0).click();
     };
     clickLeanMoreButtonInSearchWidget(){
         cy.get(SearchElements.cssBtn_SearchLabel).click();
         cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.consumer.search, {delay:100});
-        cy.get(SearchElements.cssBlock_AutocompleteWidget).get("li").get(".autocomplete__sublink").eq(0).click();
+        cy.get(SearchElements.cssBlock_AutocompleteWidget).get("li").get(CommonElements.cssLink_SearchWidgetLearnMore).eq(0).click();
     };
     clickSuggestionInSearchWidget(){
         cy.get(SearchElements.cssBtn_SearchLabel).click();
         cy.get(SearchElements.cssInput_SearchForText).click().type(printersData.dotMatrix.search, {delay:100});
-        cy.get(SearchElements.cssBlock_AutocompleteWidget).get("li").get(".ui-menu-item").eq(0).click();
+        cy.get(SearchElements.cssBlock_AutocompleteWidget).get("li").get(CommonElements.cssLink_SearchResult).eq(0).click();
     };
     closeSearchFieldByClickOnXBt(){
       cy.get(SearchElements.cssBtn_CloseSearch).click();

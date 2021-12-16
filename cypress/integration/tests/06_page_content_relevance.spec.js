@@ -25,4 +25,24 @@ describe ("Testing of pages relevance by breadcrumbs", ()=> {
         perform.pageContentRelevanceActions.openLabelMakersPcRemoteAndConnectedPrintersPage();
         check.assertions.checkBothRemoteAndConnectedPageIsOpened();
     });
+    it('should search for a product and click each level of breadcrumbs', function () {
+        perform.searchActions.clickPrinterInSearchWidget();
+        check.assertions.checkConsumerPageIsOpened();
+        perform.pageContentRelevanceActions.clickFifthLinkInBreadcrumbs();
+        check.assertions.checkLinkAndBreadcrumbForFifthItem();
+
+        perform.pageContentRelevanceActions.clickFourthLinkInBreadcrumbs();
+        check.assertions.checkLinkAndBreadcrumbForFourthItem();
+
+        perform.pageContentRelevanceActions.clickThirdLinkInBreadcrumbs();
+        check.assertions.checkLinkAndBreadcrumbForThirdItem();
+
+
+        perform.pageContentRelevanceActions.clickSecondLinkInBreadcrumbs();
+        check.assertions.checkLinkAndBreadcrumbForSecondItem();
+
+        perform.pageContentRelevanceActions.clickFirstLinkInBreadcrumbs();
+        check.assertions.checkLinkAndBreadcrumbForFirstItem();
+
+    });
 });

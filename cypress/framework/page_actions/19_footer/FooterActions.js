@@ -1,0 +1,73 @@
+import FooterElements from "../../locators/19_footer/FooterElements";
+
+class FooterActions {
+    scrollDownToFooter(){
+      cy.scrollTo("bottom");
+    };
+    openPrintersAndAllInOnePage(){
+      cy.get(FooterElements.cssLink_PrintersAndAllInOne).click();
+    };
+    openScannersPage(){
+        cy.get(FooterElements.cssLink_Scanners).click();
+    };
+    openProjectorsDisplayPage(){
+        cy.get(FooterElements.cssLink_ProjectorsDisplay).click();
+    };
+    openProfImagingPage(){
+        cy.get(FooterElements.cssLink_ProfImaging).click();
+    };
+    openPrintersPage(){
+        cy.get(FooterElements.cssLink_Printers).click();
+    };
+    openScannerPage(){
+        cy.get(FooterElements.cssLink_Scanner).click();
+    };
+    openProjectorsPage(){
+        cy.get(FooterElements.cssLink_Scanner).click();
+    };
+    openProjectorPage(){
+        cy.get(FooterElements.cssLink_Projector).click();
+    };
+    openWearablesPage(){
+        cy.get(FooterElements.cssLink_Wearables).click();
+    };
+    openK12EducationPage(){
+        cy.get(FooterElements.cssLink_K12Education).click();
+    };
+    openHigherEducationPage(){
+        cy.get(FooterElements.cssLink_HigherEducation).click();
+    };
+    openFinancialPage(){
+        cy.get(FooterElements.cssLink_Financial).click();
+    };
+    openHealthCarePage(){
+        cy.get(FooterElements.cssLink_Healthcare).click();
+    };
+    openAppleCompatibilityPage(){
+        cy.get(FooterElements.cssLink_AppleCompatibility).click();
+    };
+    openDirectCdDvdPrintingPage(){
+        cy.get(FooterElements.cssLink_DirectCdDvdPrinting).click();
+    };
+    openDocumentCaptureProPage(){
+        cy.get(FooterElements.cssLink_DocumentCapturePro).click();
+    };
+    openPrintScanSolutionsPage(){
+        cy.get(FooterElements.cssLink_PrintScanSolutions).click();
+    };
+    openAboutUsPage(){
+        cy.get(FooterElements.cssLink_AboutUs).click();
+    };
+    openOurHistoryPage(){
+        cy.get(FooterElements.cssLink_OurHistory).click();
+    };
+    openContactUsPage(){
+        cy.get(FooterElements.cssLink_ContactUs).click();
+    };
+
+
+
+}
+
+
+export default FooterActions
