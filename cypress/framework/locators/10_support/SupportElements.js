@@ -35,9 +35,11 @@ class SupportElements {
     static cssTab_Support = "div.tab-panel__tab-container.tab-panel__container.js-tab-panel-tab-container";
     static cssDropdown_SearchAuto = "ul[id='ui-id-2']";
     static cssBLock_OperatingSystemList = ".form-group.support-filter__select";
-
-
-
+    static cssAtr_FileExtension = ".support-resource__attribute";
+    static cssBlock_ProductInfo = ".support-warranty__row:nth-child(1) .support-warranty__section:nth-child(1)";
+    static cssBlock_WarrantyStandard = ".support-warranty__row:nth-child(1) .support-warranty__section:nth-child(2)";
+    static cssBlock_WarrantyExtended = ".support-warranty__row:nth-child(2) .support-warranty__section:nth-child(1)";
+    static cssAtr_Subscription = "div.support-product__headline-content > div > div > div:nth-child(1) > div:nth-child(1) > div > div:nth-child(3)";
 
 }
 export default SupportElements

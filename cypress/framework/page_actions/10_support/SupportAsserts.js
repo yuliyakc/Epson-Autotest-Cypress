@@ -68,8 +68,11 @@ class SupportAsserts {
     checkWidgetIsOpened(){
         cy.get(SupportElements.cssWidget_Main).should("be.visible");
     };
-    checkNewOSInAddressLink(){
+    checkMacOSInAddressLink(){
         cy.url().should("include", "selected-os=macOS+11");
+    };
+    checkWindowsOSInAddressLink(){
+        cy.url().should("include", "selected-os=Windows+XP+64-bit");
     };
     checkPrintersHomePage(){
         cy.url().should("include", "/inkjet/prophoto-and-graphic-arts/expression-photo-hd-xp-15000/");
@@ -82,6 +85,51 @@ class SupportAsserts {
     };
     checkOperatingSystemListIsVisible(){
         cy.get(SupportElements.cssBLock_OperatingSystemList).should("be.visible");
+    };
+    checkDownloadTabHasCorrectFileExtensionForMac(){
+      cy.get(SupportElements.cssAtr_FileExtension).should("contain", ".dmg")
+    };
+    checkDownloadTabHasCorrectFileExtensionForWindows(){
+        cy.get(SupportElements.cssAtr_FileExtension).should("contain", ".exe")
+    };
+    productInfoBlockShouldContainData(){
+      cy.get(SupportElements.cssBlock_ProductInfo)
+          .find(".support-warranty__attributes")
+          .find(".support-warranty__attribute")
+          .should("have.length", 3)
+          .and("contain", supportsData.support.serial1);
+    };
+    standardWarrantyBlockShouldContainData(){
+        cy.get(SupportElements.cssBlock_WarrantyStandard)
+            .find(".support-warranty__attributes")
+            .find(".support-warranty__attribute")
+            .should("have.length", 3)
+            .and("contain", supportsData.support.description1);
+    };
+    extendedWarrantyBlockShouldContainData(){
+        cy.get(SupportElements.cssBlock_WarrantyExtended)
+            .find(".support-warranty__table")
+            .find(".support-warranty__table-row")
+            .should("have.length", 2)
+            .and("contain", supportsData.support.description2);
+    };
+    productInfoShouldContainOneSubscription(){
+        cy.get(SupportElements.cssBlock_ProductInfo)
+            .find(".support-warranty__attributes")
+            .find(".support-warranty__attribute")
+            .should("have.length", 3)
+            .and("contain", supportsData.support.subscription);
+    };
+    checkSubscriptionBlockIsVisible(){
+        cy.get(SupportElements.cssAtr_Subscription)
+            .its('length').should('eq', 1)
+    };
+    productInfoShouldContainThreeSubscriptions(){
+        cy.get(SupportElements.cssBlock_ProductInfo)
+            .find(".support-warranty__attributes")
+            .find(".support-warranty__attribute")
+            .should("have.length", 3)
+            .and("contain", supportsData.support.subscriptions);
     };
 }
 export default SupportAsserts

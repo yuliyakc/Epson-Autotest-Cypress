@@ -66,8 +66,14 @@ class SupportActions{
     clickCloseBtnToCloseWidget(){
       cy.get(SupportElements.cssWidget_CloseWindow).click();
     };
-    selectOperatingSystem(){
+    selectOperatingSystemMac(){
       cy.get(SupportElements.idSelect_OperatingSystems).select("macOS 11 (Big Sur)", {force:true});
+    };
+    selectOperatingSystemLinux(){
+        cy.get(SupportElements.idSelect_OperatingSystems).select("Linux", {force:true});
+    };
+    selectOperatingSystemWindows(){
+        cy.get(SupportElements.idSelect_OperatingSystems).select("Windows XP 64-bit", {force:true});
     };
     clickGoBtn(){
         cy.get(SupportElements.cssBtn_Go).click();
@@ -99,6 +105,18 @@ class SupportActions{
     };
     selectSecondPrinterAndClick(){
       cy.get(SupportElements.cssDropdown_SearchAuto).get("li").get(CommonElements.cssLink_SearchResult).eq(1).click();
+    };
+    performSearchBySerialNumberForWarrantyCheck(){
+        cy.get(SupportElements.cssInput_SerialNumber).click().type(supportsData.support.serial1);
+        cy.get(SupportElements.cssBtn_Check).click({force:true});
+    };
+    performSearchBySerialNumberFor1SubscriptionCheck(){
+        cy.get(SupportElements.cssInput_SerialNumber).click().type(supportsData.support.serial2);
+        cy.get(SupportElements.cssBtn_Check).click({force:true});
+    };
+    performSearchBySerialNumberFor3SubscriptionsCheck(){
+        cy.get(SupportElements.cssInput_SerialNumber).click().type(supportsData.support.serial5);
+        cy.get(SupportElements.cssBtn_Check).click({force:true});
     };
 
 

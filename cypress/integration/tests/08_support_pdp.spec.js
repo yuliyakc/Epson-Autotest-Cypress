@@ -61,13 +61,18 @@ describe("Check Support page works correctly", ()=> {
         perform.supportActions.clickOnFindRepairButton();
         check.supportAsserts.checkWidgetIsOpened();
     });
-    it('should open Support page for printer and check correct OS changing and saving', function () {
-        perform.supportActions.selectOperatingSystem();
+    it('should open Support page for printer, change OS and check data', function () {
+        perform.supportActions.selectOperatingSystemMac();
         perform.supportActions.clickGoBtn();
-        check.supportAsserts.checkNewOSInAddressLink();
+        check.supportAsserts.checkMacOSInAddressLink();
+        check.supportAsserts.checkDownloadTabHasCorrectFileExtensionForMac();
+        perform.supportActions.selectOperatingSystemWindows();
+        perform.supportActions.clickGoBtn();
+        check.supportAsserts.checkWindowsOSInAddressLink();
+        check.supportAsserts.checkDownloadTabHasCorrectFileExtensionForWindows();
     });
-    it('should open Support page for printer and check redirect to Printers home page', function () {
-        perform.supportActions.goToPrintersHomePage();
-        check.supportAsserts.checkPrintersHomePage();
-   });
+   //  it('should open Support page for printer and check redirect to Printers home page', function () {
+   //      perform.supportActions.goToPrintersHomePage();
+   //      check.supportAsserts.checkPrintersHomePage();
+   // });
 });

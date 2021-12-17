@@ -14,7 +14,6 @@ describe("Check Support search page works correctly", ()=> {
     it('should open Support page and perform search by Product name', function () {
         perform.supportActions.performSearchByProductName();
         perform.supportActions.openFindPrinterFromSearchResults();
-
         check.supportAsserts.checkSupportPageIsOpened();
     });
     it('should open Support page and perform search by Serial Number', function () {
@@ -27,4 +26,21 @@ describe("Check Support search page works correctly", ()=> {
         check.supportAsserts.checkSupportPanelIsDisplayed();
         check.supportAsserts.checkOperatingSystemListIsVisible();
     });
+    it('should check that Product Info, Standard Warranty and Extended Warranty are displayed', function () {
+        perform.supportActions.performSearchBySerialNumberForWarrantyCheck();
+        check.supportAsserts.productInfoBlockShouldContainData();
+        check.supportAsserts.standardWarrantyBlockShouldContainData();
+        check.supportAsserts.extendedWarrantyBlockShouldContainData();
+    });
+    it('should check Subscription for a Printer in quantity 1', function () {
+        perform.supportActions.performSearchBySerialNumberFor1SubscriptionCheck();
+        check.supportAsserts.checkSubscriptionBlockIsVisible();
+        check.supportAsserts.productInfoShouldContainOneSubscription();
+    });
+    it('should check Subscription for a Printer in quantity 3', function () {
+        perform.supportActions.performSearchBySerialNumberFor3SubscriptionsCheck();
+        check.supportAsserts.checkSubscriptionBlockIsVisible();
+        check.supportAsserts.productInfoShouldContainThreeSubscriptions();
+    });
+
 });
