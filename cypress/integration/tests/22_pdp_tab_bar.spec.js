@@ -24,7 +24,7 @@ describe("Testing Tab Bar for each product", ()=> {
         perform.pdpActions.clickSupportTab();
         check.pdpAssertions.checkSupportBlock();
 
-        perform.pdpActions.clickSupportBtnAtSupportTab();
+        perform.pdpActions.clickSupportBtnAtSupportBlock();
         check.supportAsserts.checkSearchSupportPageIsOpened();
     });
     it('should open website on a specific PDP to check tabs for Options', function () {

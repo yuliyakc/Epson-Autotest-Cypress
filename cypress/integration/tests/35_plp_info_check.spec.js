@@ -1,6 +1,5 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
-import CommonAsserts from "../../framework/page_actions/CommonAsserts";
 
 describe("Login and check info on PLP page", ()=> {
     let perform = new Actions();

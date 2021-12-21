@@ -2,11 +2,11 @@ const UNIQID = Cypress.env('UNIQID')
 
 module.exports = {
     "price": {
-        "forOne": "349.99",
-        "forTwo": "699.98",
-        "withDiscount": "49.99",
-        "withVoucher30": "319.99",
-        "withVoucher100": "249.99",
+        "forOne": "£349.99",
+        "forTwo": "£699.98",
+        "withDiscount": "£49.99",
+        "withVoucher30": "£319.99",
+        "withVoucher100": "£249.99",
         "percentagePrice" : "£314.99"
     },
     "discount": {

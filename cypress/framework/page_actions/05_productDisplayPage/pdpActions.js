@@ -20,7 +20,7 @@ class PdpActions {
         cy.scrollTo(0,500);
         cy.wait(1000);
     };
-    clickSupportBtnAtSupportTab(){
+    clickSupportBtnAtSupportBlock(){
       cy.get(PdpElements.cssBtn_GoToSupport).click();
     };
     clickCompatibilityTab(){

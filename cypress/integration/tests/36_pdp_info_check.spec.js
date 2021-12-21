@@ -14,8 +14,7 @@ describe("Login and check all info on PDP page", ()=> {
         check.commonAsserts.checkStatusInStockIfBuyNowBtnIsVisible();
 
         perform.pdpActions.clickSupportButtonInProductSection();
-        perform.pdpActions.clickSupportBtnAtSupportTab();
+        perform.pdpActions.clickSupportBtnAtSupportBlock();
         check.supportAsserts.checkSearchSupportPageIsOpened();
-
     });
 });
