@@ -42,5 +42,13 @@ describe("Check Support search page works correctly", ()=> {
         check.supportAsserts.checkSubscriptionBlockIsVisible();
         check.supportAsserts.productInfoShouldContainThreeSubscriptions();
     });
+    it('should check main information of a printer', function () {
+        perform.supportActions.performSearchBySerialNumberForInfoCheck();
+        check.supportAsserts.checkProductInfoForAPrinter();
+    });
+    it('should check error message if there are no warranty for a printer', function () {
+        perform.supportActions.performSearchBySerialNumberForCheckingOfAnError();
+        check.supportAsserts.checkErrorMessageForProduct();
+    });
 
 });

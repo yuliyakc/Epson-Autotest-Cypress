@@ -12,12 +12,14 @@ class CommonAsserts {
     checkPriceWithDiscount(){
         cy.get(CheckoutElements.cssItem_TotalDiscountCart).should('contain', checkoutsData.discount.price)
     };
+    checkZeroPriceInCartSection(){
+        cy.get(CheckoutElements.cssItem_TotalDiscountCart).should("contain", checkoutsData.discount.zeroPrice)
+    };
     checkTotalOnPaymentSelectPage(){
       cy.get(".checkout-summary__product").should('contain', checkoutsData.discount.price)
     };
     checkGlobalAlertIsDisplayed(){
       cy.get(CommonElements.cssGlobal_Message).should("be.visible");
-
     };
     checkPrintersImageIsVisible(){
         cy.get(PLPInfoElements.cssBlock_Image).find('img').should('have.attr', 'src');

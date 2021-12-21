@@ -1,4 +1,3 @@
-import CommonElements from "../../locators/CommonElements";
 import usersData from "../../../data/users";
 import SignInElements from "../../locators/01_userSign/SignInElements";
 import HeaderElements from "../../locators/00_header/HeaderElements";

@@ -1,7 +1,7 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
 
-describe("Testing of Guest functionality", ()=> {
+describe("User should have an ability to purchase as Guest", ()=> {
     let perform = new Actions();
     let check = new Asserts();
     beforeEach(function () {
@@ -12,8 +12,8 @@ describe("Testing of Guest functionality", ()=> {
         perform.commonActions.openWebsite();
         perform.commonActions.acceptWebsiteCookies();
 
-        perform.searchActions.searchInkPrinterPLP();
-        perform.buyNowPLPActions.clickBuyNowBtnPLP();
+        perform.productLinksForPDP.openEcoTankPrintersPdp();
+        perform.pdpActions.clickBuyNowBtnOnPDPPage();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
 

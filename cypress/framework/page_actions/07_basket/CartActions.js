@@ -26,8 +26,12 @@ class CartActions {
     deleteFirstItemFromCart() {
         cy.get(CartElements.cssBtn_DeleteFirstItem).click({ multiple: true });
     };
-    putVoucherCodeAndApply(){
-        cy.xpath(CartElements.xpathInput_VoucherCode).click().type(checkoutsData.discount.name);
+    putFixed30VoucherCodeAndApply(){
+        cy.xpath(CartElements.xpathInput_VoucherCode).click().type(checkoutsData.discount.fixedCode30);
+        cy.get(CartElements.cssBtn_VoucherRedeem).click();
+    };
+    putFixed100VoucherCodeAndApply(){
+        cy.xpath(CartElements.xpathInput_VoucherCode).click().type(checkoutsData.discount.fixed100);
         cy.get(CartElements.cssBtn_VoucherRedeem).click();
     };
     removeDiscountFromPrinter(){
@@ -46,7 +50,10 @@ class CartActions {
     clickProductTitleToOpenPdpPage(){
       cy.get(CartElements.cssLink_CardTitle).click();
     };
-
+    putPercentageVoucherCodeAndApply(){
+        cy.xpath(CartElements.xpathInput_VoucherCode).click().type(checkoutsData.discount.percentageCode);
+        cy.get(CartElements.cssBtn_VoucherRedeem).click();
+    };
 
 }
 export default CartActions

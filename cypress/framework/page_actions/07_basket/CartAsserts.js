@@ -1,7 +1,6 @@
 import CartElements from "../../locators/07_basket/CartElements";
 import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
 import checkoutsData from "../../../data/checkouts";
-import CommonElements from "../../locators/CommonElements";
 import printersData from "../../../data/printers";
 
 class CartAsserts {
@@ -41,8 +40,24 @@ class CartAsserts {
     checkPrintersQuantityShouldBeOne(){
         cy.xpath(CartElements.xpathInput_ItemsQuantity).should("include.value", 1);
     };
-    checkPriceWithVoucherCode(){
-        cy.get(CheckoutElements.cssItem_TotalDiscount).should('contain', checkoutsData.price.withVoucher)
+    checkPriceWithVoucherCode30(){
+        cy.get(CheckoutElements.cssItem_TotalDiscount).should('contain', checkoutsData.price.withVoucher30)
     };
+    checkPriceWithVoucherCode100(){
+        cy.get(CheckoutElements.cssItem_TotalDiscount).should('contain', checkoutsData.price.withVoucher100)
+    };
+    checkFixedVoucherCode30IsApply(){
+        cy.get(CheckoutElements.cssItem_VoucherMessage).should("be.visible").and("contain.text", checkoutsData.discount.applyTextFor30);
+    };
+    checkFixedVoucherCode100IsApply(){
+        cy.get(CheckoutElements.cssItem_VoucherMessage).should("be.visible").and("contain.text", checkoutsData.discount.applyTextFor100);
+    };
+    checkPercentageVoucherCodeIsApply(){
+        cy.get(CheckoutElements.cssItem_VoucherMessage).should("be.visible").and("contain.text", checkoutsData.discount.applyTextForPercentage);
+    };
+    checkPriceWithPercentageVoucherCode(){
+        cy.get(CheckoutElements.cssItem_TotalDiscount).should('contain', checkoutsData.price.percentagePrice)
+    };
+
 }
 export default CartAsserts

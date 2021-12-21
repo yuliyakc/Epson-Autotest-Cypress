@@ -1,7 +1,6 @@
 import SignUpElements from "../../locators/01_userSign/SignUpElements";
 import usersData from "../../../data/users";
 import CommonElements from "../../locators/CommonElements";
-import printersData from "../../../data/printers";
 
 class SignAsserts {
     checkIncorrectEmailError(){

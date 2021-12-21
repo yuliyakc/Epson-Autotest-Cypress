@@ -118,8 +118,14 @@ class SupportActions{
         cy.get(SupportElements.cssInput_SerialNumber).click().type(supportsData.support.serial5);
         cy.get(SupportElements.cssBtn_Check).click({force:true});
     };
-
-
+    performSearchBySerialNumberForInfoCheck(){
+        cy.get(SupportElements.cssInput_SerialNumber).click().type(supportsData.support.serial3);
+        cy.get(SupportElements.cssBtn_Check).click({force:true});
+    };
+    performSearchBySerialNumberForCheckingOfAnError(){
+        cy.get(SupportElements.cssInput_SerialNumber).click().type(supportsData.support.serial4);
+        cy.get(SupportElements.cssBtn_Check).click({force:true});
+    };
 
 
 

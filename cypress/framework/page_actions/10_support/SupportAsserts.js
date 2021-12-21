@@ -1,6 +1,7 @@
 import CommonElements from "../../locators/CommonElements";
 import supportsData from "../../../data/supports";
 import SupportElements from "../../locators/10_support/SupportElements";
+import usersData from "../../../data/users";
 
 class SupportAsserts {
     checkSearchSupportPageIsOpened(){
@@ -130,6 +131,16 @@ class SupportAsserts {
             .find(".support-warranty__attribute")
             .should("have.length", 3)
             .and("contain", supportsData.support.subscriptions);
+    };
+    checkProductInfoForAPrinter(){
+        cy.get(SupportElements.cssBlock_ProductInfo)
+            .find(".support-warranty__attributes")
+            .find(".support-warranty__attribute")
+            .should("have.length", 2)
+            .and("contain", supportsData.support.serialNumber).and("contain",supportsData.support.model);
+    };
+    checkErrorMessageForProduct(){
+        cy.get(CommonElements.cssGlobal_Message).should("include.text", supportsData.support.alert );
     };
 }
 export default SupportAsserts

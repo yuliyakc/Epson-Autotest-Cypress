@@ -14,7 +14,10 @@ module.exports = {
         "serial2": "UV4Y030323",
         "subscription": "Subscription(s): EPP- EPSON PRINT PERFORMANCE SUBS.",
         "serial3": "X59U001243",
+        "serialNumber": "Serial Number: X59U001243",
+        "model": "Model: C11CG68401",
         "serial4": "X576037640",
+        "alert": "No Support Product found for warranty check",
         "serial5": "X3B8030324",
         "subscriptions": "Subscription(s): EPP- EPSON PRINT PERFORMANCE SUBS., ERS-EPSON REMOTE SERVICES SUBS., RI2- READY PRINT FLEX SUBS."
     }

@@ -20,5 +20,8 @@ class ProductLinksForPDP {
     openDotMatrixPrinter(){
       cy.visitWebsite("/products/printers/dot-matrix/lq-350/p/12058");
     };
+    openEcoTankPrintersPdp(){
+        cy.visitWebsite("/products/printers/inkjet/consumer/ecotank-et-2715/p/28767");
+    };
 }
 export default ProductLinksForPDP
