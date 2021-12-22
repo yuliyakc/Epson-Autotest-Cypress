@@ -134,8 +134,5 @@ class FooterAsserts {
                 expect(response.status).to.eq(200)
             });
     };
-
-
-
 }
 export default FooterAsserts

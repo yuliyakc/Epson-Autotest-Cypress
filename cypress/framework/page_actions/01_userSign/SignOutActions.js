@@ -1,8 +1,8 @@
-import HeaderElements from "../../locators/00_header/HeaderElements";
+import HomePageMenuElements from "../../locators/03_homepageMenu/HomePageMenuElements";
 
 class SignOutActions {
     clickSignOutBtn(){
-        cy.get(HeaderElements.cssButton_SignOut).click();
+        cy.get(HomePageMenuElements.cssButton_SignOut).click();
     };
 }
 export default SignOutActions

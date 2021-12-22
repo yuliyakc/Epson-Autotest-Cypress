@@ -8,7 +8,7 @@ describe("Login and buy a printer", ()=> {
         perform.signInActions.openWebsiteAndLogin();
 
         perform.searchActions.searchInkEcoPrinterPLP();
-        perform.buyNowPLPActions.clickBuyNowBtnPLP();
+        perform.plpInfoActions.clickBuyNowBtnPLP();
 
         perform.cartActions.clickOnCartMiniBtn();
         perform.cartActions.clickCheckoutBtnOnPopup();

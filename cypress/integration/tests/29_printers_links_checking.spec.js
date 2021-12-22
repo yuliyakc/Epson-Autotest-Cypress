@@ -55,6 +55,5 @@ describe ("Checking of all the links on main menu to have status 200", ()=> {
 
         perform.homePageMenuActions.openLabelMakerPcRemotePage();
         check.homePageMenuAsserts.checkLabelPcRemoteServerCorrectResponse();
-
     });
 });

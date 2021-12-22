@@ -1,15 +1,10 @@
 import FiltersElements from "../locators/04_productListingPage/FiltersElements";
-import MyAccountElements from "../locators/11_myAccount/MyAccountElements";
-import CommonElements from "../locators/CommonElements";
-import ComparePrintersElements from "../locators/15_comparePrinters/ComparePrintersElements";
-import HeaderElements from "../locators/00_header/HeaderElements";
 import CookiesDialogElements from "../locators/17_cookiesDialog/CookiesDialogElements";
-import PLPInfoElements from "../locators/04_productListingPage/PLPInfoElements";
-import BuyNowPLPElements from "../locators/04_productListingPage/BuyNowPLPElements";
+import HomePageMenuElements from "../locators/03_homepageMenu/HomePageMenuElements";
 
 class CommonActions {
     clickCreateNewAccountBtn(){
-      cy.get(HeaderElements.cssButton_CreateAccount).click();
+      cy.get(HomePageMenuElements.cssButton_CreateAccount).click();
     };
     openWebsite(){
         cy.visitWebsite("/");

@@ -87,6 +87,5 @@ class UpdateDataActions {
         cy.get(UpdateDataElements.idInput_NewPassword).click().clear().type(usersData.register.short);
         cy.get(UpdateDataElements.idInput_CheckNewPassword).click().clear().type(usersData.register.short);
     };
-
 }
 export default UpdateDataActions

@@ -6,5 +6,6 @@ class CookiesDialogElements {
     static cssSwitch_Toggle = ".ot-switch-nob";
     static cssBtn_Confirm = ".ot-btn-container > .save-preference-btn-handler";
     static idBanner_ConfirmCookies = "#onetrust-banner-sdk";
+    static cssBlock_PrivacyBlock = "#ot-pc-content";
 }
 export default CookiesDialogElements

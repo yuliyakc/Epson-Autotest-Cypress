@@ -11,7 +11,7 @@ class CookiesDialogActions {
       cy.get(CookiesDialogElements.cssBtn_CookiesSettings).click();
     };
     scrollDownTheModalWindow(){
-        cy.get("#ot-pc-content").scrollTo("bottom");
+        cy.get(CookiesDialogElements.cssBlock_PrivacyBlock).scrollTo("bottom");
     };
     setAllSwitchesOn(){
         cy.get(CookiesDialogElements.cssSwitch_Toggle).eq(0).click();

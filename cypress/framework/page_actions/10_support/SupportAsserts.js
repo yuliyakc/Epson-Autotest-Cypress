@@ -1,7 +1,6 @@
 import CommonElements from "../../locators/CommonElements";
 import supportsData from "../../../data/supports";
 import SupportElements from "../../locators/10_support/SupportElements";
-import usersData from "../../../data/users";
 
 class SupportAsserts {
     checkSearchSupportPageIsOpened(){

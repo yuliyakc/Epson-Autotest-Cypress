@@ -1,7 +1,7 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
 
-describe("Checking Large format printer functionality", ()=> {
+describe("Checking of Large format printer functionality", ()=> {
     let perform = new Actions();
     let check = new Asserts();
     beforeEach(function () {
@@ -23,7 +23,7 @@ describe("Checking Large format printer functionality", ()=> {
     });
     it('should open Learn More page for Large Format Printers', function () {
         perform.homePageMenuActions.openLargeFormatPrintersPage();
-        perform.learnMoreActions.clickLearnMoreBtn();
+        perform.plpInfoActions.clickLearnMoreBtn();
         check.assertions.checkLearnMorePageIsOpened();
     });
     it('should open LFP page and use pagination', function () {
@@ -48,10 +48,4 @@ describe("Checking Large format printer functionality", ()=> {
         check.supportAsserts.checkSupportPageIsOpened();
         check.supportAsserts.checkSupportSku();
     });
-    // it('should purchase the printer, using Credit card', function () {
-    //     perform.homePageMenuActions.openLargeFormatPrintersPage();
-    //
-    //
-    // });
-
 });

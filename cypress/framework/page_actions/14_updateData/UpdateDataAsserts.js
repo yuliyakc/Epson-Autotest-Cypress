@@ -39,8 +39,5 @@ class UpdateDataAsserts {
     checkUserGetMinCharacterError(){
       cy.get(UpdateDataElements.idError_MinCharacter).should("be.visible");
     };
-
-
-
 }
 export default UpdateDataAsserts

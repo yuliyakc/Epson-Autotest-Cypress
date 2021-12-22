@@ -11,7 +11,7 @@ describe("Check different types of Shipping Methods", ()=> {
     });
     it('should check Shipping Method "Standard" when add Hardware to the Cart', function () {
         perform.searchActions.searchInkEcoPrinterPLP();
-        perform.buyNowPLPActions.clickBuyNowBtnPLP();
+        perform.plpInfoActions.clickBuyNowBtnPLP();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
@@ -26,7 +26,7 @@ describe("Check different types of Shipping Methods", ()=> {
     });
     it('should check Shipping Method "Electronic" when add CoverPlus to the Cart', function () {
         perform.searchActions.searchCoverPlusProducts();
-        perform.buyNowPLPActions.clickBuyNowBtnPLP();
+        perform.plpInfoActions.clickBuyNowBtnPLP();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
         perform.checkoutActions.fillRequiredInfo();

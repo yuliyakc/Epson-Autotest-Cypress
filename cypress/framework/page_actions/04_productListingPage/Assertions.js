@@ -1,16 +1,8 @@
 import CommonElements from "../../locators/CommonElements";
 import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
-import SignUpElements from "../../locators/01_userSign/SignUpElements";
 import filtersData from "../../../data/filters";
 import printersData from "../../../data/printers";
-import supportsData from "../../../data/supports";
-import SupportElements from "../../locators/10_support/SupportElements";
-import ConsumablesElements from "../../locators/08_extraAccessories/ConsumablesElements";
-import CartElements from "../../locators/07_basket/CartElements";
-import SearchElements from "../../locators/09_search/SearchElements";
-import PdpElements from "../../locators/05_productDisplayPage/pdpElements";
-import BuyNowPLPElements from "../../locators/04_productListingPage/BuyNowPLPElements";
-import PLPInfoElements from "../../locators/04_productListingPage/PLPInfoElements";
+
 
 class Assertions {
     checkConsumablePage(){

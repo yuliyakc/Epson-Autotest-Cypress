@@ -1,6 +1,5 @@
 import Actions from "../../framework/Actions";
 import Asserts from "../../framework/Asserts";
-import HomePageMenuActions from "../../framework/page_actions/03_homepageMenu/HomePageMenuActions";
 
 describe ("Checking information on Checkout pages", ()=> {
     let perform = new Actions();
@@ -12,7 +11,7 @@ describe ("Checking information on Checkout pages", ()=> {
     });
     it('should check main info about the order and a buyer', function () {
         perform.homePageMenuActions.openLabelMakerPrintersPage();
-        perform.buyNowPLPActions.clickBuyNowBtnPLP();
+        perform.plpInfoActions.clickBuyNowBtnPLP();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
         perform.checkoutActions.clickProductNameToCheckRedirectOnPdpPage();

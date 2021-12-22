@@ -1,120 +1,120 @@
-import HeaderElements from "../../locators/00_header/HeaderElements";
 import printersData from "../../../data/printers";
+import HomePageMenuElements from "../../locators/03_homepageMenu/HomePageMenuElements";
 
 class HomePageMenuActions{
     openInkJetBusinessPrinters(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.inkJet.business).click({force:true});
     };
     openLaserColourPrinters(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.laserPrinters.colour).click({force:true});
     };
     openLabelMakerRemotePrinters(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.labelMaker.name3).click({force:true});
     };
     openDotMatrixPrintersPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.dotMatrix.main).click({force:true});
     };
     openLargeFormatPrintersPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.largeFormat.main).click({force:true});
     };
     openLabelMakerPrintersPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.labelMaker.main).click({force:true});
     };
     clickEpsonLogoToOpenHomePage(){
-        cy.get(HeaderElements.cssLink_EpsonLogo).click();
+        cy.get(HomePageMenuElements.cssLink_EpsonLogo).click();
     };
     openInkJetPrintersPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.inkJet.main).click({force:true});
     };
     openInkConsumerPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.inkJet.consumerPrinters).click({force:true});
     };
     openInkPhotoPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.inkJet.prophoto).click({force:true});
     };
     openInkBusinessPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.inkJet.business).click({force:true});
     };
     openInkMicroBusinessPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.inkJet.microBusiness).click({force:true});
     };
     openLaserPrintersPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.laserPrinters.main).click({force:true});
     };
     openLaserMonochromePage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.laserPrinters.monochrome).click({force:true});
     };
     openLaserColourPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.laserPrinters.colour).click({force:true});
     };
     openLabelMakerRemotePage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.labelMaker.remotePrinters).click({force:true});
     };
     openLabelMakerPcConnectedPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.labelMaker.pcConnected).click({force:true});
     };
     openLabelMakerPcRemotePage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.labelMaker.pcRemote).click({force:true});
     };
     openProjectorsMainPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.projectors.main).click({force:true});
     };
     openProjectorsUltraMobilePage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.projectors.ultraMobile).click({force:true});
     };
     openProjectorsMobilePage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.projectors.mobile).click({force:true});
     };
     openProjectorsShortPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.projectors.short).click({force:true});
     };
     openProjectorsUltraShortPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.projectors.ultraShort).click({force:true});
     };
     openProjectorsInstallationPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.projectors.installation).click({force:true});
     };
     openProjectorsAllInOnePage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.projectors.allInOne).click({force:true});
     };
     openProjectorsHomeCinemaPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.projectors.homeCinema).click({force:true});
     };
     openInkLabelMakersPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.ink.labelMakers).click({force:true});
     };
     openShopOnlineHomePage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.shopOnline.home).click({force:true});
     };
     openShopOnlineBusinessPage(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.shopOnline.business).click({force:true});
     };
 

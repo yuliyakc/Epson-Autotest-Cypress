@@ -5,10 +5,10 @@ class BuyAccessoriesActions {
       cy.get(BuyAccessoriesElements.cssBtn_FirstAccessory).click({force:true});
     };
     clickFirstSupportButton(){
-      cy.get(BuyAccessoriesElements.cssBlock_ProductList).find(".myproducts__support").first().click({force:true});
+      cy.get(BuyAccessoriesElements.cssBlock_ProductList).find(BuyAccessoriesElements.cssBtn_ProductSupport).first().click({force:true});
     };
     clickFirstProductName(){
-        cy.get(BuyAccessoriesElements.cssBlock_ProductList).find(".myproducts__name").first().click({force:true});
+        cy.get(BuyAccessoriesElements.cssBlock_ProductList).find(BuyAccessoriesElements.cssBtn_ProductName).first().click({force:true});
     };
     clickRegisterNewDeviceBtn(){
       cy.get(BuyAccessoriesElements.cssBtn_Register).click();

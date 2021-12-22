@@ -14,7 +14,6 @@ import ComparePrintersAsserts from "./page_actions/15_comparePrinters/ComparePri
 import PdpAssertions from "./page_actions/05_productDisplayPage/pdpAssertions";
 import SiteSelectorAsserts from "./page_actions/16_siteSelector/SiteSelectorAsserts";
 import CookiesDialogAsserts from "./page_actions/17_cookiesDialog/CookiesDialogAsserts";
-import HeaderAsserts from "./page_actions/00_header/HeaderAsserts";
 import HomePageMenuAsserts from "./page_actions/03_homepageMenu/HomePageMenuAsserts";
 import BuyAccessoriesAsserts from "./page_actions/18_buy_accesories_page/BuyAccessoriesAsserts";
 import FooterAsserts from "./page_actions/19_footer/FooterAsserts";
@@ -37,7 +36,6 @@ class Asserts {
     pdpAssertions = new PdpAssertions();
     siteSelectorAsserts = new SiteSelectorAsserts();
     cookiesDialogAsserts = new CookiesDialogAsserts();
-    headerAsserts = new HeaderAsserts();
     homePageMenuAsserts = new HomePageMenuAsserts();
     buyAccessoriesAsserts = new BuyAccessoriesAsserts();
     footerAsserts = new FooterAsserts();

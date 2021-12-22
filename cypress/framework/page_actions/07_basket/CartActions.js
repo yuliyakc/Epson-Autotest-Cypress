@@ -1,6 +1,6 @@
 import CartElements from "../../locators/07_basket/CartElements";
 import checkoutsData from "../../../data/checkouts";
-import HeaderElements from "../../locators/00_header/HeaderElements";
+import HomePageMenuElements from "../../locators/03_homepageMenu/HomePageMenuElements";
 
 class CartActions {
     openCartPage(){
@@ -21,7 +21,6 @@ class CartActions {
     clickCheckoutBtnOnBasketPage(){
         cy.wait(1000)
         cy.get(CartElements.cssButton_BasketCheckout).click()
-        // cy.get(CookiesDialogElements.idModal_AcceptCookies).click();
     };
     deleteFirstItemFromCart() {
         cy.get(CartElements.cssBtn_DeleteFirstItem).click({ multiple: true });
@@ -42,7 +41,7 @@ class CartActions {
     };
     clickOnCartMiniBtn(){
         cy.wait(1000);
-        cy.get(HeaderElements.cssButton_MiniCart).click({force:true});
+        cy.get(HomePageMenuElements.cssButton_MiniCart).click({force:true});
     };
     clickCheckoutBtnOnPopup(){
         cy.get(CartElements.cssBtn_Checkout).click();

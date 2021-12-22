@@ -64,9 +64,6 @@ class FooterActions {
     openContactUsPage(){
         cy.get(FooterElements.cssLink_ContactUs).click();
     };
-
-
-
 }
 
 

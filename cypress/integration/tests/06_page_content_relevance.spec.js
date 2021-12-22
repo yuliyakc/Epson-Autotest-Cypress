@@ -43,6 +43,5 @@ describe ("Testing of pages relevance by breadcrumbs", ()=> {
 
         perform.pageContentRelevanceActions.clickFirstLinkInBreadcrumbs();
         check.assertions.checkLinkAndBreadcrumbForFirstItem();
-
     });
 });

@@ -2,23 +2,19 @@ import printersData from "../../../data/printers";
 import CommonElements from "../../locators/CommonElements";
 import SupportElements from "../../locators/10_support/SupportElements";
 import supportsData from "../../../data/supports";
-import HeaderElements from "../../locators/00_header/HeaderElements";
-import SearchActions from "../09_search/SearchActions";
-import SearchElements from "../../locators/09_search/SearchElements";
+import HomePageMenuElements from "../../locators/03_homepageMenu/HomePageMenuElements";
 
 class SupportActions{
     openInkJetProphotoPrinters(){
-        cy.get(HeaderElements.cssBlock_CmsComponent).invoke('show')
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.inkJet.prophoto).click({force:true});
     };
     clickBtnAndDownloadTheFile(){
         cy.get('.btn.btn-primary').eq(3).click();
-        //cy.verifyDownload('epson632306eu.exe', { timeout: 55000, interval: 500 });
     };
     clickBtnAndDownloadTheDocFile(){
         cy.get('.btn.btn-primary').eq(11).click();
-       // cy.verifyDownload('epson632306eu.exe', { timeout: 55000, interval: 500 });
-    };//contains(text
+    };
     openFaqTabByClickOnABtn(){
         cy.get(SupportElements.cssTab_Faq).click();
     };
@@ -98,7 +94,6 @@ class SupportActions{
     };
     clickSupportBtnFromPLP(){
         cy.get(SupportElements.cssBtn_SupportPLP).first().click()
-        //cy.wait(2000);
     };
     performSearchByPartialPrintersName(){
         cy.get(SupportElements.cssInput_ProductName).click().type(supportsData.support.partialName, {delay:100});
@@ -126,9 +121,5 @@ class SupportActions{
         cy.get(SupportElements.cssInput_SerialNumber).click().type(supportsData.support.serial4);
         cy.get(SupportElements.cssBtn_Check).click({force:true});
     };
-
-
-
-
 }
 export default SupportActions

@@ -50,6 +50,5 @@ class ComparePrintersActions {
     clickPrintBtn(){
       cy.get(ComparePrintersElements.cssBtn_Print).click();
     };
-
 }
 export default ComparePrintersActions

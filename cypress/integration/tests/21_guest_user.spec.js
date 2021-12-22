@@ -12,7 +12,7 @@ describe("User should have an ability to purchase as Guest", ()=> {
         perform.commonActions.openWebsite();
         perform.commonActions.acceptWebsiteCookies();
 
-        perform.productLinksForPDP.openEcoTankPrintersPdp();
+        perform.productLinksForPDP.openInkJetHomeXPPrintersPdp();
         perform.pdpActions.clickBuyNowBtnOnPDPPage();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
@@ -45,7 +45,7 @@ describe("User should have an ability to purchase as Guest", ()=> {
     //     perform.commonActions.acceptWebsiteCookies();
     //
     //     perform.searchActions.searchInkPrinterPLP();
-    //     perform.buyNowPLPActions.clickBuyNowBtnPLP();
+    //     perform.plpInfoActions.clickBuyNowBtnPLP();
     //     perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
     //     perform.cartActions.clickCheckoutBtnOnBasketPage();
     //

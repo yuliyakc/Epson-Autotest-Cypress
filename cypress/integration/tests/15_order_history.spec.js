@@ -23,27 +23,27 @@ let check = new Asserts();
         perform.paginationActions.clickTopPaginationButtonPrev();
         check.orderHistoryAsserts.checkFirstPageIsOpened();
     });
-   //  it('should open Order Number page and reorder an order', function () {
-   //      perform.orderHistoryActions.openOrderNumberLink();
-   //      perform.orderHistoryActions.clickReorderBtn();
-   //      check.cartAsserts.checkCartPage();
-   //      check.cartAsserts.checkCartSection();
-   //      perform.cartActions.clickCheckoutBtnOnBasketPage();
-   //
-   //      check.checkoutAsserts.checkSelectedCountry();
-   //      perform.checkoutActions.fillRequiredInfo();
-   //      perform.checkoutActions.searchAndSetAnAddress();
-   //      perform.checkoutActions.setDefaultCheckboxes();
-   //      perform.checkoutActions.saveAndGoToNextStep();
-   //      perform.checkoutActions.goNextToBilling();
-   //      perform.checkoutActions.saveAndGoToNextStep();
-   //      perform.checkoutActions.performPayoutWithCreditCardMethod();
-   //      perform.checkoutActions.setCardName();
-   //      perform.checkoutActions.goNext();
-   //      perform.checkoutActions.agreeTermsAndPlaceAnOrder();
-   //      check.checkoutAsserts.checkThankYouPageAfterPurchasing();
-   //
-   // });
+    it('should open Order Number page and reorder an order', function () {
+        perform.orderHistoryActions.openOrderNumberLink();
+        perform.orderHistoryActions.clickReorderBtn();
+        check.cartAsserts.checkCartPage();
+        check.cartAsserts.checkCartSection();
+        perform.cartActions.clickCheckoutBtnOnBasketPage();
+
+        check.checkoutAsserts.checkSelectedCountry();
+        perform.checkoutActions.fillRequiredInfo();
+        perform.checkoutActions.searchAndSetAnAddress();
+        perform.checkoutActions.setDefaultCheckboxes();
+        perform.checkoutActions.saveAndGoToNextStep();
+        perform.checkoutActions.goNextToBilling();
+        perform.checkoutActions.saveAndGoToNextStep();
+        perform.checkoutActions.performPayoutWithCreditCardMethod();
+        perform.checkoutActions.setCardName();
+        perform.checkoutActions.goNext();
+        perform.checkoutActions.agreeTermsAndPlaceAnOrder();
+        check.checkoutAsserts.checkThankYouPageAfterPurchasing();
+
+   });
     it('should check Order History "Back" button', function () {
         perform.orderHistoryActions.openOrderNumberLink();
         check.orderHistoryAsserts.checkThatUserTransferToOrderPage();

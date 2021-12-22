@@ -1,11 +1,9 @@
-import ConsumablesElements from "../../locators/08_extraAccessories/ConsumablesElements";
 import CommonElements from "../../locators/CommonElements";
 import CheckoutElements from "../../locators/06_checkout/CheckoutElements";
 
 class ConsumablesActions {
     clickCheckoutBtnOnConsumablesPage(){
         cy.get(CheckoutElements.cssButton_ConsumablesCheckout).click();
-        // cy.get(CookiesDialogElements.idModal_AcceptCookies).click();
     };
     selectMediaBusinessPaper(){
         cy.wait(3000)
@@ -41,7 +39,6 @@ class ConsumablesActions {
         cy.get(CommonElements.cssBtn_BuyNowForThirdAccessory).click();
         cy.get(CommonElements.cssBtn_GoToCheckout).click();
     };
-
     addAnotherConsumable(){
       cy.get("#updateCartForm3 > .product-card__qty-inc > .glyphicon").click();
     };
@@ -57,10 +54,5 @@ class ConsumablesActions {
        cy.get(CommonElements.cssBtn_BuyNowForCoverPlus).click()
         cy.get(CommonElements.cssBtn_ContinueShopping).click();
     };
-
-
-
-
-
 }
 export default ConsumablesActions

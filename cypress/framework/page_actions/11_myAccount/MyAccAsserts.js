@@ -1,5 +1,4 @@
 import MyAccountElements from "../../locators/11_myAccount/MyAccountElements";
-import HeaderElements from "../../locators/00_header/HeaderElements";
 
 class MyAccAsserts {
     checkAddressBookTabIsOpened(){
