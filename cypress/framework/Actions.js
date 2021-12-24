@@ -25,6 +25,7 @@ import HomePageMenuActions from "./page_actions/03_homepageMenu/HomePageMenuActi
 import BuyAccessoriesActions from "./page_actions/18_buy_accesories_page/BuyAccessoriesActions";
 import FooterActions from "./page_actions/19_footer/FooterActions";
 import PLPInfoActions from "./page_actions/04_productListingPage/PLPInfoActions";
+import MobileActions from "./page_actions/20_mobile/MobileActions";
 
 
 class Actions {
@@ -57,6 +58,7 @@ class Actions {
     buyAccessoriesActions = new BuyAccessoriesActions();
     footerActions = new FooterActions();
     plpInfoActions = new PLPInfoActions();
+    mobileActions = new MobileActions();
 
 }
 
