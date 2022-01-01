@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="51.4880" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T01:53:03" tests="0" file="cypress/integration/tests/05_pagination_sorting.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Checking pagination and sorting on PLP" timestamp="2022-01-01T01:53:03" tests="3" time="51.4780" failures="0">
+    <testcase name="Checking pagination and sorting on PLP should check that pagination working correct for PLP" time="17.7740" classname="should check that pagination working correct for PLP">
+    </testcase>
+    <testcase name="Checking pagination and sorting on PLP should check that sorting by Price is working correct for PLP" time="14.9390" classname="should check that sorting by Price is working correct for PLP">
+    </testcase>
+    <testcase name="Checking pagination and sorting on PLP should check that sorting by Name is working correct for PLP" time="16.6950" classname="should check that sorting by Name is working correct for PLP">
+    </testcase>
+  </testsuite>
+</testsuites>

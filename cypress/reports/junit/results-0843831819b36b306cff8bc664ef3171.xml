@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="26.9170" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T01:50:11" tests="0" file="cypress/integration/tests/01_register_logout_login.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Register, logout and relogin" timestamp="2022-01-01T01:50:12" tests="1" time="26.8970" failures="0">
+    <testcase name="Register, logout and relogin should check negative cases with emails when register" time="24.4940" classname="should check negative cases with emails when register">
+    </testcase>
+  </testsuite>
+</testsuites>

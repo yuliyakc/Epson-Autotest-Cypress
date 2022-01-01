@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="15.2060" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T02:20:20" tests="0" file="cypress/integration/tests/32_shop_online_links_checking.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Checking of all the links for Shop online pages to have status 200" timestamp="2022-01-01T02:20:20" tests="1" time="15.1950" failures="0">
+    <testcase name="Checking of all the links for Shop online pages to have status 200 should have all Shop Online links with status 200" time="13.1500" classname="should have all Shop Online links with status 200">
+    </testcase>
+  </testsuite>
+</testsuites>

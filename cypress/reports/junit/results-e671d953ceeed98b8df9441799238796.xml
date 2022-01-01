@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="60.9170" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T02:22:42" tests="0" file="cypress/integration/tests/38_mobile_resolutions.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Check Mobile version correct working" timestamp="2022-01-01T02:22:42" tests="2" time="60.8990" failures="0">
+    <testcase name="Check Mobile version correct working should change screen resolution, login successful and purchase" time="34.2890" classname="should change screen resolution, login successful and purchase">
+    </testcase>
+    <testcase name="Check Mobile version correct working should change screen resolution, login and open My Account menu" time="24.4650" classname="should change screen resolution, login and open My Account menu">
+    </testcase>
+  </testsuite>
+</testsuites>

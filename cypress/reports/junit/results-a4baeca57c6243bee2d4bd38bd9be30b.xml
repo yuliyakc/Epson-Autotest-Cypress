@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="75.1280" tests="6" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T01:55:58" tests="0" file="cypress/integration/tests/08_support_pdp.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Check Support page works correctly" timestamp="2022-01-01T01:55:58" tests="6" time="75.1130" failures="0">
+    <testcase name="Check Support page works correctly should open Support page for printer and check FAQ tab" time="16.1920" classname="should open Support page for printer and check FAQ tab">
+    </testcase>
+    <testcase name="Check Support page works correctly should open Support page for printer and check Manuals&amp;Docs tab" time="9.5710" classname="should open Support page for printer and check Manuals&amp;Docs tab">
+    </testcase>
+    <testcase name="Check Support page works correctly should open Support page for printer and check Download tab" time="9.5400" classname="should open Support page for printer and check Download tab">
+    </testcase>
+    <testcase name="Check Support page works correctly should open Support page for printer and check Registration&amp;Warranty tab" time="13.3620" classname="should open Support page for printer and check Registration&amp;Warranty tab">
+    </testcase>
+    <testcase name="Check Support page works correctly should open Support page for printer and check ContactUs tab" time="11.2810" classname="should open Support page for printer and check ContactUs tab">
+    </testcase>
+    <testcase name="Check Support page works correctly should open Support page for printer, change OS and check data" time="12.6640" classname="should open Support page for printer, change OS and check data">
+    </testcase>
+  </testsuite>
+</testsuites>

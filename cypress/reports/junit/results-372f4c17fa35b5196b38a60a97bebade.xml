@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="18.6020" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T02:12:41" tests="0" file="cypress/integration/tests/23_cart_negative_cases.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Find specific printer, add to cart and perform quantity checking" timestamp="2022-01-01T02:12:41" tests="1" time="18.5890" failures="0">
+    <testcase name="Find specific printer, add to cart and perform quantity checking should show errors when printers quantity change to incorrect one" time="16.4330" classname="should show errors when printers quantity change to incorrect one">
+    </testcase>
+  </testsuite>
+</testsuites>

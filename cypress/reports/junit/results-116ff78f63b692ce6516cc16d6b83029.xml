@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="32.5870" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T02:16:56" tests="0" file="cypress/integration/tests/26_site_selector.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Check that user can go from one website to another one" timestamp="2022-01-01T02:16:56" tests="3" time="32.5810" failures="0">
+    <testcase name="Check that user can go from one website to another one should select German website, trigger redirect and check correct final page" time="10.9820" classname="should select German website, trigger redirect and check correct final page">
+    </testcase>
+    <testcase name="Check that user can go from one website to another one should select Belgium website, trigger redirect and check correct final page" time="9.3290" classname="should select Belgium website, trigger redirect and check correct final page">
+    </testcase>
+    <testcase name="Check that user can go from one website to another one should select Belgium website, trigger redirect and check correct final page" time="10.0950" classname="should select Belgium website, trigger redirect and check correct final page">
+    </testcase>
+  </testsuite>
+</testsuites>

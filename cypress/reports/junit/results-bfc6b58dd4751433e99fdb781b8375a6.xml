@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="47.1530" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T01:58:45" tests="0" file="cypress/integration/tests/10_cart_buy_with_stock_price.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Find discount price and purchase" timestamp="2022-01-01T01:58:45" tests="1" time="47.1390" failures="0">
+    <testcase name="Find discount price and purchase should login, find printer with discount and purchase" time="44.9550" classname="should login, find printer with discount and purchase">
+    </testcase>
+  </testsuite>
+</testsuites>

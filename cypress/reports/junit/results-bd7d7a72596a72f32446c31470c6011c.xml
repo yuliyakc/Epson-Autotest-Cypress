@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="82.2830" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T02:09:39" tests="0" file="cypress/integration/tests/20_compare.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Testing of Compare functionality" timestamp="2022-01-01T02:09:39" tests="2" time="82.2590" failures="0">
+    <testcase name="Testing of Compare functionality should open PLP page, add printers to Compare, hide and delete" time="25.0050" classname="should open PLP page, add printers to Compare, hide and delete">
+    </testcase>
+    <testcase name="Testing of Compare functionality should have an ability to open product details from Compare block and verify pages" time="55.1340" classname="should have an ability to open product details from Compare block and verify pages">
+    </testcase>
+  </testsuite>
+</testsuites>

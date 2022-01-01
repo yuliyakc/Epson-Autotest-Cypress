@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="54.8750" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T01:55:00" tests="0" file="cypress/integration/tests/07_learn_more.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Check Learn More page is opens correctly" timestamp="2022-01-01T01:55:00" tests="4" time="54.8540" failures="0">
+    <testcase name="Check Learn More page is opens correctly should open Learn More page for InkJet printers" time="14.6300" classname="should open Learn More page for InkJet printers">
+    </testcase>
+    <testcase name="Check Learn More page is opens correctly should open Learn More page for Laser Printers" time="11.2280" classname="should open Learn More page for Laser Printers">
+    </testcase>
+    <testcase name="Check Learn More page is opens correctly should open Learn More page for Dot Matrix Printers" time="10.0050" classname="should open Learn More page for Dot Matrix Printers">
+    </testcase>
+    <testcase name="Check Learn More page is opens correctly should open Learn More page for Label Maker Printers" time="16.3400" classname="should open Learn More page for Label Maker Printers">
+    </testcase>
+  </testsuite>
+</testsuites>

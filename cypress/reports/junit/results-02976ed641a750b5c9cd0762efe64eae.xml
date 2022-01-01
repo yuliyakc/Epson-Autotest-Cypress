@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="27.9730" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-01-01T02:19:33" tests="0" file="cypress/integration/tests/30_projectors_links_checking.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Checking of all the links for Projectors to have status 200" timestamp="2022-01-01T02:19:33" tests="1" time="27.9600" failures="0">
+    <testcase name="Checking of all the links for Projectors to have status 200 should have all Projectors links with status 200" time="25.6980" classname="should have all Projectors links with status 200">
+    </testcase>
+  </testsuite>
+</testsuites>
