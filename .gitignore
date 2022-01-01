@@ -3,5 +3,3 @@ node_modules/
 .idea/
 .vscode/
 *.log
-/cypress/report/
-/cypress/reports/
