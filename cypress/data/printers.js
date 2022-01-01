@@ -24,7 +24,7 @@ module.exports = {
         "main" : "Dot Matrix Printers",
         "name3":"LQ-350",
         "search": "Epson PLQ-50M",
-        "searchResult": "Epson 50ml"
+        "searchResult": "Epson 50"
     },
     "laserPrinters": {
         "name" : "WorkForce AL-C300N Series{enter}",
