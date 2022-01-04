@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="50.9520" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:00:20" tests="0" file="cypress/integration/tests/12_buy_with_consumables_accessories.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Add several consumables and  Accessories to cart " timestamp="2022-01-01T02:00:20" tests="1" time="50.9280" failures="0">
-    <testcase name="Add several consumables and  Accessories to cart  should login, add printer, several accessories and purchase" time="48.5940" classname="should login, add printer, several accessories and purchase">
-    </testcase>
-  </testsuite>
-</testsuites>

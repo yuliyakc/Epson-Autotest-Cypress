@@ -1,144 +1,28 @@
 <?xml version="1.0"?>
-<testsuites failures="3" errors="0" tests="95">
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:19:33" tests="0" file="cypress/integration/tests/30_projectors_links_checking.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking of all the links for Projectors to have status 200" timestamp="2022-01-01T02:19:33" tests="1" time="27.9600" failures="0">
-    <testcase name="Checking of all the links for Projectors to have status 200 should have all Projectors links with status 200" time="25.6980" classname="should have all Projectors links with status 200"/>
+<testsuites failures="4" errors="0" tests="95">
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:31:51" tests="0" file="cypress/integration/tests/19_large_format_printers.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking of Large format printer functionality" timestamp="2022-01-04T09:31:51" tests="6" time="88.3540" failures="0">
+    <testcase name="Checking of Large format printer functionality should hover Large Format Printers and check that correct page was opened" time="11.6000" classname="should hover Large Format Printers and check that correct page was opened"/>
+    <testcase name="Checking of Large format printer functionality should check that filter is working correct for Large format and clear filter" time="13.6850" classname="should check that filter is working correct for Large format and clear filter"/>
+    <testcase name="Checking of Large format printer functionality should open Learn More page for Large Format Printers" time="18.0770" classname="should open Learn More page for Large Format Printers"/>
+    <testcase name="Checking of Large format printer functionality should open LFP page and use pagination" time="16.5730" classname="should open LFP page and use pagination"/>
+    <testcase name="Checking of Large format printer functionality should open LFP page and use sorting by price and name" time="14.1710" classname="should open LFP page and use sorting by price and name"/>
+    <testcase name="Checking of Large format printer functionality should open Support page from PLP" time="11.7230" classname="should open Support page from PLP"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:50:43" tests="0" file="cypress/integration/tests/02_forgot_password.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Send a message when forgot password" timestamp="2022-01-01T01:50:43" tests="1" time="13.1100" failures="0">
-    <testcase name="Send a message when forgot password should click Forgot Password btn and assert an alert" time="10.9040" classname="should click Forgot Password btn and assert an alert"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:50:11" tests="0" file="cypress/integration/tests/01_register_logout_login.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Register, logout and relogin" timestamp="2022-01-01T01:50:12" tests="1" time="26.8970" failures="0">
-    <testcase name="Register, logout and relogin should check negative cases with emails when register" time="24.4940" classname="should check negative cases with emails when register"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:16:56" tests="0" file="cypress/integration/tests/26_site_selector.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Check that user can go from one website to another one" timestamp="2022-01-01T02:16:56" tests="3" time="32.5810" failures="0">
-    <testcase name="Check that user can go from one website to another one should select German website, trigger redirect and check correct final page" time="10.9820" classname="should select German website, trigger redirect and check correct final page"/>
-    <testcase name="Check that user can go from one website to another one should select Belgium website, trigger redirect and check correct final page" time="9.3290" classname="should select Belgium website, trigger redirect and check correct final page"/>
-    <testcase name="Check that user can go from one website to another one should select Belgium website, trigger redirect and check correct final page" time="10.0950" classname="should select Belgium website, trigger redirect and check correct final page"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:59:36" tests="0" file="cypress/integration/tests/11_cart_updates_voucher.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Open Cart and make some manipulations" timestamp="2022-01-01T01:59:36" tests="2" time="40.0730" failures="0">
-    <testcase name="Open Cart and make some manipulations should login, add printer to Cart and Update it - change and delete" time="19.3160" classname="should login, add printer to Cart and Update it - change and delete"/>
-    <testcase name="Open Cart and make some manipulations should login, add printer to Cart and use a voucher to change the price" time="18.5770" classname="should login, add printer to Cart and use a voucher to change the price"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:08:20" tests="0" file="cypress/integration/tests/19_large_format_printers.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking of Large format printer functionality" timestamp="2022-01-01T02:08:20" tests="6" time="75.5660" failures="0">
-    <testcase name="Checking of Large format printer functionality should hover Large Format Printers and check that correct page was opened" time="9.8720" classname="should hover Large Format Printers and check that correct page was opened"/>
-    <testcase name="Checking of Large format printer functionality should check that filter is working correct for Large format and clear filter" time="12.3890" classname="should check that filter is working correct for Large format and clear filter"/>
-    <testcase name="Checking of Large format printer functionality should open Learn More page for Large Format Printers" time="14.4940" classname="should open Learn More page for Large Format Printers"/>
-    <testcase name="Checking of Large format printer functionality should open LFP page and use pagination" time="13.9640" classname="should open LFP page and use pagination"/>
-    <testcase name="Checking of Large format printer functionality should open LFP page and use sorting by price and name" time="12.3030" classname="should open LFP page and use sorting by price and name"/>
-    <testcase name="Checking of Large format printer functionality should open Support page from PLP" time="10.2340" classname="should open Support page from PLP"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:52:11" tests="0" file="cypress/integration/tests/04_filters.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking filter for all printers" timestamp="2022-01-01T01:52:11" tests="4" time="48.3850" failures="0">
-    <testcase name="Checking filter for all printers should check that filters are working correct for Ink Printer" time="17.6220" classname="should check that filters are working correct for Ink Printer"/>
-    <testcase name="Checking filter for all printers should check that several filters shows correct result for Dot Printer" time="8.4740" classname="should check that several filters shows correct result for Dot Printer"/>
-    <testcase name="Checking filter for all printers should check that filter is working correct for Laser Printer" time="10.7430" classname="should check that filter is working correct for Laser Printer"/>
-    <testcase name="Checking filter for all printers should check that filter is working correct for Label Maker Printers" time="8.9990" classname="should check that filter is working correct for Label Maker Printers"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:20:39" tests="0" file="cypress/integration/tests/33_search_widget.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking Search widget when perform search" timestamp="2022-01-01T02:20:39" tests="3" time="36.9760" failures="0">
-    <testcase name="Checking Search widget when perform search should open PDP page of a printer" time="12.1390" classname="should open PDP page of a printer"/>
-    <testcase name="Checking Search widget when perform search should open Learn More page of a printer" time="11.0260" classname="should open Learn More page of a printer"/>
-    <testcase name="Checking Search widget when perform search should open suggestion to open PLP page and close Search field" time="11.7490" classname="should open suggestion to open PLP page and close Search field"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:17:46" tests="0" file="cypress/integration/tests/28_buy_accessories_page.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking Buy Accessories page" timestamp="2022-01-01T02:17:46" tests="1" time="40.2580" failures="0">
-    <testcase name="Checking Buy Accessories page should check that all inner links are opened correct" time="38.2580" classname="should check that all inner links are opened correct"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:51:00" tests="0" file="cypress/integration/tests/03_buy_from_plp.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Login and buy a printer" timestamp="2022-01-01T01:51:00" tests="1" time="66.9010" failures="1">
-    <testcase name="Login and buy a printer should login and buy a printer from PLP using credit card" time="0.0000" classname="should login and buy a printer from PLP using credit card">
-      <failure message="Timed out retrying after 50000ms: Expected to find element: `.mini-cart__row .mini-cart-checkout-button`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 50000ms: Expected to find element: `.mini-cart__row .mini-cart-checkout-button`, but never found it.
-    at CartActions.clickCheckoutBtnOnPopup (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\03_buy_from_plp.spec.js:3697:8)
-    at Context.eval (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\03_buy_from_plp.spec.js:6084:25)]]></failure>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:37:52" tests="0" file="cypress/integration/tests/24_order_info_checkings.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking information on Checkout pages" timestamp="2022-01-04T09:37:52" tests="1" time="62.0650" failures="1">
+    <testcase name="Checking information on Checkout pages should check main info about the order and a buyer" time="0.0000" classname="should check main info about the order and a buyer">
+      <failure message="Timed out retrying after 50000ms: Expected to find element: `.product-card`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 50000ms: Expected to find element: `.product-card`, but never found it.
+    at PLPInfoActions.clickBuyNowBtnPLP (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\24_order_info_checkings.spec.js:2752:8)
+    at Context.eval (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\24_order_info_checkings.spec.js:6086:28)]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:12:41" tests="0" file="cypress/integration/tests/23_cart_negative_cases.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Find specific printer, add to cart and perform quantity checking" timestamp="2022-01-01T02:12:41" tests="1" time="18.5890" failures="0">
-    <testcase name="Find specific printer, add to cart and perform quantity checking should show errors when printers quantity change to incorrect one" time="16.4330" classname="should show errors when printers quantity change to incorrect one"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:20:05" tests="0" file="cypress/integration/tests/31_ink_links_checking.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking of all the links for Ink pages to have status 200" timestamp="2022-01-01T02:20:05" tests="1" time="11.4670" failures="0">
-    <testcase name="Checking of all the links for Ink pages to have status 200 should have all Ink links with status 200" time="9.4100" classname="should have all Ink links with status 200"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:07:21" tests="0" file="cypress/integration/tests/17_update_details.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking Update Details Tab" timestamp="2022-01-01T02:07:21" tests="1" time="15.8330" failures="0">
-    <testcase name="Checking Update Details Tab should check that new Details are saved successfully" time="13.7230" classname="should check that new Details are saved successfully"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:03:49" tests="0" file="cypress/integration/tests/14_my_account.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking tabs on My Account menu" timestamp="2022-01-01T02:03:49" tests="2" time="57.0500" failures="0">
-    <testcase name="Checking tabs on My Account menu should check that tabs on My account menu is opened and correct ones" time="21.6420" classname="should check that tabs on My account menu is opened and correct ones"/>
-    <testcase name="Checking tabs on My Account menu should open My Accounts tab and check Inner blocks" time="33.0490" classname="should open My Accounts tab and check Inner blocks"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:53:03" tests="0" file="cypress/integration/tests/05_pagination_sorting.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking pagination and sorting on PLP" timestamp="2022-01-01T01:53:03" tests="3" time="51.4780" failures="0">
-    <testcase name="Checking pagination and sorting on PLP should check that pagination working correct for PLP" time="17.7740" classname="should check that pagination working correct for PLP"/>
-    <testcase name="Checking pagination and sorting on PLP should check that sorting by Price is working correct for PLP" time="14.9390" classname="should check that sorting by Price is working correct for PLP"/>
-    <testcase name="Checking pagination and sorting on PLP should check that sorting by Name is working correct for PLP" time="16.6950" classname="should check that sorting by Name is working correct for PLP"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:20:20" tests="0" file="cypress/integration/tests/32_shop_online_links_checking.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking of all the links for Shop online pages to have status 200" timestamp="2022-01-01T02:20:20" tests="1" time="15.1950" failures="0">
-    <testcase name="Checking of all the links for Shop online pages to have status 200 should have all Shop Online links with status 200" time="13.1500" classname="should have all Shop Online links with status 200"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:11:50" tests="0" file="cypress/integration/tests/22_pdp_tab_bar.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Testing Tab Bar for each product" timestamp="2022-01-01T02:11:50" tests="3" time="47.8150" failures="0">
-    <testcase name="Testing Tab Bar for each product should open website on a specific PDP to check tabs for Printers" time="18.0290" classname="should open website on a specific PDP to check tabs for Printers"/>
-    <testcase name="Testing Tab Bar for each product should open website on a specific PDP to check tabs for Options" time="11.1910" classname="should open website on a specific PDP to check tabs for Options"/>
-    <testcase name="Testing Tab Bar for each product should open website on a specific accessories PDP to check tabs" time="16.5050" classname="should open website on a specific accessories PDP to check tabs"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:21:55" tests="0" file="cypress/integration/tests/37_guest_user_checkouts.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Guest user performs purchase using discounts" timestamp="2022-01-01T02:21:55" tests="4" time="43.1540" failures="0">
-    <testcase name="Guest user performs purchase using discounts should open website, find product with promotion, add extra voucher and apply" time="12.0450" classname="should open website, find product with promotion, add extra voucher and apply"/>
-    <testcase name="Guest user performs purchase using discounts should open website, find Promotion printer and add it to Cart" time="7.2320" classname="should open website, find Promotion printer and add it to Cart"/>
-    <testcase name="Guest user performs purchase using discounts should open website, add printer to cart and apply Amount based voucher" time="11.3570" classname="should open website, add printer to cart and apply Amount based voucher"/>
-    <testcase name="Guest user performs purchase using discounts should open website, add printer to cart and apply Percentage based voucher" time="10.4260" classname="should open website, add printer to cart and apply Percentage based voucher"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:53:58" tests="0" file="cypress/integration/tests/06_page_content_relevance.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Testing of pages relevance by breadcrumbs" timestamp="2022-01-01T01:53:58" tests="5" time="57.7950" failures="0">
-    <testcase name="Testing of pages relevance by breadcrumbs should hover over InkJet Printers and open random page" time="9.4180" classname="should hover over InkJet Printers and open random page"/>
-    <testcase name="Testing of pages relevance by breadcrumbs should hover over Laser Printers and open random page" time="7.2550" classname="should hover over Laser Printers and open random page"/>
-    <testcase name="Testing of pages relevance by breadcrumbs should hover over Dot Matrix Printers and open page" time="7.8270" classname="should hover over Dot Matrix Printers and open page"/>
-    <testcase name="Testing of pages relevance by breadcrumbs should hover over Label maker Printers and open random page" time="7.1350" classname="should hover over Label maker Printers and open random page"/>
-    <testcase name="Testing of pages relevance by breadcrumbs should search for a product and click each level of breadcrumbs" time="23.7290" classname="should search for a product and click each level of breadcrumbs"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:14:09" tests="0" file="cypress/integration/tests/25_order_info_negative.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Open Cart and perform negative cases for Checkout" timestamp="2022-01-01T02:14:09" tests="1" time="163.4570" failures="0">
-    <testcase name="Open Cart and perform negative cases for Checkout should perform negative tests for all Checkout pages" time="160.8840" classname="should perform negative tests for all Checkout pages"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:00:20" tests="0" file="cypress/integration/tests/12_buy_with_consumables_accessories.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Add several consumables and  Accessories to cart " timestamp="2022-01-01T02:00:20" tests="1" time="50.9280" failures="0">
-    <testcase name="Add several consumables and  Accessories to cart  should login, add printer, several accessories and purchase" time="48.5940" classname="should login, add printer, several accessories and purchase"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:21:37" tests="0" file="cypress/integration/tests/36_pdp_info_check.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Login and check all info on PDP page" timestamp="2022-01-01T02:21:37" tests="1" time="14.7830" failures="0">
-    <testcase name="Login and check all info on PDP page should login, find printer, open PDP and check inner data" time="12.5710" classname="should login, find printer, open PDP and check inner data"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:01:15" tests="0" file="cypress/integration/tests/13_shipping_methods.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Check different types of Shipping Methods" timestamp="2022-01-01T02:01:15" tests="6" time="150.5800" failures="0">
-    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Hardware to the Cart" time="26.3730" classname="should check Shipping Method &quot;Standard&quot; when add Hardware to the Cart"/>
-    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Electronic&quot; when add CoverPlus to the Cart" time="22.2150" classname="should check Shipping Method &quot;Electronic&quot; when add CoverPlus to the Cart"/>
-    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Option to the Cart" time="21.0320" classname="should check Shipping Method &quot;Standard&quot; when add Option to the Cart"/>
-    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Multiple Consumables to purchase" time="29.6060" classname="should check Shipping Method &quot;Standard&quot; when add Multiple Consumables to purchase"/>
-    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Hardware with CoverPlus to purchase" time="24.1840" classname="should check Shipping Method &quot;Standard&quot; when add Hardware with CoverPlus to purchase"/>
-    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Deutsche Post&quot; when add EasyMail to purchase" time="24.7990" classname="should check Shipping Method &quot;Deutsche Post&quot; when add EasyMail to purchase"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:04:50" tests="0" file="cypress/integration/tests/15_order_history.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking Order History Tab" timestamp="2022-01-01T02:04:50" tests="4" time="78.0110" failures="0">
-    <testcase name="Checking Order History Tab should check Sorting on Order History page" time="11.6810" classname="should check Sorting on Order History page"/>
-    <testcase name="Checking Order History Tab should check Pagination on Order History page" time="9.7990" classname="should check Pagination on Order History page"/>
-    <testcase name="Checking Order History Tab should open Order Number page and reorder an order" time="37.4250" classname="should open Order Number page and reorder an order"/>
-    <testcase name="Checking Order History Tab should check Order History &quot;Back&quot; button" time="16.7670" classname="should check Order History &quot;Back&quot; button"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:18:30" tests="0" file="cypress/integration/tests/29_printers_links_checking.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking of all the links on main menu to have status 200" timestamp="2022-01-01T02:18:30" tests="5" time="59.6930" failures="1">
-    <testcase name="Checking of all the links on main menu to have status 200 should have all InkJet Printers links with status 200" time="19.3500" classname="should have all InkJet Printers links with status 200"/>
-    <testcase name="Checking of all the links on main menu to have status 200 should have all Laser Printers links with status 200" time="12.3940" classname="should have all Laser Printers links with status 200"/>
-    <testcase name="Checking of all the links on main menu to have status 200 should have Dot Matrix Printers links with status 200" time="8.2750" classname="should have Dot Matrix Printers links with status 200"/>
-    <testcase name="Checking of all the links on main menu to have status 200 should have Large Format Printers links with status 200" time="8.7480" classname="should have Large Format Printers links with status 200"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:44:18" tests="0" file="cypress/integration/tests/29_printers_links_checking.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking of all the links on main menu to have status 200" timestamp="2022-01-04T09:44:18" tests="5" time="70.0530" failures="1">
+    <testcase name="Checking of all the links on main menu to have status 200 should have all InkJet Printers links with status 200" time="23.7970" classname="should have all InkJet Printers links with status 200"/>
+    <testcase name="Checking of all the links on main menu to have status 200 should have all Laser Printers links with status 200" time="13.7670" classname="should have all Laser Printers links with status 200"/>
+    <testcase name="Checking of all the links on main menu to have status 200 should have Dot Matrix Printers links with status 200" time="9.1680" classname="should have Dot Matrix Printers links with status 200"/>
+    <testcase name="Checking of all the links on main menu to have status 200 should have Large Format Printers links with status 200" time="9.2250" classname="should have Large Format Printers links with status 200"/>
     <testcase name="Checking of all the links on main menu to have status 200 should have all Label Maker Printers links with status 200" time="0.0000" classname="should have all Label Maker Printers links with status 200">
       <failure message="`cy.request()` failed on:
 
@@ -162,7 +46,7 @@ Headers: {
   &quot;Connection&quot;: &quot;keep-alive&quot;,
   &quot;user-agent&quot;: &quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/96.0.4664.110 Safari/537.36&quot;,
   &quot;accept&quot;: &quot;*/*&quot;,
-  &quot;cookie&quot;: &quot;gpv_prevurl=epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com%2Fen_GB%2F; gpv_pn=home; epsonstorefrontRememberMe=bWFyaWEuYm9icm92YSUyQjAzJTQwa2VlbmV0aGljcy5jb206MTY0MjIxMzE2NjYwNzpjZGJiOGY3NDQyOWZiNmFhMjU0ZGIxNDQ0OTcxMjFiYg; OptanonAlertBoxClosed=2022-01-01T02:19:23.385Z; anonymous-consents=%5B%5D; OptanonConsent=isGpcEnabled=0&amp;datestamp=Sat+Jan+01+2022+04%3A19%3A29+GMT%2B0200+(Eastern+European+Standard+Time)&amp;version=6.21.0&amp;isIABGlobal=false&amp;hosts=&amp;consentId=e6f8e420-7e9a-4ca6-8713-953b7f937e31&amp;interactionCount=1&amp;landingPath=NotLandingPage&amp;groups=C0004%3A1%2CC0003%3A1%2CC0002%3A1%2CC0001%3A1&amp;geolocation=UA%3B23&AwaitingReconsent=false; AMCV_C6DD45815AE6DFFD0A495D24%40AdobeOrg=-2121179033%7CMCIDTS%7C18994%7CMCMID%7C04689572918646860384547734955543081991%7CMCAAMLH-1641608362%7C6%7CMCAAMB-1641608362%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1641010762s%7CNONE%7CMCSYNCSOP%7C411-19001%7CvVersion%7C5.3.0; mbox=session#9f7c2c115751494da0b7bfe0ab494821#1641005429|PC#9f7c2c115751494da0b7bfe0ab494821.37_0#1704248363; cookie-notification=NOT_ACCEPTED; s_sq=eulepsondev2021%3D%2526c.%2526a.%2526activitymap.%2526page%253Dhome%2526link%253DLabel%252520maker%252520Printers%2526region%253DBODY%2526pageIDType%253D1%2526.activitymap%2526.a%2526.c%2526pid%253Dhome%2526pidt%253D1%2526oid%253Dhttps%25253A%25252F%25252Fepson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com%25252Fen_GB%25252Fc%25252Flabelwriter%2526ot%253DA; JSESSIONID=Y6-beae85f3-3ab8-4a9f-ac7a-41ae67a4c48e.accstorefront-97474cc55-rtpj5; acceleratorSecureGUID=c622ccc83f27f5e24f475f6bfca0229fee8cdec0; s_cc=true; at_check=true; AMCVS_C6DD45815AE6DFFD0A495D24%40AdobeOrg=1; ROUTE=.accstorefront-97474cc55-rtpj5&quot;,
+  &quot;cookie&quot;: &quot;gpv_prevurl=epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com%2Fen_GB%2Fc%2Flabelwriter; gpv_pn=404; epsonstorefrontRememberMe=bWFyaWEuYm9icm92YSUyQjAzJTQwa2VlbmV0aGljcy5jb206MTY0MjQ5OTEyMTkyNzo0ZWQ0ODEwM2NiOTQxNjgxM2IzYjJkYWE1YjlhMjJlOA; OptanonAlertBoxClosed=2022-01-04T09:45:19.377Z; anonymous-consents=%5B%5D; OptanonConsent=isGpcEnabled=0&amp;datestamp=Tue+Jan+04+2022+11%3A45%3A27+GMT%2B0200+(Eastern+European+Standard+Time)&amp;version=6.21.0&amp;isIABGlobal=false&amp;hosts=&amp;consentId=5b76394b-595f-416c-a2f1-e787348f671f&amp;interactionCount=1&amp;landingPath=NotLandingPage&amp;groups=C0004%3A1%2CC0003%3A1%2CC0002%3A1%2CC0001%3A1&amp;geolocation=UA%3B23&AwaitingReconsent=false; AMCV_C6DD45815AE6DFFD0A495D24%40AdobeOrg=-2121179033%7CMCIDTS%7C18997%7CMCMID%7C31299330352542165872597430877874370784%7CMCAAMLH-1641894317%7C6%7CMCAAMB-1641894317%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1641296717s%7CNONE%7CMCSYNCSOP%7C411-19004%7CvVersion%7C5.3.0; mbox=session#5522dd6225d64a05b6dd0cfef250f0d3#1641291388|PC#5522dd6225d64a05b6dd0cfef250f0d3.37_0#1704534318; cookie-notification=NOT_ACCEPTED; s_sq=%5B%5BB%5D%5D; JSESSIONID=Y6-272349bb-6bb8-4906-a8e2-fce4b161e2c1.accstorefront-97474cc55-rtpj5; acceleratorSecureGUID=a26451914094dc29ccfb3d607546fe8a4cfcdc6f; s_cc=true; at_check=true; AMCVS_C6DD45815AE6DFFD0A495D24%40AdobeOrg=1; ROUTE=.accstorefront-97474cc55-rtpj5&quot;,
   &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;
 }
 
@@ -172,7 +56,7 @@ The response we got was:
 
 Status: 404 - Not Found
 Headers: {
-  &quot;date&quot;: &quot;Sat, 01 Jan 2022 02:19:29 GMT&quot;,
+  &quot;date&quot;: &quot;Tue, 04 Jan 2022 09:45:25 GMT&quot;,
   &quot;server&quot;: &quot;*&quot;,
   &quot;x-frame-options&quot;: &quot;&quot;,
   &quot;cache-control&quot;: &quot;no-cache, no-store, max-age=0, must-revalidate&quot;,
@@ -184,7 +68,7 @@ Headers: {
   &quot;content-type&quot;: &quot;text/html;charset=UTF-8&quot;,
   &quot;content-language&quot;: &quot;en-GB&quot;,
   &quot;vary&quot;: &quot;User-Agent&quot;,
-  &quot;keep-alive&quot;: &quot;timeout=5, max=47&quot;,
+  &quot;keep-alive&quot;: &quot;timeout=5, max=43&quot;,
   &quot;connection&quot;: &quot;Keep-Alive&quot;,
   &quot;transfer-encoding&quot;: &quot;chunked&quot;
 }
@@ -252,7 +136,7 @@ Headers: {
   "Connection": "keep-alive",
   "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/96.0.4664.110 Safari/537.36",
   "accept": "*/*",
-  "cookie": "gpv_prevurl=epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com%2Fen_GB%2F; gpv_pn=home; epsonstorefrontRememberMe=bWFyaWEuYm9icm92YSUyQjAzJTQwa2VlbmV0aGljcy5jb206MTY0MjIxMzE2NjYwNzpjZGJiOGY3NDQyOWZiNmFhMjU0ZGIxNDQ0OTcxMjFiYg; OptanonAlertBoxClosed=2022-01-01T02:19:23.385Z; anonymous-consents=%5B%5D; OptanonConsent=isGpcEnabled=0&datestamp=Sat+Jan+01+2022+04%3A19%3A29+GMT%2B0200+(Eastern+European+Standard+Time)&version=6.21.0&isIABGlobal=false&hosts=&consentId=e6f8e420-7e9a-4ca6-8713-953b7f937e31&interactionCount=1&landingPath=NotLandingPage&groups=C0004%3A1%2CC0003%3A1%2CC0002%3A1%2CC0001%3A1&geolocation=UA%3B23&AwaitingReconsent=false; AMCV_C6DD45815AE6DFFD0A495D24%40AdobeOrg=-2121179033%7CMCIDTS%7C18994%7CMCMID%7C04689572918646860384547734955543081991%7CMCAAMLH-1641608362%7C6%7CMCAAMB-1641608362%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1641010762s%7CNONE%7CMCSYNCSOP%7C411-19001%7CvVersion%7C5.3.0; mbox=session#9f7c2c115751494da0b7bfe0ab494821#1641005429|PC#9f7c2c115751494da0b7bfe0ab494821.37_0#1704248363; cookie-notification=NOT_ACCEPTED; s_sq=eulepsondev2021%3D%2526c.%2526a.%2526activitymap.%2526page%253Dhome%2526link%253DLabel%252520maker%252520Printers%2526region%253DBODY%2526pageIDType%253D1%2526.activitymap%2526.a%2526.c%2526pid%253Dhome%2526pidt%253D1%2526oid%253Dhttps%25253A%25252F%25252Fepson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com%25252Fen_GB%25252Fc%25252Flabelwriter%2526ot%253DA; JSESSIONID=Y6-beae85f3-3ab8-4a9f-ac7a-41ae67a4c48e.accstorefront-97474cc55-rtpj5; acceleratorSecureGUID=c622ccc83f27f5e24f475f6bfca0229fee8cdec0; s_cc=true; at_check=true; AMCVS_C6DD45815AE6DFFD0A495D24%40AdobeOrg=1; ROUTE=.accstorefront-97474cc55-rtpj5",
+  "cookie": "gpv_prevurl=epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com%2Fen_GB%2Fc%2Flabelwriter; gpv_pn=404; epsonstorefrontRememberMe=bWFyaWEuYm9icm92YSUyQjAzJTQwa2VlbmV0aGljcy5jb206MTY0MjQ5OTEyMTkyNzo0ZWQ0ODEwM2NiOTQxNjgxM2IzYjJkYWE1YjlhMjJlOA; OptanonAlertBoxClosed=2022-01-04T09:45:19.377Z; anonymous-consents=%5B%5D; OptanonConsent=isGpcEnabled=0&datestamp=Tue+Jan+04+2022+11%3A45%3A27+GMT%2B0200+(Eastern+European+Standard+Time)&version=6.21.0&isIABGlobal=false&hosts=&consentId=5b76394b-595f-416c-a2f1-e787348f671f&interactionCount=1&landingPath=NotLandingPage&groups=C0004%3A1%2CC0003%3A1%2CC0002%3A1%2CC0001%3A1&geolocation=UA%3B23&AwaitingReconsent=false; AMCV_C6DD45815AE6DFFD0A495D24%40AdobeOrg=-2121179033%7CMCIDTS%7C18997%7CMCMID%7C31299330352542165872597430877874370784%7CMCAAMLH-1641894317%7C6%7CMCAAMB-1641894317%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1641296717s%7CNONE%7CMCSYNCSOP%7C411-19004%7CvVersion%7C5.3.0; mbox=session#5522dd6225d64a05b6dd0cfef250f0d3#1641291388|PC#5522dd6225d64a05b6dd0cfef250f0d3.37_0#1704534318; cookie-notification=NOT_ACCEPTED; s_sq=%5B%5BB%5D%5D; JSESSIONID=Y6-272349bb-6bb8-4906-a8e2-fce4b161e2c1.accstorefront-97474cc55-rtpj5; acceleratorSecureGUID=a26451914094dc29ccfb3d607546fe8a4cfcdc6f; s_cc=true; at_check=true; AMCVS_C6DD45815AE6DFFD0A495D24%40AdobeOrg=1; ROUTE=.accstorefront-97474cc55-rtpj5",
   "accept-encoding": "gzip, deflate"
 }
 
@@ -262,7 +146,7 @@ The response we got was:
 
 Status: 404 - Not Found
 Headers: {
-  "date": "Sat, 01 Jan 2022 02:19:29 GMT",
+  "date": "Tue, 04 Jan 2022 09:45:25 GMT",
   "server": "*",
   "x-frame-options": "",
   "cache-control": "no-cache, no-store, max-age=0, must-revalidate",
@@ -274,7 +158,7 @@ Headers: {
   "content-type": "text/html;charset=UTF-8",
   "content-language": "en-GB",
   "vary": "User-Agent",
-  "keep-alive": "timeout=5, max=47",
+  "keep-alive": "timeout=5, max=43",
   "connection": "Keep-Alive",
   "transfer-encoding": "chunked"
 }
@@ -336,77 +220,197 @@ From Your Spec Code:
     at Context.eval (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\29_printers_links_checking.spec.js:6114:31)]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:55:58" tests="0" file="cypress/integration/tests/08_support_pdp.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Check Support page works correctly" timestamp="2022-01-01T01:55:58" tests="6" time="75.1130" failures="0">
-    <testcase name="Check Support page works correctly should open Support page for printer and check FAQ tab" time="16.1920" classname="should open Support page for printer and check FAQ tab"/>
-    <testcase name="Check Support page works correctly should open Support page for printer and check Manuals&amp;Docs tab" time="9.5710" classname="should open Support page for printer and check Manuals&amp;Docs tab"/>
-    <testcase name="Check Support page works correctly should open Support page for printer and check Download tab" time="9.5400" classname="should open Support page for printer and check Download tab"/>
-    <testcase name="Check Support page works correctly should open Support page for printer and check Registration&amp;Warranty tab" time="13.3620" classname="should open Support page for printer and check Registration&amp;Warranty tab"/>
-    <testcase name="Check Support page works correctly should open Support page for printer and check ContactUs tab" time="11.2810" classname="should open Support page for printer and check ContactUs tab"/>
-    <testcase name="Check Support page works correctly should open Support page for printer, change OS and check data" time="12.6640" classname="should open Support page for printer, change OS and check data"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:15:43" tests="0" file="cypress/integration/tests/05_pagination_sorting.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking pagination and sorting on PLP" timestamp="2022-01-04T09:15:43" tests="3" time="56.9980" failures="0">
+    <testcase name="Checking pagination and sorting on PLP should check that pagination working correct for PLP" time="20.4530" classname="should check that pagination working correct for PLP"/>
+    <testcase name="Checking pagination and sorting on PLP should check that sorting by Price is working correct for PLP" time="17.3190" classname="should check that sorting by Price is working correct for PLP"/>
+    <testcase name="Checking pagination and sorting on PLP should check that sorting by Name is working correct for PLP" time="16.6830" classname="should check that sorting by Name is working correct for PLP"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:57:17" tests="0" file="cypress/integration/tests/09_support_search.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Check Support search page works correctly" timestamp="2022-01-01T01:57:17" tests="8" time="84.3240" failures="0">
-    <testcase name="Check Support search page works correctly should open Support page and perform search by Product name" time="11.0800" classname="should open Support page and perform search by Product name"/>
-    <testcase name="Check Support search page works correctly should open Support page and perform search by Serial Number" time="10.7120" classname="should open Support page and perform search by Serial Number"/>
-    <testcase name="Check Support search page works correctly should search and select specific printer from dropdown list" time="9.7760" classname="should search and select specific printer from dropdown list"/>
-    <testcase name="Check Support search page works correctly should check that Product Info, Standard Warranty and Extended Warranty are displayed" time="9.8840" classname="should check that Product Info, Standard Warranty and Extended Warranty are displayed"/>
-    <testcase name="Check Support search page works correctly should check Subscription for a Printer in quantity 1" time="10.3080" classname="should check Subscription for a Printer in quantity 1"/>
-    <testcase name="Check Support search page works correctly should check Subscription for a Printer in quantity 3" time="10.7010" classname="should check Subscription for a Printer in quantity 3"/>
-    <testcase name="Check Support search page works correctly should check main information of a printer" time="10.0310" classname="should check main information of a printer"/>
-    <testcase name="Check Support search page works correctly should check error message if there are no warranty for a printer" time="9.2370" classname="should check error message if there are no warranty for a printer"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:33:24" tests="0" file="cypress/integration/tests/20_compare.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Testing of Compare functionality" timestamp="2022-01-04T09:33:24" tests="2" time="88.1990" failures="0">
+    <testcase name="Testing of Compare functionality should open PLP page, add printers to Compare, hide and delete" time="26.8160" classname="should open PLP page, add printers to Compare, hide and delete"/>
+    <testcase name="Testing of Compare functionality should have an ability to open product details from Compare block and verify pages" time="58.8640" classname="should have an ability to open product details from Compare block and verify pages"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:21:22" tests="0" file="cypress/integration/tests/35_plp_info_check.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Login and check info on PLP page" timestamp="2022-01-01T02:21:22" tests="1" time="12.0200" failures="0">
-    <testcase name="Login and check info on PLP page should login and check inner data for plp printer" time="9.8570" classname="should login and check inner data for plp printer"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:42:48" tests="0" file="cypress/integration/tests/27_cookies_dialog.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking of Cookies banner correct work" timestamp="2022-01-04T09:42:48" tests="2" time="10.5230" failures="0">
+    <testcase name="Checking of Cookies banner correct work should click Cookies Info link and check correct page" time="5.7150" classname="should click Cookies Info link and check correct page"/>
+    <testcase name="Checking of Cookies banner correct work should click Cookies settings, Allow All switches and confirm" time="2.6330" classname="should click Cookies settings, Allow All switches and confirm"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:09:39" tests="0" file="cypress/integration/tests/20_compare.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Testing of Compare functionality" timestamp="2022-01-01T02:09:39" tests="2" time="82.2590" failures="0">
-    <testcase name="Testing of Compare functionality should open PLP page, add printers to Compare, hide and delete" time="25.0050" classname="should open PLP page, add printers to Compare, hide and delete"/>
-    <testcase name="Testing of Compare functionality should have an ability to open product details from Compare block and verify pages" time="55.1340" classname="should have an ability to open product details from Compare block and verify pages"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:13:44" tests="0" file="cypress/integration/tests/03_buy_from_plp.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Login and buy a printer" timestamp="2022-01-04T09:13:44" tests="1" time="54.4690" failures="0">
+    <testcase name="Login and buy a printer should login and buy a printer from PLP using credit card" time="51.7720" classname="should login and buy a printer from PLP using credit card"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:58:45" tests="0" file="cypress/integration/tests/10_cart_buy_with_stock_price.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Find discount price and purchase" timestamp="2022-01-01T01:58:45" tests="1" time="47.1390" failures="0">
-    <testcase name="Find discount price and purchase should login, find printer with discount and purchase" time="44.9550" classname="should login, find printer with discount and purchase"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:49:03" tests="0" file="cypress/integration/tests/38_mobile_resolutions.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Check Mobile version correct working" timestamp="2022-01-04T09:49:03" tests="2" time="75.0660" failures="0">
+    <testcase name="Check Mobile version correct working should change screen resolution, login successful and purchase" time="46.8930" classname="should change screen resolution, login successful and purchase"/>
+    <testcase name="Check Mobile version correct working should change screen resolution, login and open My Account menu" time="25.6730" classname="should change screen resolution, login and open My Account menu"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:11:05" tests="0" file="cypress/integration/tests/21_guest_user.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="User should have an ability to purchase as Guest" timestamp="2022-01-01T02:11:05" tests="1" time="40.4650" failures="0">
-    <testcase name="User should have an ability to purchase as Guest should open website, add product to Cart and register with existed email" time="38.1780" classname="should open website, add product to Cart and register with existed email"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:06:12" tests="0" file="cypress/integration/tests/16_address_book.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking Address Book Tab" timestamp="2022-01-01T02:06:12" tests="3" time="65.2800" failures="0">
-    <testcase name="Checking Address Book Tab should check negative testcases while creating new Address" time="35.6250" classname="should check negative testcases while creating new Address"/>
-    <testcase name="Checking Address Book Tab should edit created before Address by search with Postcode and check for changes" time="14.7140" classname="should edit created before Address by search with Postcode and check for changes"/>
-    <testcase name="Checking Address Book Tab should delete created before Address" time="12.7740" classname="should delete created before Address"/>
-  </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:13:03" tests="0" file="cypress/integration/tests/24_order_info_checkings.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking information on Checkout pages" timestamp="2022-01-01T02:13:03" tests="1" time="61.3650" failures="1">
-    <testcase name="Checking information on Checkout pages should check main info about the order and a buyer" time="0.0000" classname="should check main info about the order and a buyer">
-      <failure message="Timed out retrying after 50000ms: Expected to find element: `.product-card`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 50000ms: Expected to find element: `.product-card`, but never found it.
-    at PLPInfoActions.clickBuyNowBtnPLP (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\24_order_info_checkings.spec.js:2752:8)
-    at Context.eval (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\24_order_info_checkings.spec.js:6086:28)]]></failure>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:36:44" tests="0" file="cypress/integration/tests/23_cart_negative_cases.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Find specific printer, add to cart and perform quantity checking" timestamp="2022-01-04T09:36:44" tests="1" time="63.2080" failures="1">
+    <testcase name="Find specific printer, add to cart and perform quantity checking should show errors when printers quantity change to incorrect one" time="0.0000" classname="should show errors when printers quantity change to incorrect one">
+      <failure message="Timed out retrying after 50000ms: Expected to find element: `.product-summary__buttons #addToCartButton`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 50000ms: Expected to find element: `.product-summary__buttons #addToCartButton`, but never found it.
+    at PdpActions.clickBuyNowBtnOnPDPPage (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\23_cart_negative_cases.spec.js:3004:8)
+    at Context.eval (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\23_cart_negative_cases.spec.js:6082:30)]]></failure>
     </testcase>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:55:00" tests="0" file="cypress/integration/tests/07_learn_more.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Check Learn More page is opens correctly" timestamp="2022-01-01T01:55:00" tests="4" time="54.8540" failures="0">
-    <testcase name="Check Learn More page is opens correctly should open Learn More page for InkJet printers" time="14.6300" classname="should open Learn More page for InkJet printers"/>
-    <testcase name="Check Learn More page is opens correctly should open Learn More page for Laser Printers" time="11.2280" classname="should open Learn More page for Laser Printers"/>
-    <testcase name="Check Learn More page is opens correctly should open Learn More page for Dot Matrix Printers" time="10.0050" classname="should open Learn More page for Dot Matrix Printers"/>
-    <testcase name="Check Learn More page is opens correctly should open Learn More page for Label Maker Printers" time="16.3400" classname="should open Learn More page for Label Maker Printers"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:23:26" tests="0" file="cypress/integration/tests/12_buy_with_consumables_accessories.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Add several consumables and  Accessories to cart " timestamp="2022-01-04T09:23:26" tests="1" time="55.0760" failures="0">
+    <testcase name="Add several consumables and  Accessories to cart  should login, add printer, several accessories and purchase" time="52.5610" classname="should login, add printer, several accessories and purchase"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:17:32" tests="0" file="cypress/integration/tests/27_cookies_dialog.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking of Cookies banner correct work" timestamp="2022-01-01T02:17:32" tests="2" time="9.9660" failures="0">
-    <testcase name="Checking of Cookies banner correct work should click Cookies Info link and check correct page" time="5.4580" classname="should click Cookies Info link and check correct page"/>
-    <testcase name="Checking of Cookies banner correct work should click Cookies settings, Allow All switches and confirm" time="2.3900" classname="should click Cookies settings, Allow All switches and confirm"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:28:05" tests="0" file="cypress/integration/tests/15_order_history.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking Order History Tab" timestamp="2022-01-04T09:28:05" tests="4" time="82.4360" failures="0">
+    <testcase name="Checking Order History Tab should check Sorting on Order History page" time="12.5490" classname="should check Sorting on Order History page"/>
+    <testcase name="Checking Order History Tab should check Pagination on Order History page" time="10.5520" classname="should check Pagination on Order History page"/>
+    <testcase name="Checking Order History Tab should open Order Number page and reorder an order" time="39.0610" classname="should open Order Number page and reorder an order"/>
+    <testcase name="Checking Order History Tab should check Order History &quot;Back&quot; button" time="17.9400" classname="should check Order History &quot;Back&quot; button"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:22:42" tests="0" file="cypress/integration/tests/38_mobile_resolutions.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Check Mobile version correct working" timestamp="2022-01-01T02:22:42" tests="2" time="60.8990" failures="0">
-    <testcase name="Check Mobile version correct working should change screen resolution, login successful and purchase" time="34.2890" classname="should change screen resolution, login successful and purchase"/>
-    <testcase name="Check Mobile version correct working should change screen resolution, login and open My Account menu" time="24.4650" classname="should change screen resolution, login and open My Account menu"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:42:09" tests="0" file="cypress/integration/tests/26_site_selector.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Check that user can go from one website to another one" timestamp="2022-01-04T09:42:09" tests="3" time="34.4430" failures="0">
+    <testcase name="Check that user can go from one website to another one should select German website, trigger redirect and check correct final page" time="11.9720" classname="should select German website, trigger redirect and check correct final page"/>
+    <testcase name="Check that user can go from one website to another one should select Belgium website, trigger redirect and check correct final page" time="9.9920" classname="should select Belgium website, trigger redirect and check correct final page"/>
+    <testcase name="Check that user can go from one website to another one should select Belgium website, trigger redirect and check correct final page" time="10.1700" classname="should select Belgium website, trigger redirect and check correct final page"/>
   </testsuite>
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:07:40" tests="0" file="cypress/integration/tests/18_update_email.spec.js" time="0.0000" failures="0"/>
-  <testsuite name="Checking Update Email Tab" timestamp="2022-01-01T02:07:40" tests="2" time="35.7920" failures="0">
-    <testcase name="Checking Update Email Tab should check that new Email is saved successfully" time="12.1110" classname="should check that new Email is saved successfully"/>
-    <testcase name="Checking Update Email Tab should check negative cases for email changing" time="21.5750" classname="should check negative cases for email changing"/>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:14:42" tests="0" file="cypress/integration/tests/04_filters.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking filter for all printers" timestamp="2022-01-04T09:14:42" tests="4" time="56.4430" failures="0">
+    <testcase name="Checking filter for all printers should check that filters are working correct for Ink Printer" time="19.7500" classname="should check that filters are working correct for Ink Printer"/>
+    <testcase name="Checking filter for all printers should check that several filters shows correct result for Dot Printer" time="11.9890" classname="should check that several filters shows correct result for Dot Printer"/>
+    <testcase name="Checking filter for all printers should check that filter is working correct for Laser Printer" time="11.3360" classname="should check that filter is working correct for Laser Printer"/>
+    <testcase name="Checking filter for all printers should check that filter is working correct for Label Maker Printers" time="10.8450" classname="should check that filter is working correct for Label Maker Printers"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:16:44" tests="0" file="cypress/integration/tests/06_page_content_relevance.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Testing of pages relevance by breadcrumbs" timestamp="2022-01-04T09:16:44" tests="5" time="61.6930" failures="0">
+    <testcase name="Testing of pages relevance by breadcrumbs should hover over InkJet Printers and open random page" time="9.5270" classname="should hover over InkJet Printers and open random page"/>
+    <testcase name="Testing of pages relevance by breadcrumbs should hover over Laser Printers and open random page" time="8.0290" classname="should hover over Laser Printers and open random page"/>
+    <testcase name="Testing of pages relevance by breadcrumbs should hover over Dot Matrix Printers and open page" time="8.2540" classname="should hover over Dot Matrix Printers and open page"/>
+    <testcase name="Testing of pages relevance by breadcrumbs should hover over Label maker Printers and open random page" time="7.2550" classname="should hover over Label maker Printers and open random page"/>
+    <testcase name="Testing of pages relevance by breadcrumbs should search for a product and click each level of breadcrumbs" time="26.3780" classname="should search for a product and click each level of breadcrumbs"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:34:57" tests="0" file="cypress/integration/tests/21_guest_user.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="User should have an ability to purchase as Guest" timestamp="2022-01-04T09:34:57" tests="1" time="48.5640" failures="0">
+    <testcase name="User should have an ability to purchase as Guest should open website, add product to Cart and register with existed email" time="46.1250" classname="should open website, add product to Cart and register with existed email"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:31:09" tests="0" file="cypress/integration/tests/18_update_email.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking Update Email Tab" timestamp="2022-01-04T09:31:09" tests="2" time="38.0880" failures="0">
+    <testcase name="Checking Update Email Tab should check that new Email is saved successfully" time="12.9850" classname="should check that new Email is saved successfully"/>
+    <testcase name="Checking Update Email Tab should check negative cases for email changing" time="22.6730" classname="should check negative cases for email changing"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:17:49" tests="0" file="cypress/integration/tests/07_learn_more.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Check Learn More page is opens correctly" timestamp="2022-01-04T09:17:49" tests="4" time="57.8000" failures="0">
+    <testcase name="Check Learn More page is opens correctly should open Learn More page for InkJet printers" time="14.1100" classname="should open Learn More page for InkJet printers"/>
+    <testcase name="Check Learn More page is opens correctly should open Learn More page for Laser Printers" time="11.5900" classname="should open Learn More page for Laser Printers"/>
+    <testcase name="Check Learn More page is opens correctly should open Learn More page for Dot Matrix Printers" time="11.7340" classname="should open Learn More page for Dot Matrix Printers"/>
+    <testcase name="Check Learn More page is opens correctly should open Learn More page for Label Maker Printers" time="17.9640" classname="should open Learn More page for Label Maker Printers"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:20:14" tests="0" file="cypress/integration/tests/09_support_search.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Check Support search page works correctly" timestamp="2022-01-04T09:20:14" tests="8" time="92.8380" failures="0">
+    <testcase name="Check Support search page works correctly should open Support page and perform search by Product name" time="12.7490" classname="should open Support page and perform search by Product name"/>
+    <testcase name="Check Support search page works correctly should open Support page and perform search by Serial Number" time="11.5860" classname="should open Support page and perform search by Serial Number"/>
+    <testcase name="Check Support search page works correctly should search and select specific printer from dropdown list" time="11.1740" classname="should search and select specific printer from dropdown list"/>
+    <testcase name="Check Support search page works correctly should check that Product Info, Standard Warranty and Extended Warranty are displayed" time="10.5470" classname="should check that Product Info, Standard Warranty and Extended Warranty are displayed"/>
+    <testcase name="Check Support search page works correctly should check Subscription for a Printer in quantity 1" time="11.4840" classname="should check Subscription for a Printer in quantity 1"/>
+    <testcase name="Check Support search page works correctly should check Subscription for a Printer in quantity 3" time="9.5340" classname="should check Subscription for a Printer in quantity 3"/>
+    <testcase name="Check Support search page works correctly should check main information of a printer" time="12.6530" classname="should check main information of a printer"/>
+    <testcase name="Check Support search page works correctly should check error message if there are no warranty for a printer" time="10.3580" classname="should check error message if there are no warranty for a printer"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:38:58" tests="0" file="cypress/integration/tests/25_order_info_negative.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Open Cart and perform negative cases for Checkout" timestamp="2022-01-04T09:38:58" tests="1" time="187.4510" failures="0">
+    <testcase name="Open Cart and perform negative cases for Checkout should perform negative tests for all Checkout pages" time="184.4950" classname="should perform negative tests for all Checkout pages"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:45:32" tests="0" file="cypress/integration/tests/30_projectors_links_checking.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking of all the links for Projectors to have status 200" timestamp="2022-01-04T09:45:32" tests="1" time="30.4130" failures="0">
+    <testcase name="Checking of all the links for Projectors to have status 200 should have all Projectors links with status 200" time="27.9580" classname="should have all Projectors links with status 200"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:46:24" tests="0" file="cypress/integration/tests/32_shop_online_links_checking.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking of all the links for Shop online pages to have status 200" timestamp="2022-01-04T09:46:24" tests="1" time="17.1990" failures="0">
+    <testcase name="Checking of all the links for Shop online pages to have status 200 should have all Shop Online links with status 200" time="14.1080" classname="should have all Shop Online links with status 200"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:35:49" tests="0" file="cypress/integration/tests/22_pdp_tab_bar.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Testing Tab Bar for each product" timestamp="2022-01-04T09:35:49" tests="3" time="50.8850" failures="0">
+    <testcase name="Testing Tab Bar for each product should open website on a specific PDP to check tabs for Printers" time="19.1140" classname="should open website on a specific PDP to check tabs for Printers"/>
+    <testcase name="Testing Tab Bar for each product should open website on a specific PDP to check tabs for Options" time="11.9130" classname="should open website on a specific PDP to check tabs for Options"/>
+    <testcase name="Testing Tab Bar for each product should open website on a specific accessories PDP to check tabs" time="17.4760" classname="should open website on a specific accessories PDP to check tabs"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:48:10" tests="0" file="cypress/integration/tests/37_guest_user_checkouts.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Guest user performs purchase using discounts" timestamp="2022-01-04T09:48:10" tests="4" time="48.8210" failures="0">
+    <testcase name="Guest user performs purchase using discounts should open website, find product with promotion, add extra voucher and apply" time="13.5510" classname="should open website, find product with promotion, add extra voucher and apply"/>
+    <testcase name="Guest user performs purchase using discounts should open website, find Promotion printer and add it to Cart" time="8.2390" classname="should open website, find Promotion printer and add it to Cart"/>
+    <testcase name="Guest user performs purchase using discounts should open website, add printer to cart and apply Amount based voucher" time="12.6610" classname="should open website, add printer to cart and apply Amount based voucher"/>
+    <testcase name="Guest user performs purchase using discounts should open website, add printer to cart and apply Percentage based voucher" time="11.8050" classname="should open website, add printer to cart and apply Percentage based voucher"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:43:02" tests="0" file="cypress/integration/tests/28_buy_accessories_page.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking Buy Accessories page" timestamp="2022-01-04T09:43:02" tests="1" time="70.4050" failures="1">
+    <testcase name="Checking Buy Accessories page should check that all inner links are opened correct" time="0.0000" classname="should check that all inner links are opened correct">
+      <failure message="Timed out retrying after 50000ms: Expected to find element: `.product-pricing__stock`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 50000ms: Expected to find element: `.product-pricing__stock`, but never found it.
+    at PdpAssertions.checkThatInStockStatusIsVisible (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\28_buy_accessories_page.spec.js:3119:54)
+    at Context.eval (https://epson-gb.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/__cypress/tests?p=cypress\integration\tests\28_buy_accessories_page.spec.js:6094:25)]]></failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:29:31" tests="0" file="cypress/integration/tests/16_address_book.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking Address Book Tab" timestamp="2022-01-04T09:29:31" tests="3" time="71.0120" failures="0">
+    <testcase name="Checking Address Book Tab should check negative testcases while creating new Address" time="40.6540" classname="should check negative testcases while creating new Address"/>
+    <testcase name="Checking Address Book Tab should edit created before Address by search with Postcode and check for changes" time="14.1750" classname="should edit created before Address by search with Postcode and check for changes"/>
+    <testcase name="Checking Address Book Tab should delete created before Address" time="13.9570" classname="should delete created before Address"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:47:50" tests="0" file="cypress/integration/tests/36_pdp_info_check.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Login and check all info on PDP page" timestamp="2022-01-04T09:47:50" tests="1" time="17.1240" failures="0">
+    <testcase name="Login and check all info on PDP page should login, find printer, open PDP and check inner data" time="14.8350" classname="should login, find printer, open PDP and check inner data"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:18:51" tests="0" file="cypress/integration/tests/08_support_pdp.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Check Support page works correctly" timestamp="2022-01-04T09:18:51" tests="6" time="79.4140" failures="0">
+    <testcase name="Check Support page works correctly should open Support page for printer and check FAQ tab" time="15.4660" classname="should open Support page for printer and check FAQ tab"/>
+    <testcase name="Check Support page works correctly should open Support page for printer and check Manuals&amp;Docs tab" time="10.6640" classname="should open Support page for printer and check Manuals&amp;Docs tab"/>
+    <testcase name="Check Support page works correctly should open Support page for printer and check Download tab" time="9.7840" classname="should open Support page for printer and check Download tab"/>
+    <testcase name="Check Support page works correctly should open Support page for printer and check Registration&amp;Warranty tab" time="14.3250" classname="should open Support page for printer and check Registration&amp;Warranty tab"/>
+    <testcase name="Check Support page works correctly should open Support page for printer and check ContactUs tab" time="13.0570" classname="should open Support page for printer and check ContactUs tab"/>
+    <testcase name="Check Support page works correctly should open Support page for printer, change OS and check data" time="13.7390" classname="should open Support page for printer, change OS and check data"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:12:53" tests="0" file="cypress/integration/tests/01_register_logout_login.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Register, logout and relogin" timestamp="2022-01-04T09:12:53" tests="1" time="28.4530" failures="0">
+    <testcase name="Register, logout and relogin should check negative cases with emails when register" time="26.0780" classname="should check negative cases with emails when register"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:46:07" tests="0" file="cypress/integration/tests/31_ink_links_checking.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking of all the links for Ink pages to have status 200" timestamp="2022-01-04T09:46:07" tests="1" time="12.4720" failures="0">
+    <testcase name="Checking of all the links for Ink pages to have status 200 should have all Ink links with status 200" time="10.0990" classname="should have all Ink links with status 200"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:27:06" tests="0" file="cypress/integration/tests/14_my_account.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking tabs on My Account menu" timestamp="2022-01-04T09:27:06" tests="2" time="54.9080" failures="0">
+    <testcase name="Checking tabs on My Account menu should check that tabs on My account menu is opened and correct ones" time="21.4120" classname="should check that tabs on My account menu is opened and correct ones"/>
+    <testcase name="Checking tabs on My Account menu should open My Accounts tab and check Inner blocks" time="30.9340" classname="should open My Accounts tab and check Inner blocks"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:13:26" tests="0" file="cypress/integration/tests/02_forgot_password.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Send a message when forgot password" timestamp="2022-01-04T09:13:26" tests="1" time="14.3480" failures="0">
+    <testcase name="Send a message when forgot password should click Forgot Password btn and assert an alert" time="12.2340" classname="should click Forgot Password btn and assert an alert"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:47:31" tests="0" file="cypress/integration/tests/35_plp_info_check.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Login and check info on PLP page" timestamp="2022-01-04T09:47:31" tests="1" time="13.6000" failures="0">
+    <testcase name="Login and check info on PLP page should login and check inner data for plp printer" time="11.0280" classname="should login and check inner data for plp printer"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:21:51" tests="0" file="cypress/integration/tests/10_cart_buy_with_stock_price.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Find discount price and purchase" timestamp="2022-01-04T09:21:51" tests="1" time="41.4770" failures="0">
+    <testcase name="Find discount price and purchase should login, find printer with discount and purchase" time="39.2000" classname="should login, find printer with discount and purchase"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:22:36" tests="0" file="cypress/integration/tests/11_cart_updates_voucher.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Open Cart and make some manipulations" timestamp="2022-01-04T09:22:36" tests="2" time="45.9920" failures="0">
+    <testcase name="Open Cart and make some manipulations should login, add printer to Cart and Update it - change and delete" time="23.1750" classname="should login, add printer to Cart and Update it - change and delete"/>
+    <testcase name="Open Cart and make some manipulations should login, add printer to Cart and use a voucher to change the price" time="20.2370" classname="should login, add printer to Cart and use a voucher to change the price"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:46:45" tests="0" file="cypress/integration/tests/33_search_widget.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking Search widget when perform search" timestamp="2022-01-04T09:46:45" tests="3" time="40.1310" failures="0">
+    <testcase name="Checking Search widget when perform search should open PDP page of a printer" time="12.8540" classname="should open PDP page of a printer"/>
+    <testcase name="Checking Search widget when perform search should open Learn More page of a printer" time="12.5480" classname="should open Learn More page of a printer"/>
+    <testcase name="Checking Search widget when perform search should open suggestion to open PLP page and close Search field" time="12.2820" classname="should open suggestion to open PLP page and close Search field"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:24:26" tests="0" file="cypress/integration/tests/13_shipping_methods.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Check different types of Shipping Methods" timestamp="2022-01-04T09:24:26" tests="6" time="155.9140" failures="0">
+    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Hardware to the Cart" time="27.6600" classname="should check Shipping Method &quot;Standard&quot; when add Hardware to the Cart"/>
+    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Electronic&quot; when add CoverPlus to the Cart" time="24.6720" classname="should check Shipping Method &quot;Electronic&quot; when add CoverPlus to the Cart"/>
+    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Option to the Cart" time="22.0140" classname="should check Shipping Method &quot;Standard&quot; when add Option to the Cart"/>
+    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Multiple Consumables to purchase" time="26.6920" classname="should check Shipping Method &quot;Standard&quot; when add Multiple Consumables to purchase"/>
+    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Standard&quot; when add Hardware with CoverPlus to purchase" time="25.1850" classname="should check Shipping Method &quot;Standard&quot; when add Hardware with CoverPlus to purchase"/>
+    <testcase name="Check different types of Shipping Methods should check Shipping Method &quot;Deutsche Post&quot; when add EasyMail to purchase" time="27.3030" classname="should check Shipping Method &quot;Deutsche Post&quot; when add EasyMail to purchase"/>
+  </testsuite>
+  <testsuite name="Root Suite" timestamp="2022-01-04T09:30:46" tests="0" file="cypress/integration/tests/17_update_details.spec.js" time="0.0000" failures="0"/>
+  <testsuite name="Checking Update Details Tab" timestamp="2022-01-04T09:30:46" tests="1" time="18.6960" failures="0">
+    <testcase name="Checking Update Details Tab should check that new Details are saved successfully" time="16.4240" classname="should check that new Details are saved successfully"/>
   </testsuite>
 </testsuites>

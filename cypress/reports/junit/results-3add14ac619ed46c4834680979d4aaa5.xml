@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="11.4810" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:20:05" tests="0" file="cypress/integration/tests/31_ink_links_checking.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Checking of all the links for Ink pages to have status 200" timestamp="2022-01-01T02:20:05" tests="1" time="11.4670" failures="0">
-    <testcase name="Checking of all the links for Ink pages to have status 200 should have all Ink links with status 200" time="9.4100" classname="should have all Ink links with status 200">
-    </testcase>
-  </testsuite>
-</testsuites>

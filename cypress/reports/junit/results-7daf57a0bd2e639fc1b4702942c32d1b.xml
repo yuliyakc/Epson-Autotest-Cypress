@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="14.7960" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:21:37" tests="0" file="cypress/integration/tests/36_pdp_info_check.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Login and check all info on PDP page" timestamp="2022-01-01T02:21:37" tests="1" time="14.7830" failures="0">
-    <testcase name="Login and check all info on PDP page should login, find printer, open PDP and check inner data" time="12.5710" classname="should login, find printer, open PDP and check inner data">
-    </testcase>
-  </testsuite>
-</testsuites>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="163.4740" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:14:09" tests="0" file="cypress/integration/tests/25_order_info_negative.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Open Cart and perform negative cases for Checkout" timestamp="2022-01-01T02:14:09" tests="1" time="163.4570" failures="0">
-    <testcase name="Open Cart and perform negative cases for Checkout should perform negative tests for all Checkout pages" time="160.8840" classname="should perform negative tests for all Checkout pages">
-    </testcase>
-  </testsuite>
-</testsuites>

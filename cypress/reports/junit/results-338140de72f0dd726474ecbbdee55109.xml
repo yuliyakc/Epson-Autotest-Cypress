@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="40.2810" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:17:46" tests="0" file="cypress/integration/tests/28_buy_accessories_page.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Checking Buy Accessories page" timestamp="2022-01-01T02:17:46" tests="1" time="40.2580" failures="0">
-    <testcase name="Checking Buy Accessories page should check that all inner links are opened correct" time="38.2580" classname="should check that all inner links are opened correct">
-    </testcase>
-  </testsuite>
-</testsuites>

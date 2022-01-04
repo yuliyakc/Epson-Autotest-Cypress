@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="12.0310" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-01-01T02:21:22" tests="0" file="cypress/integration/tests/35_plp_info_check.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Login and check info on PLP page" timestamp="2022-01-01T02:21:22" tests="1" time="12.0200" failures="0">
-    <testcase name="Login and check info on PLP page should login and check inner data for plp printer" time="9.8570" classname="should login and check inner data for plp printer">
-    </testcase>
-  </testsuite>
-</testsuites>

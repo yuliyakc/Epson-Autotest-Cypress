@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="13.1290" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2022-01-01T01:50:43" tests="0" file="cypress/integration/tests/02_forgot_password.spec.js" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Send a message when forgot password" timestamp="2022-01-01T01:50:43" tests="1" time="13.1100" failures="0">
-    <testcase name="Send a message when forgot password should click Forgot Password btn and assert an alert" time="10.9040" classname="should click Forgot Password btn and assert an alert">
-    </testcase>
-  </testsuite>
-</testsuites>
