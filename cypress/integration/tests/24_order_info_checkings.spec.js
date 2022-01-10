@@ -10,7 +10,7 @@ describe ("Checking information on Checkout pages", ()=> {
         perform.signInActions.openWebsiteAndLogin();
     });
     it('should check main info about the order and a buyer', function () {
-        perform.homePageMenuActions.openLabelMakerPrintersPage();
+        perform.homePageMenuActions.openDotMatrixMainPage();
         perform.plpInfoActions.clickBuyNowBtnPLP();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         perform.cartActions.clickCheckoutBtnOnBasketPage();

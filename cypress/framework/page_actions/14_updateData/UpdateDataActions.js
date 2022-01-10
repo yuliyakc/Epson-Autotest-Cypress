@@ -11,8 +11,8 @@ class UpdateDataActions {
         cy.get(UpdateDataElements.idInput_ProfileLastName).click().clear().type(usersData.address.lastName)
     };
     selectAndAddDateOfBirth(){
-        cy.get(UpdateDataElements.cssDropdown_Day).select(3).should("have.value", 3);
-        cy.get(UpdateDataElements.cssDropdown_Month).select(3).should("have.value", 3);
+        cy.get(UpdateDataElements.cssDropdown_Day).select("5").should("have.value", 5);
+        cy.get(UpdateDataElements.cssDropdown_Month).select("5").should("have.value", 5);
         cy.get(UpdateDataElements.cssDropdown_Year).select("1989").should("have.value", "1989");
     };
     changeTelephoneNumber(){

@@ -40,7 +40,7 @@ class CartActions {
         cy.xpath(CartElements.xpathInput_ItemsQuantity).click().clear().type(checkoutsData.quantity.num);
     };
     clickOnCartMiniBtn(){
-        cy.wait(1000);
+        cy.wait(2000);
         cy.get(HomePageMenuElements.cssButton_MiniCart).click({force:true});
     };
     clickCheckoutBtnOnPopup(){

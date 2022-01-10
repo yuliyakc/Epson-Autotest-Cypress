@@ -12,11 +12,11 @@ describe("Find specific printer, add to cart and perform quantity checking", ()=
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickToRaisePrintersQuantity();
-        check.cartAsserts.checkAlertForSpecificPrinter();
+        check.commonAsserts.checkGlobalAlertIsDisplayed();
 
         perform.cartActions.clickPrintersQuantityAndChangeIt();
         check.commonAsserts.checkGlobalAlertIsDisplayed();
-        check.cartAsserts.checkPrintersQuantityShouldBeOne();
+        check.cartAsserts.checkPrintersQuantityIsNotWithMinus();
         perform.cartActions.deleteFirstItemFromCart();
         check.commonAsserts.checkGlobalAlertIsDisplayed();
     });

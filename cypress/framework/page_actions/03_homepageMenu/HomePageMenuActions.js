@@ -22,7 +22,11 @@ class HomePageMenuActions{
         cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.largeFormat.main).click({force:true});
     };
-    openLabelMakerPrintersPage(){
+    openDotMatrixMainPage(){
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(printersData.dotMatrix.main).click({force:true});
+    };
+    openLabelMakerMainPage(){
         cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.labelMaker.main).click({force:true});
     };

@@ -38,8 +38,8 @@ class ComparePrintersActions {
       cy.get(ComparePrintersElements.cssLink_LearnMore).click();
     };
     clickFindADealerBtnToOpenModalWindow(){
-        cy.get(ComparePrintersElements.cssBtn_FindADealer).click();
-        cy.wait(1000);
+        cy.get(ComparePrintersElements.cssBtn_FindADealer).click({force:true});
+        cy.wait(2000);
     };
     clickRequestCallbackBtn(){
       cy.get(ComparePrintersElements.cssBtn_RequestCallback).click();

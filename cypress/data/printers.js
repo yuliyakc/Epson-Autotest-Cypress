@@ -11,7 +11,7 @@ module.exports = {
         "name2": "ET-2715{enter}",
         "consumer": "EcoTank ET-2750{enter}",
         "ink": "WorkForce WF-7310DTW{enter}",
-        "individual": "WorkForce WF-7310DTW{enter}",
+        "individual": "C11CH70401{enter}",
         "microBusinessSku": "C11CH70401{enter}"
     },
     "consumer":{

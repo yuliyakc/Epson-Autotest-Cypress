@@ -35,10 +35,10 @@ class CartAsserts {
         cy.get(CheckoutElements.cssBlock_CartHeaders).should("be.visible");
     };
     checkAlertForSpecificPrinter(){
-        cy.get("div.global-alerts a").should("include.text", printersData.dotMatrix.name3)
+        cy.get("div.global-alerts a").should("be.visible")
     };
-    checkPrintersQuantityShouldBeOne(){
-        cy.xpath(CartElements.xpathInput_ItemsQuantity).should("include.value", 1);
+    checkPrintersQuantityIsNotWithMinus(){
+        cy.xpath(CartElements.xpathInput_ItemsQuantity).should("include.value", 2);
     };
     checkPriceWithVoucherCode30(){
         cy.get(CheckoutElements.cssItem_TotalDiscount).should('contain', checkoutsData.price.withVoucher30)

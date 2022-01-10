@@ -44,7 +44,7 @@ describe ("Checking of all the links on main menu to have status 200", ()=> {
         check.homePageMenuAsserts.checkDotMatrixPrintersServerCorrectResponse();
     });
     it('should have all Label Maker Printers links with status 200', function () {
-        perform.homePageMenuActions.openLabelMakerPrintersPage();
+        perform.homePageMenuActions.openLabelMakerMainPage();
         check.homePageMenuAsserts.checkLabelMakerPrintersServerCorrectResponse();
 
         perform.homePageMenuActions.openLabelMakerRemotePage();
