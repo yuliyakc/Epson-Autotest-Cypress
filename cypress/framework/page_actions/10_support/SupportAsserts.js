@@ -57,7 +57,7 @@ class SupportAsserts {
         cy.get(SupportElements.cssBlock_SupportOptions).eq(3).should("be.visible");
     };
     checkThatCorrectPageIsOpened(){
-        cy.url().should("contain", "/en_GB/support");
+        cy.url().should("contain", "/support");
     };
     checkCorrectPageIsOpened(){
         cy.url().should("contain", "/en_GB/");

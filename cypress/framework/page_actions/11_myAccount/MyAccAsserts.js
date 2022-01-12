@@ -13,6 +13,7 @@ class MyAccAsserts {
         cy.get(MyAccountElements.cssDropdown_MyAccount).should("be.visible");
     };
     checkThatUserTransferToUpdateProfilePage(){
+        cy.wait(1000)
         cy.url().should("include", "my-account/update-profile");
     };
     checkThatUserTransferToUpdateEmailPage(){

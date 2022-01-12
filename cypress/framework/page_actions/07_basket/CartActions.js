@@ -10,17 +10,18 @@ class CartActions {
       cy.get(CartElements.cssBtn_RaisePrintersQuantity).click();
     };
     deleteTwoItemsFromCart() {
-        cy.get(CartElements.cssBtn_DeleteSecondItem).click()
+        cy.get(CartElements.cssBtn_DeleteSecondItem).click();
         cy.get(CartElements.cssBtn_DeleteFirstItem).click();
+        cy.wait(2000);
     };
     deleteThreeItemsFromCart() {
-        cy.get(CartElements.cssBtn_DeleteThirdItem).click()
-        cy.get(CartElements.cssBtn_DeleteSecondItem).click()
+        cy.get(CartElements.cssBtn_DeleteThirdItem).click();
+        cy.get(CartElements.cssBtn_DeleteSecondItem).click();
         cy.get(CartElements.cssBtn_DeleteFirstItem).click();
     };
     clickCheckoutBtnOnBasketPage(){
         cy.wait(1000)
-        cy.get(CartElements.cssButton_BasketCheckout).click()
+        cy.get(CartElements.cssButton_BasketCheckout).click();
     };
     deleteFirstItemFromCart() {
         cy.get(CartElements.cssBtn_DeleteFirstItem).click({ multiple: true });
