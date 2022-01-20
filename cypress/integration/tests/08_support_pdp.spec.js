@@ -59,7 +59,7 @@ describe("Check Support page works correctly", ()=> {
         //click EmailUsBtn when page will be created
         //check EmailUs form
         perform.supportActions.clickOnFindRepairButton();
-        check.supportAsserts.checkWidgetIsOpened();
+        check.commonAsserts.checkWidgetIsOpened();
     });
     it('should open Support page for printer, change OS and check data', function () {
         perform.supportActions.selectOperatingSystemMac();

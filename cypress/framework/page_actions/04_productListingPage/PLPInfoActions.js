@@ -7,5 +7,8 @@ class PLPInfoActions {
     clickLearnMoreBtn(){
         cy.get(PLPInfoElements.cssBtn_LearnMore).first().click();
     };
+    clickFindADealerBtn(){
+        cy.get(PLPInfoElements.cssBtn_FindADealer).click();
+    };
 }
 export default PLPInfoActions

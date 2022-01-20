@@ -24,7 +24,7 @@ describe ("Check Mobile version correct working", ()=> {
 
         perform.plpInfoActions.clickBuyNowBtnPLP();
 
-        perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
+        //perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.mobileAsserts.checkPageTitleOnCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
         perform.checkoutActions.fillRequiredInfo();

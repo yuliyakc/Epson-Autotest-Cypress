@@ -10,8 +10,8 @@ describe("Check different types of Shipping Methods", ()=> {
         perform.signInActions.openWebsiteAndLogin();
     });
     it('should check Shipping Method "Standard" when add Hardware to the Cart', function () {
-        perform.searchActions.searchInkEcoPrinterPLP();
-        perform.plpInfoActions.clickBuyNowBtnPLP();
+        perform.productLinksForPDP.openEcoTankPrinterPDPPage();
+        perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickCheckoutBtnOnBasketPage();

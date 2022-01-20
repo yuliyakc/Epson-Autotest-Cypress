@@ -2,6 +2,7 @@ import CheckoutElements from "../locators/06_checkout/CheckoutElements";
 import checkoutsData from "../../data/checkouts";
 import CommonElements from "../locators/CommonElements";
 import PLPInfoElements from "../locators/04_productListingPage/PLPInfoElements";
+import SupportElements from "../locators/10_support/SupportElements";
 
 class CommonAsserts {
     checkPrinterHasDiscountPrice(){
@@ -38,6 +39,9 @@ class CommonAsserts {
                     .should("be.visible");
             }
         });
+    };
+    checkWidgetIsOpened(){
+        cy.get(SupportElements.cssWidget_Main).should("be.visible");
     };
 
 

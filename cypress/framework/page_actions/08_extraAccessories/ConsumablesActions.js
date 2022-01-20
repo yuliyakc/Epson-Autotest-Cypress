@@ -8,7 +8,7 @@ class ConsumablesActions {
     selectMediaBusinessPaper(){
         cy.wait(3000)
         cy.scrollTo(0, 500)
-        cy.get(CommonElements.cssBtn_BtnPrimary).eq(15).click();
+        cy.get(CommonElements.cssBtn_BtnPrimary).eq(25).click();
     };
     clickBuyNowForMediaAndContinueShopping(){
         cy.get(CommonElements.cssBtn_BuyNowForSecondAccessory).click();
@@ -17,7 +17,7 @@ class ConsumablesActions {
     selectConsumablesColourMultiPac(){
         cy.wait(2000)
         cy.scrollTo("center")
-        cy.get(CommonElements.cssBtn_BtnPrimary).eq(92).click();
+        cy.get(CommonElements.cssBtn_BtnPrimary).eq(95).click();
     };
     clickBuyNowForConsumablesAndContinueShopping(){
         cy.get(CommonElements.cssBtn_BuyNowForCoverPlus).click();

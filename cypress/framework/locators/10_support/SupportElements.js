@@ -24,7 +24,7 @@ class SupportElements {
     static idSelect_OperatingSystems = "select[id='operating-system']";
     static cssBtn_Go = " div.support-product__operating-system > div > form > button";
     static cssBtn_PrintersHomePage = "div.support-product__headline-sidebar > div > a";
-    static cssLink_Support = ".navigation__list-item:nth-child(7) a";
+    static cssLink_Support = ".navigation__list-item:nth-child(4) a";
     static cssInput_ProductName = "input[name='searchText']";
     static cssInput_SerialNumber = "input[name='serialNumber']";
     static cssBtn_Search = "#epsonSupportSearchForm > div.support-search__form-elements > button";

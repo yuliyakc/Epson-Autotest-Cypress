@@ -1,4 +1,5 @@
 import FiltersElements from "../../locators/04_productListingPage/FiltersElements";
+import PLPInfoElements from "../../locators/04_productListingPage/PLPInfoElements";
 
 class FiltersActions {
      useAppSegmentFilter(){
@@ -26,9 +27,6 @@ class FiltersActions {
      useLabelMakerPrinters(){
          cy.get(FiltersElements.cssCheckbox_LabelMakerPrinters).check().should('be.checked').and('have.value','on');
      };
-
-
-
 
 
      someMethod() {

@@ -7,13 +7,13 @@ describe("Add several consumables and  Accessories to cart ", ()=> {
     it('should login, add printer, several accessories and purchase', function () {
         perform.signInActions.openWebsiteAndLogin();
 
-        perform.productLinksForPDP.openEcoTankPrinter();
+        perform.productLinksForPDP.openEcoTankForConsumablesPrinterPdp();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
         check.consumablesAsserts.checkUserIsOnConsumablesPage();
 
         perform.consumablesActions.selectCoverPlusZeroFiveYears();
         perform.consumablesActions.clickBuyNowForConsumablesAndContinueShopping();
-
+        //perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         perform.consumablesActions.selectMediaBusinessPaper();
         perform.consumablesActions.clickBuyNowForMediaAndContinueShopping();
 

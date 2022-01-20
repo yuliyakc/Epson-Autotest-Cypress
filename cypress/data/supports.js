@@ -2,6 +2,7 @@
 
 module.exports = {
     "support" : {
+        "main": "Support",
         "breadcrumbs" : "Support",
         "search": "test",
         "name" : "support",
@@ -19,7 +20,7 @@ module.exports = {
         "serial4": "X576037640",
         "alert": "No Support Product found for warranty check",
         "serial5": "X3B8030324",
-        "subscriptions": "Subscription(s): EPP- EPSON PRINT PERFORMANCE SUBS., ERS-EPSON REMOTE SERVICES SUBS., RI2- READY PRINT FLEX SUBS."
+        "subscriptions": "Subscription(s): EPP- EPSON PRINT PERFORMANCE SUBS., ERS-EPSON REMOTE SERVICES SUBS."
     }
 
 

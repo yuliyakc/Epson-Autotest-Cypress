@@ -11,7 +11,7 @@ describe("Open Cart and perform negative cases for Checkout", ()=> {
         perform.signInActions.openWebsiteAndLogin();
         perform.productLinksForPDP.openEcoTankPrinter();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
-        perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
+        //perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkUserOpenCartSection()
         check.cartAsserts.checkPrintersPriceForOneItem();
         perform.cartActions.clickCheckoutBtnOnBasketPage();

@@ -65,9 +65,6 @@ class SupportAsserts {
     checkChatWasOpened(){
         cy.get(SupportElements.idModal_Chat).should("be.visible");
     };
-    checkWidgetIsOpened(){
-        cy.get(SupportElements.cssWidget_Main).should("be.visible");
-    };
     checkMacOSInAddressLink(){
         cy.url().should("include", "selected-os=macOS+11");
     };
@@ -110,7 +107,7 @@ class SupportAsserts {
         cy.get(SupportElements.cssBlock_WarrantyExtended)
             .find(".support-warranty__table")
             .find(".support-warranty__table-row")
-            .should("have.length", 2)
+            .should("have.length", 1)
             .and("contain", supportsData.support.description2);
     };
     productInfoShouldContainOneSubscription(){

@@ -7,8 +7,8 @@ describe("Login and buy a printer", ()=> {
     it('should login and buy a printer from PLP using credit card', function () {
         perform.signInActions.openWebsiteAndLogin();
 
-        perform.searchActions.searchInkEcoPrinterPLP();
-        perform.plpInfoActions.clickBuyNowBtnPLP();
+        perform.productLinksForPDP.openWorkForcePrinterPDP();
+        perform.pdpActions.clickBuyNowBtnOnPDPPage();
 
         perform.cartActions.clickOnCartMiniBtn();
         perform.cartActions.clickCheckoutBtnOnPopup();

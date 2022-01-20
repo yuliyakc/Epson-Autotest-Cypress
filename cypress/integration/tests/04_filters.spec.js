@@ -9,16 +9,14 @@ describe("Checking filter for all printers", ()=> {
         cy.viewport(1200, 800);
         perform.signInActions.openWebsiteAndLogin();
     });
-    // it('should check that filters are working correct for Ink Printer', function () {
-    //     perform.searchActions.searchInkPrinterPLPByFullName();
-    //     check.assertions.checkMainProductsQuantity();
-    //     perform.filtersActions.useAppSegmentFilter();
-    //     check.assertions.checkActiveFilter();
-    //
-    //     perform.commonActions.resetFilters();
-    //     perform.filtersActions.useCategoryFilter();
-    //     check.assertions.checkInkQuantity();
-    // });
+    it('should check that filters are working correct for Ink Printer', function () {
+        perform.searchActions.searchInkPrinterPLPByFullName();
+        check.assertions.checkMainProductsQuantity();
+
+        perform.commonActions.resetFilters();
+        perform.filtersActions.useCategoryFilter();
+        check.assertions.checkInkQuantity();
+    });
     it('should check that several filters shows correct result for Dot Printer', function () {
         perform.searchActions.searchDotPrinterPLP();
         perform.filtersActions.useIncludedSoftFilter();
@@ -38,4 +36,10 @@ describe("Checking filter for all printers", ()=> {
         check.assertions.checkActiveFilter();
         check.assertions.checkLabelMakerProductsQuantity();
     });
+    // it('should check that Find a dealer modal opens after filter was applied', function () {
+    //     perform.searchActions.searchInkPrinterPLPByFullName();
+    //     perform.filtersActions.useCategoryFilter();
+    //     perform.plpInfoActions.clickFindADealerBtn();
+    //     check.commonAsserts.checkWidgetIsOpened();
+    // });
 });

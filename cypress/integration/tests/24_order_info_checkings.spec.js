@@ -12,7 +12,7 @@ describe ("Checking information on Checkout pages", ()=> {
     it('should check main info about the order and a buyer', function () {
         perform.homePageMenuActions.openDotMatrixMainPage();
         perform.plpInfoActions.clickBuyNowBtnPLP();
-        perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
+        //perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
         perform.checkoutActions.clickProductNameToCheckRedirectOnPdpPage();
         check.pdpAssertions.checkThatSKUIsDisplayed();

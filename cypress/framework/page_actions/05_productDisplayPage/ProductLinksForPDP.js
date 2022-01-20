@@ -23,5 +23,8 @@ class ProductLinksForPDP {
     openInkJetHomeXPPrintersPdp(){
         cy.visitWebsite("/products/printers/inkjet/consumer/expression-home-xp-2100/p/27260");
     };
+    openEcoTankForConsumablesPrinterPdp(){
+        cy.visitWebsite("products/printers/inkjet/consumer/ecotank-et-4850/p/30164");
+    };
 }
 export default ProductLinksForPDP

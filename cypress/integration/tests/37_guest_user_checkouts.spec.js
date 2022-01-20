@@ -28,7 +28,7 @@ describe("Guest user performs purchase using discounts", ()=> {
     it('should open website, add printer to cart and apply Amount based voucher', function () {
         perform.productLinksForPDP.openEcoTankPrinter();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
-        perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
+        //perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkUserOpenCartSection();
         perform.cartActions.putFixed100VoucherCodeAndApply();
         check.cartAsserts.checkFixedVoucherCode100IsApply();
@@ -37,7 +37,7 @@ describe("Guest user performs purchase using discounts", ()=> {
     it('should open website, add printer to cart and apply Percentage based voucher', function () {
         perform.productLinksForPDP.openEcoTankPrinter();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
-        perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
+        //perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkUserOpenCartSection();
         perform.cartActions.putPercentageVoucherCodeAndApply();
         check.cartAsserts.checkPercentageVoucherCodeIsApply();

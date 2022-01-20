@@ -33,9 +33,9 @@ describe("Testing Tab Bar for each product", ()=> {
         perform.pdpActions.clickSupportTab();
         check.pdpAssertions.checkSupportBlock();
 
-        perform.pdpActions.clickCompatibilityTab();
-        check.pdpAssertions.checkCompatibilityBlock();
-        perform.pdpActions.clickCompatibilityLink();
+       // perform.pdpActions.clickCompatibilityTab();
+        //check.pdpAssertions.checkCompatibilityBlock();
+       // perform.pdpActions.clickCompatibilityLink();
         check.pdpAssertions.checkThatSKUIsDisplayed();
     });
     it('should open website on a specific accessories PDP to check tabs', function () {

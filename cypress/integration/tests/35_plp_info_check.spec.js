@@ -14,4 +14,4 @@ describe("Login and check info on PLP page", ()=> {
         check.commonAsserts.checkProductPricingTaxIsVisible();
         check.commonAsserts.checkStatusInStockIfBuyNowBtnIsVisible();
     });
-});
+});findADealer

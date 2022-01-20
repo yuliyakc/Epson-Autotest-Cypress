@@ -9,7 +9,7 @@ describe("Find specific printer, add to cart and perform quantity checking", ()=
         perform.signInActions.openWebsiteAndLogin();
         perform.productLinksForPDP.openDotMatrixPrinter();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
-        perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
+       // perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkCartSection();
         perform.cartActions.clickToRaisePrintersQuantity();
         check.commonAsserts.checkGlobalAlertIsDisplayed();

@@ -25,9 +25,9 @@ describe("Checking Buy Accessories page", ()=> {
         check.pdpAssertions.checkThatInStockStatusIsVisible();
         perform.commonActions.goBackToPreviousPage();
 
-        perform.buyAccessoriesActions.clickFirstAccessoryButton();
-        check.buyAccessoriesAsserts.checkAccessoriesTabIsVisible()
-        perform.commonActions.goBackToPreviousPage();
+        // perform.buyAccessoriesActions.clickFirstAccessoryButton();
+        // check.buyAccessoriesAsserts.checkAccessoriesTabIsVisible()
+        // perform.commonActions.goBackToPreviousPage();
 
         perform.buyAccessoriesActions.clickFirstSupportButton();
         check.supportAsserts.checkSupportPageIsOpened();

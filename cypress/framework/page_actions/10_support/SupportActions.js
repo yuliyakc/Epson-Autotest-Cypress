@@ -5,6 +5,10 @@ import supportsData from "../../../data/supports";
 import HomePageMenuElements from "../../locators/03_homepageMenu/HomePageMenuElements";
 
 class SupportActions{
+    openSupportTab(){
+        cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
+        cy.contains(supportsData.support.main).click({force:true});
+    };
     openInkJetProphotoPrinters(){
         cy.get(HomePageMenuElements.cssBlock_CmsComponent).invoke('show')
         cy.contains(printersData.inkJet.prophoto).click({force:true});

@@ -10,7 +10,7 @@ describe("Open Cart and make some manipulations", ()=> {
         perform.signInActions.openWebsiteAndLogin();
         perform.productLinksForPDP.openEcoTankPrinter();
         perform.buyNowPDPActions.clickBuyNowBtnOnPDPPage();
-        perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
+        //perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         check.cartAsserts.checkUserOpenCartSection()
         check.cartAsserts.checkPrintersPriceForOneItem();
     });

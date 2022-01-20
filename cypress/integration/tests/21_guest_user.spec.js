@@ -14,7 +14,7 @@ describe("User should have an ability to purchase as Guest", ()=> {
 
         perform.productLinksForPDP.openInkJetHomeXPPrintersPdp();
         perform.pdpActions.clickBuyNowBtnOnPDPPage();
-        perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
+        // perform.consumablesActions.clickCheckoutBtnOnConsumablesPage();
         perform.cartActions.clickCheckoutBtnOnBasketPage();
 
         perform.signUpActions.enterExistedEmailFromData();
