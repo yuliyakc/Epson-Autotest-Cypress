@@ -1,5 +1,5 @@
 import Actions from "../../framework/Actions";
-import Asserts from "../../framework/Asserts";
+//import Asserts from "../../framework/Asserts";
 
 describe ("Register, logout and relogin", ()=> {
     let perform = new Actions();
