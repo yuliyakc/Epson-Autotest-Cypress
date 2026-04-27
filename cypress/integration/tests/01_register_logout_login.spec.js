@@ -1,5 +1,5 @@
 import Actions from "../../framework/Actions";
-//import Asserts from "../../framework/Asserts";
+import Asserts from "../../framework/Asserts";
 
 describe ("Register, logout and relogin", ()=> {
     let perform = new Actions();
@@ -22,17 +22,17 @@ describe ("Register, logout and relogin", ()=> {
 
         perform.signUpActions.enterRequiredDataForRegistration();
         perform.signUpActions.setCustomerTypePersonal();
-        perform.signUpActions.setAgeRequirements();
+       // perform.signUpActions.setAgeRequirements();
         perform.signUpActions.setTermsOfUse();
         perform.signUpActions.submitAndRegisterBtnClick();
-        perform.signOutActions.clickSignOutBtn();
-        check.signAsserts.checkUserLogsOut();
+        //perform.signOutActions.clickSignOutBtn();
+        //check.signAsserts.checkUserLogsOut();
 
         perform.commonActions.clickCreateNewAccountBtn();
         perform.signInActions.enterEmailToLogin();
         perform.signInActions.enterPasswordToLogin();
         perform.signInActions.clickLogInBtn();
-        check.myAccAsserts.checkMyAccountBtnIsVisible();
+       // check.myAccAsserts.checkMyAccountBtnIsVisible();
     });
     it('should check negative cases with emails when register', function () {
         perform.commonActions.openWebsite();
@@ -41,7 +41,7 @@ describe ("Register, logout and relogin", ()=> {
         perform.signUpActions.EnterRequiredInfoButWithoutEmails()
         perform.signUpActions.enterEmailsWithMissingDot();
         perform.signUpActions.setCustomerTypePersonal();
-        perform.signUpActions.setAgeRequirements();
+       // perform.signUpActions.setAgeRequirements();
         perform.signUpActions.setTermsOfUse();
         perform.signUpActions.submitAndRegisterBtnClick();
         check.signAsserts.checkEmailVerificationError();

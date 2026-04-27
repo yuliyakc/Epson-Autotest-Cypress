@@ -16,7 +16,7 @@ class CommonElements {
     static cssBtn_ContinueShopping = "#simple-modal a:nth-child(1)";
     static cssBtn_BuyNowForConsumable = ".cross-sell-list:nth-child(1) > .cross-sell-list__footer > .btn";
     static cssDropdown_Sorting = "select[id='sortOptions1']";
-    static cssGlobal_Message = ".global-alerts > .alert-dismissable";
+    static cssGlobal_Message = ".global-alerts .js-alert";
     static cssBtn_SearchAgain = ".js-address-finder-fields-container > a";
     static idInput_AddressFinder = "input[id='address-finder']";
     static cssBlock_Price = ".product-pricing";

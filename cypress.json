@@ -3,7 +3,7 @@
   "defaultCommandTimeout": 50000,
   "pageLoadTimeout": 75000,
   "watchForFileChanges": false,
-  "screenshotOnRunFailure": true,
+  "screenshotOnRunFailure": false,
   "screenshotsFolder": "cypress/report/mochareports/assets",
 
   "reporter": "cypress-multi-reporters",
